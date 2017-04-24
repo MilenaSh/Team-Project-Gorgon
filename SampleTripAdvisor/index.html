@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app-container"></div>
+
+    <!--This is not supposed to be here, don`t know how to fix yet-->
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD10D9-jjwHLoQX4AfeYmM61Yd_CKJbpKU",
+            authDomain: "test-50a3e.firebaseapp.com",
+            databaseURL: "https://test-50a3e.firebaseio.com",
+            projectId: "test-50a3e",
+            storageBucket: "test-50a3e.appspot.com",
+            messagingSenderId: "696351308795"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script src="./js/system-config.js"></script>
+    <script>
+        System.import('app');
+    </script>
+</body>
+
+</html>
