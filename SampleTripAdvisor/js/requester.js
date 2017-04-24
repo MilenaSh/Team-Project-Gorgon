@@ -13,6 +13,15 @@ const requester = function() {
         return promise;
     }
 
+    // Add data to the DB with some parameters (can be easily changed) 
+    // this overwrites if sending on id that is taken
+    function addToFirebase(id, name, city) {
+        database.ref(`/objects/${id}`).set({
+            name: name,
+            city: city
+        });
+    }
+
     function getData(url) {
         const promise = new Promise((resolve, reject) => {
             $.ajax({
@@ -27,6 +36,7 @@ const requester = function() {
     }
 
     return {
+        addToFirebase,
         getFirebaseData,
         getData
     };

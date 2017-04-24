@@ -15,3 +15,7 @@ function printData(data) {
 // requester().getFirebaseData('objects', 10).then(firebaseParser().parseForTemplate);
 
 homeController().displayTemplate('objects', 10);
+
+
+// Adds to firebase, params etc can be easily changed once content is known
+// requester().addToFirebase(4, 'Object 4', 'Nqkyde');
