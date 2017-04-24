@@ -7,6 +7,12 @@ SystemJS.config({
         'systemjs-babel-build': '../node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
         // app start script
         'app': './js/app.js',
-        'requester': './js/requester.js'
+        'requester': './js/requester.js',
+        'templates': './js/templates.js',
+        'homeController': './js/controllers/homeController.js',
+        'firebaseParser': './js/utils/firebaseParser.js',
+
+        // Libraries
+        'jquery' : '../node_modules/jquery/dist/jquery.js'
     }
 });
