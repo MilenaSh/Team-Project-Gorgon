@@ -35,10 +35,15 @@ const requester = function() {
         return promise;
     }
 
+    function addToFirebase1(directory, id, content) {
+        database.ref(`${directory}/${id}`).set(content);
+    }
+
     return {
         addToFirebase,
         getFirebaseData,
-        getData
+        getData,
+        addToFirebase1
     };
 };
 
