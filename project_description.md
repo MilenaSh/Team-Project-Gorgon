@@ -1,0 +1,69 @@
+# Trip advisor
+____
+## App objective and requirements:
+- ### Provide users with means to __browse/add/edit/search__ tourist objects
+	- Objects include __accomodation facilities, bars/pubs and sightseeing__
+- ### Users need to be __logged__ in order to add their own object and later on edit it
+- ### There needs to be separate pages for:
+	- Accomodation facilities, containing brief information about each object (List)
+	- Bars/Pubs, containing brief information about each object (List)
+	- Sightseeing, containing brief information about each object (List)
+	- Detailed page for every object containing all the information needed (Specific)
+	- User registration page
+	- User login page
+	- User profile page (Specific)
+	- Page for adding a new object (if user is logged)
+	- Page for editing an already existing object (if user is logged and owner of the object)
+		- The edit will be initiated from the Specific object page
+## Design:
+- ### Header and footer can be static html since their content is not expected to be changed
+- ### List pages (the ones listing multiple objects of the same type) will provide:
+	- __Paged listing of content__
+		- The user will be able to navigate between pages (done in order not to make requests for large chunks of data)
+	- __List of objects of the given type__
+		- Each containing only the most vital information regarding the object
+	- __Search field__
+		- The user will be able to search for objects by name
+		- The search result will be shown in the same way as the unfiltered content
+	- __Filter fields__
+		- Filtering by price (from-to)
+		- Filtering by rating (from-to)
+		- Filtering by country
+		- Filtering by city
+	- __Page numbers__
+- ### Specific object pages will provide:
+	- __Title__
+		- Object type and name
+	- __Information__
+		- Contacts, Location, Description, Photos, etc
+	- __Functionality to rate the given object__
+		- If the user is logged in
+	- __Functionality to add a new comment__
+		- If the user is logged in
+	- __List of all comments__
+	- __Edit button__
+		- If the user logged is the owner
+- ### User registration page will provide:
+	- __TODO: Figure out credentials needed and authentication way__
+- ### User login page will provide:
+	- __Input fields for:__
+		- Username/Email
+		- Password
+	- __Buttons__
+		- Log in
+		- Cancel (redirect to home page)
+- ### User profile page will provide:
+	- __Information about the user:__
+		- Objects added by this user
+		- __TODO: Figure out what other information to display__
+- ### The page for adding an object will provide:
+	- __All necessary fields needed as an information(based on the selected type to add)__
+	- __Add button__
+	- __Cancel button__
+	- __Preview button__
+- ### The page for editing an object will provide:
+	- __All necessary fields that are legal to be edited__
+	- __Save changes button__
+	- __Cancel button__
+	- __Preview button__
+	
