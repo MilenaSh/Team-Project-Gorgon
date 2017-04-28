@@ -1,0 +1,101 @@
+{
+  "hotels": [
+    {
+      "name": "Hotel a",
+      "price": 42,
+      "somethingNooneHas": "WOW",
+      "someAsd": 69
+    },
+    {
+      "name": "Hotel b"
+    },
+    {
+      "name": "Hotel c"
+    },
+    {
+      "name": "Hotel d"
+    },
+    {
+      "name": "Hotel e"
+    },
+    {
+      "name": "Hotel f"
+    },
+    {
+      "name": "Hotel g"
+    },
+    {
+      "name": "Hotel z"
+    },
+    {
+      "name": "Hotel y"
+    },
+    {
+      "name": "Hotel k"
+    },
+    {
+      "name": "Hotel l"
+    },
+    {
+      "name": "Hotel l"
+    },
+    {
+      "name": "Hotel p"
+    },
+    {
+      "name": "Hotel 1"
+    },
+    {
+      "name": "Hotel 3"
+    },
+    {
+      "name": "Hotel 2"
+    },
+    {
+      "name": "Hotel 4"
+    },
+    {
+      "name": "Hotel 4"
+    },
+    {
+      "name": "Added from post!!",
+      "id": "646795d4-a2b6-4f74-8130-bf52df933aa6"
+    },
+    {
+      "name": "Added from post!!",
+      "id": "eb3862ce-de71-4209-a0fe-988a1ce022db"
+    },
+    {
+      "name": "1234",
+      "id": "dac97b6c-c1f9-461e-9c3e-ec57a5c5fd85"
+    },
+    {
+      "name": "GGWP",
+      "id": "c0588802-3c47-4522-8408-a909d998c0a5"
+    },
+    {
+      "name": "1337",
+      "id": "be3624aa-3e4d-48c6-8c5b-40fd0f99b327"
+    }
+  ],
+  "guesthouses": [
+    {
+      "name": "Guesthouse 1"
+    },
+    {
+      "name": "Guesthouse 2"
+    },
+    {
+      "name": "Guesthouse 3"
+    },
+    {
+      "name": "Guesthouse 4"
+    },
+    {
+      "name": "Guesthouse 5"
+    },
+    {
+      "name": "Guesthouse 6"
+    }
+  ]
+}

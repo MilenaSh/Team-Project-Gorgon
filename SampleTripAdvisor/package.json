@@ -1,17 +1,26 @@
 {
-  "name": "sample-app",
+  "name": "express-app",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "handlebars": "^4.0.6",
-    "jquery": "^3.2.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "lowdb": "^0.16.2",
     "systemjs": "^0.20.12",
-    "systemjs-plugin-babel": "0.0.21"
+    "systemjs-plugin-babel": "0.0.21",
+    "underscore-db": "^0.12.2",
+    "handlebars": "^4.0.6",
+    "jquery": "^3.2.1"
+  },
+  "engines": {
+    "node": "7.9.0"
   }
 }
