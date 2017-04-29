@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Cheat Sheet</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,13 +15,9 @@
     <!--Navbar-->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
         <div class="container">
-            <!--Should thingk login/register better as they are not responsive-->
+            <!--Should think login/register better as they are not responsive-->
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" class="btn btn-sm">Register</a></li>
-                <li>
-                    <a href="#" class="btn btn-sm"> <span class="glyphicon glyphicon-user"> Login</a></li>
-            </ul>  
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                         <!--Collapses the nav buttons for smaller screens-->
@@ -28,16 +25,80 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        </button>
+                </button>
                         <a href="" class="navbar-brand">Trip guide</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#feedback">Accomodation</a></li>
-                <li><a href="#feedback">Restaurants and Bars</a></li>
-                <li><a href="#feedback">Sightseeing</a></li>
-            </ul>
-        </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Accommodation</a></li>
+                    <li><a href="#">Restaurants and Bars</a></li>
+                    <li><a href="#">Sightseeing</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Register <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-lr animated flipInX" role="menu">
+                            <div class="col-lg-12">
+                                <div class="text-center"><h3><b>Register</b></h3></div>
+                                <form id="ajax-register-form" action="#" method="post" role="form" autocomplete="off">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username-register" tabindex="1" class="form-control" placeholder="Username" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password-register" tabindex="2" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-xs-offset-3">
+                                                <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-info" value="Register Now">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="hide" name="token" id="token-register" value="7c6f19960d63f53fcd05c3e0cbc434c0">
+                                </form>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
+                            <div class="col-lg-12">
+                                <div class="text-center"><h3><b>Log In</b></h3></div>
+                                <form id="ajax-login-form" action="#" method="post" role="form" autocomplete="off">
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <input type="checkbox" tabindex="3" name="remember" id="remember">
+                                                <label for="remember"> Remember Me</label>
+                                            </div>
+                                            <div class="col-xs-5 pull-right">
+                                                <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="hide" name="token" id="token" value="a465a2791ae0bae853cf4bf485dbe1b6">
+                                </form>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!--End of container -->
     </nav>
@@ -56,30 +117,12 @@
         </div>
     </div>
 
-    <!--Page content to be displayed / hotesl and/or Sightseeing - to be rewritten with ajax-->
-    <script id="data-template" type='text/x-handlebars-template'>
-        {{#each hotels}}
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="{{image}}" alt="...">
-                <div class="caption">
-                    <h3>{{name}}</h3>
-                    <p> {{description}}</p>
-                    <p><a href="#" class="btn btn-primary" role="button">View details</a> <a href="#" class="btn btn-default"
-                            role="button">Make a Reservation</a></p>
-                </div>
-            </div>
-        </div>
-        {{/each}}
-    </script>
-
     <div class="container container-fluid">
 
         <div class="row" id="hotels-data">
         </div>
     </div>
 
-    </div>
     <!-- Footer - we can pin it to the bottom later using css-->
     <hr>
 
@@ -91,7 +134,7 @@
             </div>
         </div>
     </footer>
-    </div>
+
 
     <!--End jumbotron-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
