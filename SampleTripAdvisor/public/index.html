@@ -4,25 +4,39 @@
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
-    <script type="text/javascript" scr="libs/handlebars/dist/handlebars.js"></script>    
-    
+    <script type="text/javascript" scr="libs/handlebars/dist/handlebars.js"></script>
+
 </head>
 
 <body>
-    <a href="#!/">--OBJECTS--</a>
-    <a href="#!/hotelObjects">--HOTELS--</a>
-    <a href="#!/restaurantObjects">--RESTAURANTS--</a>
-    <a href="#!/sightseeingObjects">--SIGHTSEEING--</a>
-    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#!/">Trip advisor</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/#!/">Home</a></li>
+                <li><a href="/#!/hotelObjects">Accomodation</a></li>
+                <li><a href="/#!/restaurantObjects">Bars/Restaurants</a></li>
+                <li><a href="/#!/sightseeingObjects">Sightseeing</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+            </ul>
+        </div>
+    </nav> 
+
     <div id="app-container">Hello world!</div>
-    
+
 
     <script src="libs/systemjs/dist/system.js"></script>
     <script src="./js/system-config.js"></script>
     <script>
         System.import('app');
     </script>
-    
+
 </body>
 
 </html>
