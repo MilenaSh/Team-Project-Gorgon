@@ -7,6 +7,8 @@ SystemJS.config({
         'systemjs-babel-build': 'libs/systemjs-plugin-babel/systemjs-babel-browser.js',
         // app start script
         'app': './js/app.js',
+        'requester': './js/requesters/requester.js',
+        'objectsRequester': './js/requesters/objectsRequester.js',
 
         // Libraries
         'jquery' : 'libs/jquery/dist/jquery.js'

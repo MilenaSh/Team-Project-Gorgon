@@ -131,5 +131,66 @@
       "name": "Name 16",
       "id": "19457a3d-d667-4413-a220-1af85099345a"
     }
+  ],
+  "restaurants": [
+    {
+      "name": "Restaurant 1",
+      "menu": [
+        "Dish 1",
+        "Dish 2"
+      ]
+    },
+    {
+      "name": "Restaurant 2"
+    },
+    {
+      "name": "Restaurant 3"
+    },
+    {
+      "name": "Restaurant 4"
+    },
+    {
+      "name": "Restaurant 5"
+    },
+    {
+      "name": "Restaurant 6"
+    },
+    {
+      "name": "Restaurant 7"
+    },
+    {
+      "name": "Restaurant 8"
+    },
+    {
+      "name": "Restaurant 9"
+    },
+    {
+      "name": "Restaurant 10"
+    },
+    {
+      "name": "Restaurant 11"
+    },
+    {
+      "name": "Restaurant 12"
+    },
+    {
+      "name": "Restaurant 13"
+    },
+    {
+      "name": "Restaurant 14"
+    },
+    {
+      "name": "Restaurant 15"
+    },
+    {
+      "name": "Restaurant 16"
+    },
+    {
+      "name": "Restaurant 17"
+    },
+    {
+      "name": "Some restaurant",
+      "id": "2666bf1c-52f4-4d70-8aab-a6c6a600bc77"
+    }
   ]
 }
