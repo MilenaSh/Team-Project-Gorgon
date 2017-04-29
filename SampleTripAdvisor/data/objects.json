@@ -78,24 +78,58 @@
       "id": "be3624aa-3e4d-48c6-8c5b-40fd0f99b327"
     }
   ],
-  "guesthouses": [
+  "sightseeing": [
     {
-      "name": "Guesthouse 1"
+      "name": "Name 1"
     },
     {
-      "name": "Guesthouse 2"
+      "name": "Name 2",
+      "value": "Edited value"
     },
     {
-      "name": "Guesthouse 3"
+      "name": "Name 3"
     },
     {
-      "name": "Guesthouse 4"
+      "name": "Name 4"
     },
     {
-      "name": "Guesthouse 5"
+      "name": "Name 5",
+      "value": "Edited value",
+      "smth": "More editions"
     },
     {
-      "name": "Guesthouse 6"
+      "name": "Name 6"
+    },
+    {
+      "name": "Name 7"
+    },
+    {
+      "name": "Name 8"
+    },
+    {
+      "name": "Name 9"
+    },
+    {
+      "name": "Name 10"
+    },
+    {
+      "name": "Name 11"
+    },
+    {
+      "name": "Name 12"
+    },
+    {
+      "name": "Name 13"
+    },
+    {
+      "name": "Name 14"
+    },
+    {
+      "name": "Name 15"
+    },
+    {
+      "name": "Name 16",
+      "id": "19457a3d-d667-4413-a220-1af85099345a"
     }
   ]
 }

@@ -24,7 +24,7 @@ module.exports = function (db) {
         const hotelsDB = db.get('hotels');
 
         // Page content would exceed the number of items
-        if (pageSize * pageNumber - pageSize > hotelsDB.size()) {
+        if (pageSize * pageNumber - pageSize >= hotelsDB.size()) {
             res.status(400)
                 .json("No hotels on this page");
             return;
