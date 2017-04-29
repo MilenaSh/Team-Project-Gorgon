@@ -1,0 +1,22 @@
+<div class="row">
+{{#each hotels}}
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <div class="caption">
+            {{!--{{{img image}}}--}}
+            <h3>{{name}}</h3>
+            <p> {{description}}</p>
+            <p><a href="#" class="btn btn-primary" role="button">View details</a> <a href="#" class="btn btn-default" role="button">Make a Reservation</a></p>
+        </div>
+    </div>
+</div>
+{{/each}}
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+    {{#each pages}}
+        {{{hotelPage this}}}
+    {{/each}}
+    </div>
+</div>

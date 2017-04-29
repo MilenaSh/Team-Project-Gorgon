@@ -9,7 +9,10 @@ SystemJS.config({
         'app': './js/app.js',
         'requester': './js/requesters/requester.js',
         'objectsRequester': './js/requesters/objectsRequester.js',
+        'mainPageController': './js/controllers/mainPageController.js',
         'hotelsPageController': './js/controllers/hotelsPageController.js',
+        'restaurantsPageController': './js/controllers/restaurantsPageController.js',
+        'sightseeingPageController': './js/controllers/sightseeingPageController.js',
         'templates': './js/templates.js',
         'dataParser': './js/dataParser.js',
 

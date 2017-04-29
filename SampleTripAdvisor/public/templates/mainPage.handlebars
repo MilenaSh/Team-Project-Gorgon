@@ -1,8 +1,9 @@
-{{#each hotels}}
+<div class="row">
+{{#each objects}}
 <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="caption">
-            {{{img image}}}
+            {{!--{{{img image}}}--}}
             <h3>{{name}}</h3>
             <p> {{description}}</p>
             <p><a href="#" class="btn btn-primary" role="button">View details</a> <a href="#" class="btn btn-default" role="button">Make a Reservation</a></p>
@@ -10,5 +11,12 @@
     </div>
 </div>
 {{/each}}
+</div>
 
-{{!--Write properties expected here--}}
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+    {{#each pages}}
+        {{{objectPage this}}}
+    {{/each}}
+    </div>
+</div>

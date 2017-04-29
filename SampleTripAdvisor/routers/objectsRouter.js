@@ -37,12 +37,20 @@ module.exports = function (db) {
         const startingIndex = pageNumber * pageSize - pageSize;
         const endingIndex = pageNumber * pageSize;
 
+        const pagesCount = Math.ceil(allObjects.length / pageSize);
+        const pages = [];
+        for(let i = 0; i < pagesCount; i += 1) {
+            pages.push(i + 1);
+        }
 
 
         const result = allObjects
             .slice(startingIndex, endingIndex);
 
-        res.json(result);
+        res.json({
+            objects: result,
+            pages: pages
+        });
     });
 
     return router;

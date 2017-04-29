@@ -33,13 +33,22 @@ module.exports = function (db) {
         const startingIndex = pageNumber * pageSize - pageSize;
         const endingIndex = pageNumber * pageSize;
 
+        const pagesCount = Math.ceil(sightseeingDB.value().length / pageSize);
+        const pages = [];
+        for(let i = 0; i < pagesCount; i += 1) {
+            pages.push(i + 1);
+        }
+
         // Sort hotels by name and get by indices based on page selected
         const resultObjects = sightseeingDB.chain()
             .sortBy('name')
             .slice(startingIndex, endingIndex)
             .value();
 
-        res.json(resultObjects);
+        res.json({
+            sightseeing:resultObjects,
+            pages: pages
+        });
     });
 
     // Add new object

@@ -22,7 +22,6 @@ module.exports = function (db) {
         const pageSize = DEFAULT_PAGE_SIZE || req.pageSize;
         const pageNumber = req.params.pageNumber;
         const hotelsDB = db.get('hotels');
-
         // Page content would exceed the number of items
         if (pageSize * pageNumber - pageSize >= hotelsDB.size()) {
             res.status(400)
@@ -33,13 +32,23 @@ module.exports = function (db) {
         const startingIndex = pageNumber * pageSize - pageSize;
         const endingIndex = pageNumber * pageSize;
 
+        const pagesCount = Math.ceil(hotelsDB.value().length / pageSize);
+        const pages = [];
+        for(let i = 0; i < pagesCount; i += 1) {
+            pages.push(i + 1);
+        }
+
+
         // Sort hotels by name and get by indices based on page selected
         const resultHotels = hotelsDB.chain()
             .sortBy('name')
             .slice(startingIndex, endingIndex)
             .value();
 
-        res.json(resultHotels);
+        res.json({
+            hotels: resultHotels,
+            pages: pages
+        });
     });
 
     // Add new hotel

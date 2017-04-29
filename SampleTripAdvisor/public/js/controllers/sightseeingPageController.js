@@ -4,12 +4,12 @@ import 'jquery';
 import { dataParser } from 'dataParser';
 import Handlebars from 'handlebars';
 
-const hotelsPageController = function(containerID) {
+const sightseeingPageController = function(containerID) {
     const container = $(`#${containerID}`);
 
     function displayTemplate(directory, page) {
         Promise.all([
-            templates().loadTemplate('hotelsPage'),
+            templates().loadTemplate('sightseeingPage'),
             objectsRequester().getObjectsPage(directory, page)
         ])
         .then(([template, data]) => {
@@ -22,4 +22,4 @@ const hotelsPageController = function(containerID) {
     };
 };
 
-export { hotelsPageController };
+export { sightseeingPageController };
