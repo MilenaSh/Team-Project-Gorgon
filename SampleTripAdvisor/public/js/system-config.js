@@ -9,8 +9,13 @@ SystemJS.config({
         'app': './js/app.js',
         'requester': './js/requesters/requester.js',
         'objectsRequester': './js/requesters/objectsRequester.js',
+        'hotelsPageController': './js/controllers/hotelsPageController.js',
+        'templates': './js/templates.js',
+        'dataParser': './js/dataParser.js',
 
         // Libraries
-        'jquery' : 'libs/jquery/dist/jquery.js'
+        'jquery' : 'libs/jquery/dist/jquery.js',
+        'bootstrap': 'libs/bootstrap/dist/js/bootstrap.js',
+        'handlebars': 'libs/handlebars/dist/handlebars.js'
     }
 });

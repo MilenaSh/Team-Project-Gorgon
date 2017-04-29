@@ -1,85 +1,66 @@
 {
-  "hotels": [
-    {
-      "name": "Hotel a",
-      "price": 42,
-      "somethingNooneHas": "WOW",
-      "someAsd": 69
+  "hotels": [{
+      "name": "Hotel 1",
+      "description": "I am described"
     },
     {
-      "name": "Hotel b"
+      "name": "Hotel 2",
+      "description": "I am described"
     },
     {
-      "name": "Hotel c"
+      "name": "Hotel 3",
+      "description": "I am described"
     },
     {
-      "name": "Hotel d"
+      "name": "Hotel 4",
+      "description": "I am described"
     },
     {
-      "name": "Hotel e"
+      "name": "Hotel 5",
+      "description": "I am described"
     },
     {
-      "name": "Hotel f"
+      "name": "Hotel 6",
+      "description": "I am described"
     },
     {
-      "name": "Hotel g"
+      "name": "Hotel 7",
+      "description": "I am described"
     },
     {
-      "name": "Hotel z"
+      "name": "Hotel 123",
+      "description": "I am described"
     },
     {
-      "name": "Hotel y"
+      "name": "Hotel 555",
+      "description": "I am described"
     },
     {
-      "name": "Hotel k"
+      "name": "Hotel 234",
+      "description": "I am described"
     },
     {
-      "name": "Hotel l"
+      "name": "Hotel wqe",
+      "description": "I am described"
     },
     {
-      "name": "Hotel l"
+      "name": "Hotel trhdfg",
+      "description": "I am described"
     },
     {
-      "name": "Hotel p"
+      "name": "Hotel hrehehr",
+      "description": "I am described"
     },
     {
-      "name": "Hotel 1"
+      "name": "Hotel gggg",
+      "description": "I am described"
     },
     {
-      "name": "Hotel 3"
-    },
-    {
-      "name": "Hotel 2"
-    },
-    {
-      "name": "Hotel 4"
-    },
-    {
-      "name": "Hotel 4"
-    },
-    {
-      "name": "Added from post!!",
-      "id": "646795d4-a2b6-4f74-8130-bf52df933aa6"
-    },
-    {
-      "name": "Added from post!!",
-      "id": "eb3862ce-de71-4209-a0fe-988a1ce022db"
-    },
-    {
-      "name": "1234",
-      "id": "dac97b6c-c1f9-461e-9c3e-ec57a5c5fd85"
-    },
-    {
-      "name": "GGWP",
-      "id": "c0588802-3c47-4522-8408-a909d998c0a5"
-    },
-    {
-      "name": "1337",
-      "id": "be3624aa-3e4d-48c6-8c5b-40fd0f99b327"
+      "name": "Hotel jasdasd",
+      "description": "I am described"
     }
   ],
-  "sightseeing": [
-    {
+  "sightseeing": [{
       "name": "Name 1"
     },
     {
@@ -132,8 +113,7 @@
       "id": "19457a3d-d667-4413-a220-1af85099345a"
     }
   ],
-  "restaurants": [
-    {
+  "restaurants": [{
       "name": "Restaurant 1",
       "menu": [
         "Dish 1",
