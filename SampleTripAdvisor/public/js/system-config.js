@@ -16,6 +16,7 @@ SystemJS.config({
         // Libraries
         'jquery' : 'libs/jquery/dist/jquery.js',
         'bootstrap': 'libs/bootstrap/dist/js/bootstrap.js',
-        'handlebars': 'libs/handlebars/dist/handlebars.js'
+        'handlebars': 'libs/handlebars/dist/handlebars.js',
+        'navigo': 'libs/navigo/lib/navigo.js'
     }
 });

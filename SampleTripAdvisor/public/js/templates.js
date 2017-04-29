@@ -1,7 +1,15 @@
 import { requester } from 'requester';
 import Handlebars from 'handlebars';
 
-const templates = function() {
+Handlebars.registerHelper('img', function (object) {
+    const src = object;
+
+    return new Handlebars.SafeString(
+        "<img src='" + src + "'></img>"
+    );
+});
+
+const templates = function () {
     function loadTemplate(templateName) {
         return requester().get(`templates/${templateName}.handlebars`)
             .then(template => {
@@ -16,4 +24,6 @@ const templates = function() {
     };
 };
 
-export { templates };
+export {
+    templates
+};

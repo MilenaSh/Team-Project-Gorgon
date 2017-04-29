@@ -1,63 +1,78 @@
 {
   "hotels": [{
       "name": "Hotel 1",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 2",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 3",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 4",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 5",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 6",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 7",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 123",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 555",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel 234",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel wqe",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel trhdfg",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel hrehehr",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel gggg",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     },
     {
       "name": "Hotel jasdasd",
-      "description": "I am described"
+      "description": "I am described",
+      "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     }
   ],
   "sightseeing": [{
