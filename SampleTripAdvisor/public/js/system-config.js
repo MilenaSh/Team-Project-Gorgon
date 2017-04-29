@@ -9,12 +9,9 @@ SystemJS.config({
         'app': './js/app.js',
         'requester': './js/requesters/requester.js',
         'objectsRequester': './js/requesters/objectsRequester.js',
-        'mainPageController': './js/controllers/mainPageController.js',
-        'hotelsPageController': './js/controllers/hotelsPageController.js',
-        'restaurantsPageController': './js/controllers/restaurantsPageController.js',
-        'sightseeingPageController': './js/controllers/sightseeingPageController.js',
+        'objectPagesController': './js/controllers/objectPagesController.js',
         'templates': './js/templates.js',
-        'dataParser': './js/dataParser.js',
+        'helperRegister': './js/helperRegister.js',
 
         // Libraries
         'jquery' : 'libs/jquery/dist/jquery.js',

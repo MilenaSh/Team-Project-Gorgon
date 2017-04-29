@@ -1,5 +1,7 @@
 // !!!!! TODO !!!!!!
 // fix consistency in variable declarations (var, let, const)
+// TODO: fix routers code quality
+
 
 var express = require('express');
 var low = require('lowdb');

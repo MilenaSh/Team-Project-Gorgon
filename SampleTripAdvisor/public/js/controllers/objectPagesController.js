@@ -1,15 +1,14 @@
+import 'jquery';
+import Handlebars from 'handlebars';
 import { templates } from 'templates';
 import { objectsRequester } from 'objectsRequester';
-import 'jquery';
-import { dataParser } from 'dataParser';
-import Handlebars from 'handlebars';
 
-const sightseeingPageController = function(containerID) {
+const objectPagesController = function(containerID) {
     const container = $(`#${containerID}`);
 
-    function displayTemplate(directory, page) {
+    function displayTemplate(directory, page, templateName) {
         Promise.all([
-            templates().loadTemplate('sightseeingPage'),
+            templates().loadTemplate(templateName),
             objectsRequester().getObjectsPage(directory, page)
         ])
         .then(([template, data]) => {
@@ -22,4 +21,4 @@ const sightseeingPageController = function(containerID) {
     };
 };
 
-export { sightseeingPageController };
+export { objectPagesController };
