@@ -7,9 +7,12 @@ SystemJS.config({
         'systemjs-babel-build': 'libs/systemjs-plugin-babel/systemjs-babel-browser.js',
         // app start script
         'app': './js/app.js',
+        'data': '/js/data.js',
+        'userRouter' : './js/userRouter.js',
         'requester': './js/requesters/requester.js',
         'objectsRequester': './js/requesters/objectsRequester.js',
         'objectPagesController': './js/controllers/objectPagesController.js',
+        'userController':'./js/controllers/userController.js',
         'templates': './js/templates.js',
         'helperRegister': './js/helperRegister.js',
 

@@ -15,8 +15,15 @@ db._.mixin(require('underscore-db'));
 
 app.use(express.static(__dirname + '/public'));
 app.use('/libs', express.static(__dirname + '/node_modules'));
-
 app.use(bodyParser.json());
+
+require('./utils/authorize-user')(app, db);
+
+//User
+//var usersController = require(__dirname + '/controllers/userController')(db);
+//app.get('/users', usersController.get);
+//app.post('/users', usersController.post);
+//app.put('/auth', usersController.put);
 
 // Routers
 var hotelsRouter = require(__dirname + '/routers/hotelsRouter')(db);

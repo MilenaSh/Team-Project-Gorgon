@@ -2,6 +2,8 @@
   <dictionary name="Vladi">
     <words>
       <w>advisor</w>
+      <w>authkey</w>
+      <w>localstorage</w>
     </words>
   </dictionary>
 </component>

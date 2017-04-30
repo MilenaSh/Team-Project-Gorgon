@@ -1,10 +1,19 @@
+/**
+ * @param {{pageNumber:number}} params
+ */
+
+import { UserRouter } from 'userRouter'
 import { objectPagesController } from 'objectPagesController';
+import { requester } from "requester"
 import Navigo from 'navigo';
+import * as userController from 'userController';
 
 const root = null;
 const useHash = true;
 const hash = '#!';
 const router = new Navigo(root, useHash, hash);
+
+const userRouter = new UserRouter();
 
 router
     .on('/hotelObjects/:pageNumber', function(params) {
@@ -35,3 +44,11 @@ router
         const pageNumber = params.pageNumber || 1;
         objectPagesController('app-container').displayTemplate('objects', pageNumber, 'mainPage');
     });
+
+userRouter
+    .on('/auth', userController.get)
+    .on('/login', userController.login)
+    .on('/register', userController.register)
+    .on('/logout', userController.logout);
+
+

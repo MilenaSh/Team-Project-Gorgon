@@ -12,12 +12,14 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "bootstrap": "^3.3.7",
+    "data": "^0.6.1",
     "express": "^4.15.2",
     "handlebars": "^4.0.6",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
     "lowdb": "^0.16.2",
     "navigo": "^4.7.0",
+    "requester": "latest",
     "systemjs": "^0.20.12",
     "systemjs-plugin-babel": "0.0.21",
     "underscore-db": "^0.12.2"
