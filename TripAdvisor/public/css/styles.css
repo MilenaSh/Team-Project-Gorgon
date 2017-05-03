@@ -7,11 +7,61 @@ ul.dropdown-lr {
 }
 
 /* mobile fix */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .dropdown-lr h3 {
         color: #eee;
     }
     .dropdown-lr label {
         color: #eee;
     }
+}*/
+
+#myLogo {
+    max-width:100px;
+    margin-top: -15px;
+}
+
+.navbar-custom {
+	background-color:#1B3C34;
+    color:#ffffff;
+  	border-radius:0;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+	background-color:transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #619285;
+}   
+     
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  	background-color:#619285;
+}
+
+/*Adding a full page background image*/
+
+.full {
+    background: url('background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#form-text{
+    color: #1B3C34;
 }
