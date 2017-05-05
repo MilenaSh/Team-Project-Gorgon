@@ -12,6 +12,7 @@ SystemJS.config({
         'objectsRequester': './js/requesters/objectsRequester.js',
         'objectPagesController': './js/controllers/objectPagesController.js',
         'userController':'./js/controllers/userController.js',
+        'hotelDetailsController' : '/js/controllers/hotelDetailsController.js',
         'templates': './js/templates.js',
         'helperRegister': './js/helperRegister.js',
 

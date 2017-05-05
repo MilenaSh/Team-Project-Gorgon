@@ -1,4 +1,5 @@
 import { objectPagesController } from 'objectPagesController';
+import { hotelDetailsController } from 'hotelDetailsController';
 import { requester } from "requester";
 import { userController } from "userController";
 import Navigo from 'navigo';
@@ -30,13 +31,20 @@ router
         const pageNumber = params.pageNumber || 1;
         objectPagesController('app-container').displayTemplate('sightseeing', pageNumber, 'sightseeingPage');
     })
+    .on('/test/:hotelName', function(params) {
+        const hotelName = params.hotelName;
+        hotelDetailsController('app-container').displayTemplate('hotels', 'hotelDetails');
+    })
     .on('/', function() {
         objectPagesController('app-container').displayTemplate('objects', 1, 'mainPage');
     })
     .on('/:pageNumber', function(params) {
         const pageNumber = params.pageNumber || 1;
         objectPagesController('app-container').displayTemplate('objects', pageNumber, 'mainPage');
-    });
+    });    
+    
+
+    
 
 userController();
 
