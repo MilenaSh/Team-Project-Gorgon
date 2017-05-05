@@ -1,55 +1,126 @@
-// TODO fix this file
+//TODO: add login logic
 
-import * as data from 'data';
+import "jquery";
+import {userRequester} from "userRequester";
 
-import { load as loadTemplate } from 'templates';
+const userController = function () {
+    function register(username, emailAddress, password, secretQuestion, secretAnswer) {
+        const userData = {
+            username: username,
+            emailAddress: emailAddress,
+            // TODO: hash
+            passHash: "hashed" + password + username,
+            secretQuestion: secretQuestion,
+            secretAnswer: secretAnswer,
+        };
 
-const $appContainer = $('#app-container');
+        return userRequester().register(userData);
+    }
 
-const LOCALSTORAGE_AUTH_KEY_NAME = 'authkey';
-const AUTH_KEY_HEADER = 'x-auth-key';
+    function login(username, password) {
+        const userData = {
+            username: username,
+            passHash: "hashed" + password + username
+        }
+    }
 
-export function get(params) {
-    const { category } = params;
+    $("#register-submit").on("click", function (ev) {
+        const username = $("#username-register").val().trim();
+        const emailAddress = $("#email").val().trim();
+        const password = $("#password-register").val().trim();
+        const confirmPassword = $("#confirm-password").val().trim();
+        const secretQuestion = $("#secret-question").val().trim();
+        const secretAnswer = $("#secret-answer").val().trim();
 
-    loadTemplate('auth')
-        .then(template => {
-            $appContainer.html(template());
-        });
-}
+        try {
+            validateUsername(username);
+            validateEmail(emailAddress);
+            validatePassword(password);
+            validateConfirmPassword(confirmPassword, password);
+            validateSecretQuestion(secretQuestion);
+            validateSecretAnswer(secretAnswer);
+            
+            let msg = "You are successfully registered!";
+            let htmlAlert = '<div class="alert alert-success"> <strong>Success! </strong>'+ msg +'</div>';
+            $('body').prepend(htmlAlert);
+            $(".alert").first().hide().fadeIn(200).delay(1000).fadeOut(1500, function () { $(this).remove(); });
 
-export function login() {
-    const username = $('#username').val();
-    const password = $('#password').val();
-    const passHash = password; // HASH ME
+            register(username, emailAddress, password, secretQuestion, secretAnswer)
+                .then(function (data) {
+                    //TODO : local, session storage...
+                }, function (data) {
+                    console.log(data);
+                });
+        }
+        catch (err){
+            let htmlAlert = '<div class="alert alert-danger"> <strong>Error! </strong>'+ err +'</div>';
+            $('body').prepend(htmlAlert);
+            $(".alert").first().hide().fadeIn(200).delay(1000).fadeOut(1500, function () { $(this).remove(); });
+        }
 
-    data.login(username, passHash)
-        .then(
-            result => {
-                localStorage.setItem(LOCALSTORAGE_AUTH_KEY_NAME, result.result.authKey);
-                location.href = '#!';
-            },
-            errorMsg => toastr.error(errorMsg));
-}
+    });
 
-export function register() {
-    const username = $('#input-username').val();
-    const password = $('#input-password').val();
-    const passHash = password; // HASH ME
+    function validateUsername(username) {
+        const usernameMinLength = 4;
+        const usernamePattern = new RegExp("^[a-zA-Z0-9]{" + usernameMinLength + ",}");
 
-    data.register(username, passHash)
-        .then(
-            result => {
-                toastr.success(`User ${username} registered successfully`);
-                login()
-            },
-            errorMsg => toastr.error(errorMsg));
-}
+        if(!username){
+            throw "Username cannot be empty!";
+        }
 
-export function logout() {
-    localStorage.removeItem(LOCALSTORAGE_AUTH_KEY_NAME);
-    $('#auth-btn').removeClass('hidden');
-    $('#signout-btn').addClass('hidden');
-    //toastr.success('Logged out');
-    location.href = '#/home';
-}
+        if(!username.match(usernamePattern)){
+            throw "Username must be more than " + usernameMinLength + " letters and should contain only latin letters and digits!"
+        }
+    }
+
+    function validateEmail(email) {
+        let emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        if(!email) {
+            throw "Email cannot be empty!";
+        }
+
+        if(!email.match(emailPattern)){
+            throw "Invalid email address!";
+        }
+    }
+
+    function validatePassword(password) {
+        const passwordMinLength = 3;
+        if(!password) {
+            throw "Password cannot be empty!";
+        }
+        if(password.length < passwordMinLength){
+            throw "Password cannot be less than " + passwordMinLength + " symbols long!";
+        }
+    }
+
+    function validateConfirmPassword(confirmPassword, password) {
+        if(confirmPassword !== password){
+            throw "Passwords do not match!";
+        }
+    }
+
+    function validateSecretQuestion(secretQuestion) {
+        const secretQuestionMinLength = 3;
+        if(!secretQuestion){
+            throw "Secret question cannot be empty";
+        }
+
+        if(secretQuestion.length < secretQuestionMinLength){
+            throw "Secret question cannot be less than " + secretQuestionMinLength + " letters"
+        }
+    }
+
+    function validateSecretAnswer(secretAnswer) {
+        const secretAnswerMinLength = 3;
+        if(!secretAnswer){
+            throw "Secret answer cannot be empty";
+        }
+
+        if(secretAnswer.length < secretAnswerMinLength){
+            throw "Secret answer cannot be less than " + secretAnswerMinLength + " letters";
+        }
+    }
+};
+
+export {userController};

@@ -1,5 +1,6 @@
 import { objectPagesController } from 'objectPagesController';
 import { requester } from "requester";
+import { userController } from "userController";
 import Navigo from 'navigo';
 
 const root = null;
@@ -37,6 +38,7 @@ router
         objectPagesController('app-container').displayTemplate('objects', pageNumber, 'mainPage');
     });
 
+userController();
 
 // TESTING PURPOSES
 function registerUser(username, password) {
@@ -63,6 +65,6 @@ function printResult(data) {
     console.log(data);
 }
 
-registerUser('User1', 'password1')
-    .then(printResult);
+registerUser('User', 'password1')
+    .then(printResult, printResult);
 

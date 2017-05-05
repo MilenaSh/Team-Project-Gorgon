@@ -21,7 +21,7 @@ const requester = function() {
             $.ajax({
                 type: 'POST',
                 url: url,
-                data: body,
+                data: JSON.stringify(body),
                 contentType: 'application/json',
                 success: (data) => resolve(data),
                 error: (data) => reject(data)
