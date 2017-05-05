@@ -55,13 +55,24 @@ ul.dropdown-lr {
 /*Adding a full page background image*/
 
 .full {
-    background: url('background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
+    background: url('../imgs/background.jpg') no-repeat center center fixed;    
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-#form-text{
+#main-slogan {  
+    color: #1B3C34;
+}
+
+#register-text {
+    color: #1B3C34;
+}
+
+#login-text {
+    color: #1B3C34;
+}
+
+#remember-me-text{
     color: #1B3C34;
 }
