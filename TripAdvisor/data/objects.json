@@ -1,7 +1,7 @@
 {
   "hotels": [
     {
-      "name": "Hotel 1",
+      "name": "Hotel1",
       "description": "I am described",
       "image": "/imgs/sample-hotel.jpg"
     },

@@ -1,4 +1,5 @@
 import { objectPagesController } from 'objectPagesController';
+import { hotelDetailsController } from 'hotelDetailsController';
 import { requester } from "requester";
 import Navigo from 'navigo';
 
@@ -35,7 +36,14 @@ router
     .on('/:pageNumber', function(params) {
         const pageNumber = params.pageNumber || 1;
         objectPagesController('app-container').displayTemplate('objects', pageNumber, 'mainPage');
+    })
+    
+    .on('/test/:hotelName', function(params) {
+        const hotelName = params.hotelName;
+        hotelDetailsController('app-container').displayTemplate('hotels', 'hotelDetails');
     });
+
+    
 
 
 // TESTING PURPOSES
