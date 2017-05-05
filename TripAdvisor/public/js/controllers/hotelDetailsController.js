@@ -11,7 +11,7 @@ const hotelDetailsController = function(containerID) {
     function displayTemplate(directory, templateName) {
         Promise.all([
             templates().loadTemplate(templateName),
-            objectsRequester().getSpecificObject(directory, name)
+            objectsRequester().getSpecificObject('/hotels', "Hotel1")
         ])
         .then(([template, data]) => {
             container.html(template(data));

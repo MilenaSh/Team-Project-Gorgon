@@ -76,8 +76,6 @@ module.exports = function (db) {
         // Add logic for additional params (price, etc)
         const searchedHotelName = req.body.name;
 
-        console.log('called put');
-
         const foundHotel = db.get('hotels')
             .find({name: searchedHotelName})
             .value();
