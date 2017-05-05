@@ -1,19 +1,11 @@
-/**
- * @param {{pageNumber:number}} params
- */
-
-import { UserRouter } from 'userRouter'
 import { objectPagesController } from 'objectPagesController';
-import { requester } from "requester"
+import { requester } from "requester";
 import Navigo from 'navigo';
-import * as userController from 'userController';
 
 const root = null;
 const useHash = true;
 const hash = '#!';
 const router = new Navigo(root, useHash, hash);
-
-const userRouter = new UserRouter();
 
 router
     .on('/hotelObjects/:pageNumber', function(params) {
@@ -45,10 +37,32 @@ router
         objectPagesController('app-container').displayTemplate('objects', pageNumber, 'mainPage');
     });
 
-userRouter
-    .on('/auth', userController.get)
-    .on('/login', userController.login)
-    .on('/register', userController.register)
-    .on('/logout', userController.logout);
 
+// TESTING PURPOSES
+function registerUser(username, password) {
+    const user = {
+        username: username,
+        passHash: "Hashed" + username + password
+    };
+
+    const promise = new Promise((resolve, reject) => {
+        $.ajax({
+            type: 'POST',
+            url: 'api/users',
+            contentType: 'application/json',
+            data: JSON.stringify(user),
+            success: response => resolve(response),
+            error: response => reject(response)
+        });
+    });
+
+    return promise;
+}
+
+function printResult(data) {
+    console.log(data);
+}
+
+registerUser('User1', 'password1')
+    .then(printResult);
 

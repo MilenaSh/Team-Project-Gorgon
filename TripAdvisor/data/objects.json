@@ -1,5 +1,6 @@
 {
-  "hotels": [{
+  "hotels": [
+    {
       "name": "Hotel 1",
       "description": "I am described",
       "image": "/imgs/sample-hotel.jpg"
@@ -75,7 +76,8 @@
       "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
     }
   ],
-  "sightseeing": [{
+  "sightseeing": [
+    {
       "name": "Name 1"
     },
     {
@@ -128,7 +130,8 @@
       "id": "19457a3d-d667-4413-a220-1af85099345a"
     }
   ],
-  "restaurants": [{
+  "restaurants": [
+    {
       "name": "Restaurant 1",
       "menu": [
         "Dish 1",
@@ -186,6 +189,13 @@
     {
       "name": "Some restaurant",
       "id": "2666bf1c-52f4-4d70-8aab-a6c6a600bc77"
+    }
+  ],
+  "users": [
+    {
+      "username": "User1",
+      "passHash": "HashedUser1password1",
+      "id": "0b6a40a0-1e26-45b9-b07f-0056f73f7dea"
     }
   ]
 }
