@@ -1,0 +1,26 @@
+# Refactoring
+- ## templates.js
+	- `const templates = function (genericRequester) { ... }`
+		- assign the function parameters inside the object(class)
+		- use the passed requester`s functions
+- ## objectsRequester.js
+	- `const objectsRequester = function(genericRequester) { ... }`
+		- assign the function parameters inside the object(class)
+		- use the passed requester`s functions
+- ## usersRequester.js
+	- `const userRequester = function (genericRequester) { ... }`
+		- assign the function parameters inside the object(class)
+		- use the passed requester`s functions
+- ## objectsPageController.js
+	- `const objectPagesController = function(objectsRequester, templateLoader) { ... }`
+		- assign the function parameters inside the object(class)
+		- use the passed objRequester\`s and templateLoader\`s functions
+- ## usersController.js
+	- `const userController = function (userRequester, (??)templateLoader) { ... }`
+		- assign the function parameters inside the object(class)
+		- use the passed userRequester\`s and templateLoader\`s functions (if templates are needed)
+- ## hotelDetailsController.js
+	- `const hotelDetailsController = function(objectsRequester, templateLoader) { ... }`
+		- assign the function parameters inside the object(class)
+		- use the passed objRequester\`s and templateLoader\`s functions
+
