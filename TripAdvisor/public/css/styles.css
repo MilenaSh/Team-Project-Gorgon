@@ -21,6 +21,11 @@ ul.dropdown-lr {
     margin-top: -15px;
 }
 
+/* TODO: Fix that */
+.glyphicon-user {
+    font-size: 45px;
+}
+
 .navbar-custom {
 	background-color:#1B3C34;
   	border-radius:0;
@@ -75,3 +80,4 @@ ul.dropdown-lr {
 #remember-me-text{
     color: #1B3C34;
 }
+

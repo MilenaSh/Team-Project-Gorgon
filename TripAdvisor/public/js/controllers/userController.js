@@ -21,7 +21,9 @@ const userController = function () {
         const userData = {
             username: username,
             passHash: "hashed" + password + username
-        }
+        };
+
+        return userRequester().login(userData);
     }
 
     $("#register-submit").on("click", function (ev) {
@@ -39,27 +41,39 @@ const userController = function () {
             validateConfirmPassword(confirmPassword, password);
             validateSecretQuestion(secretQuestion);
             validateSecretAnswer(secretAnswer);
-            
-            let msg = "You are successfully registered!";
-            let htmlAlert = '<div class="alert alert-success"> <strong>Success! </strong>'+ msg +'</div>';
-            $('body').prepend(htmlAlert);
-            $(".alert").first().hide().fadeIn(200).delay(1000).fadeOut(1500, function () { $(this).remove(); });
 
             register(username, emailAddress, password, secretQuestion, secretAnswer)
                 .then(function (data) {
-                    //TODO : local, session storage...
+                    renderAlert("success", "You are successfully registered!");
+                    $('.dropdown').first().remove();
+                    $('.dropdown').replaceWith('<a href="#"><span class="glyphicon glyphicon-user"></span></a>');
+                    sessionStorage.setItem("username", username);
+                    sessionStorage.setItem("password", password);
                 }, function (data) {
-                    console.log(data);
+                    renderAlert("danger", "This username already exists!")
                 });
         }
         catch (err){
-            let htmlAlert = '<div class="alert alert-danger"> <strong>Error! </strong>'+ err +'</div>';
-            $('body').prepend(htmlAlert);
-            $(".alert").first().hide().fadeIn(200).delay(1000).fadeOut(1500, function () { $(this).remove(); });
+            renderAlert("danger", err)
         }
 
+        $("#login-submit").on("click", function (ev) {
+            const username = $("#")
+        })
     });
 
+    function renderAlert(type, msg){
+        const alertType = 'alert-'+ type;
+        if(type === "danger"){
+            type = "Error";
+        }
+        if(type === "success"){
+            type = "Success";
+        }
+        const $htmlAlert = '<div class="alert ' + alertType + '"> <strong>' + type + '! </strong>'+ msg +'</div>';
+        $('body').prepend($htmlAlert);
+        $(".alert").first().hide().fadeIn(200).delay(1000).fadeOut(1500, function () { $(this).remove(); });
+    }
     function validateUsername(username) {
         const usernameMinLength = 4;
         const usernamePattern = new RegExp("^[a-zA-Z0-9]{" + usernameMinLength + ",}");

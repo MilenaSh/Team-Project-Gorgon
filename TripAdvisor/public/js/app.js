@@ -49,30 +49,30 @@ router
 userController();
 
 // TESTING PURPOSES
-function registerUser(username, password) {
-    const user = {
-        username: username,
-        passHash: "Hashed" + username + password
-    };
-
-    const promise = new Promise((resolve, reject) => {
-        $.ajax({
-            type: 'POST',
-            url: 'api/users',
-            contentType: 'application/json',
-            data: JSON.stringify(user),
-            success: response => resolve(response),
-            error: response => reject(response)
-        });
-    });
-
-    return promise;
-}
-
-function printResult(data) {
-    console.log(data);
-}
-
-registerUser('User', 'password1')
-    .then(printResult, printResult);
+//function registerUser(username, password) {
+//    const user = {
+//        username: username,
+//        passHash: "Hashed" + username + password
+//    };
+//
+//    const promise = new Promise((resolve, reject) => {
+//        $.ajax({
+//            type: 'POST',
+//            url: 'api/users',
+//            contentType: 'application/json',
+//            data: JSON.stringify(user),
+//            success: response => resolve(response),
+//            error: response => reject(response)
+//        });
+//    });
+//
+//    return promise;
+//}
+//
+//function printResult(data) {
+//    console.log(data);
+//}
+//
+//registerUser('User', 'password1')
+//    .then(printResult, printResult);
 
