@@ -23,6 +23,7 @@ SystemJS.config({
         'jquery' : 'libs/jquery/dist/jquery.js',
         'bootstrap': 'libs/bootstrap/dist/js/bootstrap.js',
         'handlebars': 'libs/handlebars/dist/handlebars.js',
-        'navigo': 'libs/navigo/lib/navigo.js'
+        'navigo': 'libs/navigo/lib/navigo.js',
+        'toastr': 'libs/toastr/package/toastr.js'
     }
 });

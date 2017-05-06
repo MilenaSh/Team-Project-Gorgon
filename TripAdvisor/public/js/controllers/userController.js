@@ -1,4 +1,5 @@
 import "jquery";
+import toastr from 'toastr';
 
 //TODO: add login logic
 
@@ -48,16 +49,10 @@ const userController = function (usrRequester, usrValidator) {
             };
 
             userValidator.validateUser(user);
-            
-            // Replace with toastr
-            let msg = "You are successfully registered!";
-            let htmlAlert = '<div class="alert alert-success"> <strong>Success! </strong>'+ msg +'</div>';
-            $('body').prepend(htmlAlert);
-            $(".alert").first().hide().fadeIn(200).delay(1000).fadeOut(1500, function () { $(this).remove(); });
 
             register(username, emailAddress, password, secretQuestion, secretAnswer)
                 .then(function (data) {
-                    //TODO : local, session storage...
+                    toastr.success("You are successfully registered!");
                 }, function (data) {
                     console.log(data);
                 });
@@ -65,9 +60,7 @@ const userController = function (usrRequester, usrValidator) {
         }
         catch (err){
             // Replace with toastr, clear input fields
-            let htmlAlert = '<div class="alert alert-danger"> <strong>Error! </strong>'+ err +'</div>';
-            $('body').prepend(htmlAlert);
-            $(".alert").first().hide().fadeIn(200).delay(1000).fadeOut(1500, function () { $(this).remove(); });
+            toastr.error(err);
         }
 
     });
