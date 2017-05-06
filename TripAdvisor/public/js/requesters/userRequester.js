@@ -1,8 +1,8 @@
-import {requester} from "requester"
+import {genericRequester} from "genericRequester"
 
-const userRequester = function () {
+const usergenericRequester = function () {
     function register(body) {
-        return requester().post('api/users', body);
+        return genericRequester().post('api/users', body);
     }
 
     function login(username, passHash) {
@@ -11,7 +11,7 @@ const userRequester = function () {
             passHash
         };
 
-        return requester().put('api/users', body);
+        return genericRequester().put('api/users', body);
     }
 
     return {
@@ -20,7 +20,7 @@ const userRequester = function () {
     }
 };
 
-export {userRequester};
+export {usergenericRequester};
 
 
 

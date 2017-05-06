@@ -1,17 +1,17 @@
 import 'jquery';
-import { requester } from 'requester';
+import { genericRequester } from 'genericRequester';
 
-const objectsRequester = function() {
+const objectsgenericRequester = function() {
     function getAllObjects(directory) {
-        return requester().get(directory);
+        return genericRequester().get(directory);
     }
 
     function getObjectsPage(directory, pageNumber) {
-        return requester().get(`${directory}/${pageNumber}`)
+        return genericRequester().get(`${directory}/${pageNumber}`)
     }
 
     function addNewObject(directory, objectData) {
-        return requester().post(directory, objectData);
+        return genericRequester().post(directory, objectData);
     }
 
     function getSpecificObject(directory, name) {
@@ -19,13 +19,13 @@ const objectsRequester = function() {
             name: name
         };
 
-        return requester().put(directory, searchParams);
+        return genericRequester().put(directory, searchParams);
     }
 
     function editSpecificObject(directory, name, info) {
         info['name'] = name;
 
-        return requester().patch(directory, info);
+        return genericRequester().patch(directory, info);
     }
 
     return {
@@ -37,4 +37,4 @@ const objectsRequester = function() {
     };
 };
 
-export { objectsRequester };
+export { objectsgenericRequester };

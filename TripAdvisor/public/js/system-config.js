@@ -7,7 +7,7 @@ SystemJS.config({
         'systemjs-babel-build': 'libs/systemjs-plugin-babel/systemjs-babel-browser.js',
         // app start script
         'app': './js/app.js',
-        'requester': './js/requesters/requester.js',
+        'genericRequester': './js/requesters/genericRequester.js',
         'userRequester': '/js/requesters/userRequester.js',
         'objectsRequester': './js/requesters/objectsRequester.js',
         'objectPagesController': './js/controllers/objectPagesController.js',
