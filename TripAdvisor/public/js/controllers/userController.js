@@ -46,7 +46,7 @@ const userController = function (usrRequester, usrValidator) {
                 secretQuestion: secretQuestion,
                 secretAnswer: secretAnswer
             };
-            console.log("Calling validator");
+
             userValidator.validateUser(user);
             
             // Replace with toastr

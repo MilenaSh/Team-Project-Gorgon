@@ -595,6 +595,14 @@
       "username": "Usernqkoi",
       "passHash": "HashedUsernqkoipassword1",
       "id": "180c3298-5cff-4a05-87e3-129ede454f32"
+    },
+    {
+      "username": "testUser",
+      "emailAddress": "asd@asd.com",
+      "passHash": "hashedparolatestUser",
+      "secretQuestion": "vypros",
+      "secretAnswer": "otgovor",
+      "id": "9ee24466-9fd0-474b-87a9-66ca2a85a6ea"
     }
   ]
 }
