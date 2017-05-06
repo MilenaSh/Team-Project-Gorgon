@@ -46,10 +46,8 @@ const helperRegister = function () {
     }
 
     return {
-        initHelpers
-    }
+        initHelpers: initHelpers
+    };
 };
 
-export {
-    helperRegister
-};
+export { helperRegister };

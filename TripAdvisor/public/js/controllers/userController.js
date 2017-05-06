@@ -1,6 +1,6 @@
-//TODO: add login logic
-
 import "jquery";
+
+//TODO: add login logic
 
 const userController = function (usrRequester, usrValidator) {
     const userRequester = usrRequester;
@@ -69,3 +69,5 @@ const userController = function (usrRequester, usrValidator) {
 
     });
 };
+
+export { userController };
