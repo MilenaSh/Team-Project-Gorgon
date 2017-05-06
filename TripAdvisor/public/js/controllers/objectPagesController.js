@@ -5,7 +5,7 @@ const objectPagesController = function(objectsRequester, templateLoader) {
     const objRequester = objectsRequester;
     const loader = templateLoader;
 
-    function displayTemplate(directory, page, templateName, containerSelector) {
+    function displayContent(directory, page, templateName, containerSelector) {
         Promise.all([
             loader.loadTemplate(templateName),
             objRequester.getObjectsPage(directory, page)
@@ -16,7 +16,7 @@ const objectPagesController = function(objectsRequester, templateLoader) {
     }   
 
     return {
-        displayTemplate: displayTemplate
+        displayContent: displayContent
     };
 };
 

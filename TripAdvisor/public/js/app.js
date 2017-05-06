@@ -1,78 +1,46 @@
-import { objectPagesController } from 'objectPagesController';
-import { hotelDetailsController } from 'hotelDetailsController';
-import { requester } from "requester";
-import { userController } from "userController";
 import Navigo from 'navigo';
+import { controllersFactory } from 'controllersFactory';
 
 const root = null;
 const useHash = true;
 const hash = '#!';
 const router = new Navigo(root, useHash, hash);
 
+const controllerFactory = controllersFactory();
+const objectPagesController = controllerFactory.createObjectsPagesController();
+const hotelDetailsController = controllerFactory.createHotelDetailsController();
+const userController = controllerFactory.createUserController();
+
 router
     .on('/hotelObjects/:pageNumber', function(params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController('app-container').displayTemplate('hotels', pageNumber, 'hotelsPage');
+        objectPagesController.displayContent('hotels', pageNumber, 'hotelsPage', '#app-container');
     })
     .on('/hotelObjects', function() {
-        objectPagesController('app-container').displayTemplate('hotels', 1, 'hotelsPage');
+        objectPagesController.displayContent('hotels', 1, 'hotelsPage', '#app-container');
     })
     .on('/restaurantObjects', function() {
-        objectPagesController('app-container').displayTemplate('restaurants', 1, 'restaurantsPage');
+        objectPagesController.displayContent('restaurants', 1, 'restaurantsPage', '#app-container');
     })
     .on('/restaurantObjects/:pageNumber', function(params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController('app-container').displayTemplate('restaurants', pageNumber, 'restaurantsPage');
+        objectPagesController.displayContent('restaurants', pageNumber, 'restaurantsPage', '#app-container');
     })
     .on('/sightseeingObjects', function() {
-        objectPagesController('app-container').displayTemplate('sightseeing', 1, 'sightseeingPage');
+        objectPagesController.displayContent('sightseeing', 1, 'sightseeingPage', '#app-container');        
     })
     .on('/sightseeingObjects/:pageNumber', function(params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController('app-container').displayTemplate('sightseeing', pageNumber, 'sightseeingPage');
+        objectPagesController.displayContent('sightseeing', pageNumber, 'sightseeingPage', '#app-container');  
     })
     .on('/test/:hotelName', function(params) {
         const hotelName = params.hotelName;
-        hotelDetailsController('app-container').displayTemplate('hotels', 'hotelDetails');
+        hotelDetailsController.displayContent('hotels', hotelName, 'hotelDetails', '#app-container');
     })
     .on('/', function() {
-        objectPagesController('app-container').displayTemplate('objects', 1, 'mainPage');
+        objectPagesController.displayContent('objects', 1, 'mainPage', '#app-container');
     })
     .on('/:pageNumber', function(params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController('app-container').displayTemplate('objects', pageNumber, 'mainPage');
-    });    
-    
-
-    
-
-userController();
-
-// TESTING PURPOSES
-function registerUser(username, password) {
-    const user = {
-        username: username,
-        passHash: "Hashed" + username + password
-    };
-
-    const promise = new Promise((resolve, reject) => {
-        $.ajax({
-            type: 'POST',
-            url: 'api/users',
-            contentType: 'application/json',
-            data: JSON.stringify(user),
-            success: response => resolve(response),
-            error: response => reject(response)
-        });
+        objectPagesController.displayContent('objects', 1, 'mainPage', '#app-container');
     });
-
-    return promise;
-}
-
-function printResult(data) {
-    console.log(data);
-}
-
-registerUser('User', 'password1')
-    .then(printResult, printResult);
-

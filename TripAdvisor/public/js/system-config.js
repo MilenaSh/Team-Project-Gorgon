@@ -15,6 +15,9 @@ SystemJS.config({
         'hotelDetailsController' : '/js/controllers/hotelDetailsController.js',
         'templateLoader': './js/templateLoader.js',
         'helperRegister': './js/helperRegister.js',
+        'userValidator': './js/utils/userValidator.js',
+        'controllersFactory': './js/factories/controllersFactory.js',
+        'requesterFactory': './js/factories/requesterFactory.js',
 
         // Libraries
         'jquery' : 'libs/jquery/dist/jquery.js',

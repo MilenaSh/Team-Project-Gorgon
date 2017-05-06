@@ -34,16 +34,18 @@ const userController = function (usrRequester, usrValidator) {
         const secretQuestion = $("#secret-question").val().trim();
         const secretAnswer = $("#secret-answer").val().trim();
 
-        const user = {
-            username: username,
-            email: emailAddress,
-            password: password,
-            confirmPassword: confirmPassword,
-            secretQuestion: secretQuestion,
-            secretAnswer: secretAnswer
-        };
+
 
         try {
+            const user = {
+                username: username,
+                email: emailAddress,
+                password: password,
+                confirmPassword: confirmPassword,
+                secretQuestion: secretQuestion,
+                secretAnswer: secretAnswer
+            };
+
             userValidator.validateUser(user);
             
             // Replace with toastr
