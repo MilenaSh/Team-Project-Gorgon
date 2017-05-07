@@ -147,6 +147,15 @@
   "restaurants": [
     {
       "name": "Restaurant1",
+      "phone": "0035912345678",
+      "address": "86 Pine St., Seattle, WA 98101-1571",
+      "e-mail": "some.email@gmail.com",
+      "description": "Some details about the menu and the food we serve.",
+      "imageOne": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageTwo": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageThree": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFour": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",      
       "menu": [
         "Dish 1",
         "Dish 2"
