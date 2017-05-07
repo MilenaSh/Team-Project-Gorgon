@@ -4,6 +4,7 @@ import { userRequester } from 'userRequester';
 import { templateLoader } from 'templateLoader';
 import { userValidator } from 'userValidator';
 import { hotelDetailsController } from 'hotelDetailsController';
+import { sightseeingDetailsController } from 'sightseeingDetailsController';
 import { objectPagesController } from 'objectPagesController';
 import { userController } from 'userController';
 
@@ -19,6 +20,11 @@ const controllersFactory = function() {
         return hotelDetailsController(objRequester, loader);
     }
 
+//adding sightseeing controller function
+    function createSightseeingDetailsController() {
+        return sightseeingDetailsController(objRequester, loader);
+    }
+
     function createObjectsPagesController() {
         return objectPagesController(objRequester, loader);
     }
@@ -30,7 +36,8 @@ const controllersFactory = function() {
     return {
         createHotelDetailsController: createHotelDetailsController,
         createObjectsPagesController: createObjectsPagesController,
-        createUserController: createUserController
+        createUserController: createUserController,
+        createSightseeingDetailsController: createSightseeingDetailsController
     };
 };
 
