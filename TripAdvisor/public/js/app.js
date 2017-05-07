@@ -45,6 +45,11 @@ router
         const sightseeingName = params.sightseeingName;
         sightseeingDetailsController.displayContent('api/sightseeing', sightseeingName, 'sightseeingDetails', '#app-container');
     })
+    .on('/restaurantTest/:restaurantName', function (params) {
+        // Better naming after establishing what to search by
+        const restaurantName = params.restaurantName;
+        restaurantDetailsController.displayContent('api/restaurants', restaurantName, 'restaurantDetails', '#app-container');
+    })
     .on('/', function () {
         objectPagesController.displayContent('api/all', 1, 'mainPage', '#app-container');
     })

@@ -5,6 +5,7 @@ import { templateLoader } from 'templateLoader';
 import { userValidator } from 'userValidator';
 import { hotelDetailsController } from 'hotelDetailsController';
 import { sightseeingDetailsController } from 'sightseeingDetailsController';
+import { restaurantDetailsController } from 'restaurantDetailsController'; 
 import { objectPagesController } from 'objectPagesController';
 import { userController } from 'userController';
 
@@ -25,6 +26,11 @@ const controllersFactory = function() {
         return sightseeingDetailsController(objRequester, loader);
     }
 
+//adding restaurant controller function
+    function createRestaurantDetailsController() {
+        return restaurantDetailsController(objRequester, loader);
+    }
+
     function createObjectsPagesController() {
         return objectPagesController(objRequester, loader);
     }
@@ -37,7 +43,8 @@ const controllersFactory = function() {
         createHotelDetailsController: createHotelDetailsController,
         createObjectsPagesController: createObjectsPagesController,
         createUserController: createUserController,
-        createSightseeingDetailsController: createSightseeingDetailsController
+        createSightseeingDetailsController: createSightseeingDetailsController,
+        createRestaurantDetailsController: createRestaurantDetailsController
     };
 };
 
