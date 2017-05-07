@@ -1,5 +1,6 @@
 import Navigo from 'navigo';
 import { controllersFactory } from 'controllersFactory';
+import 'jquery';
 
 const root = null;
 const useHash = true;
@@ -38,12 +39,12 @@ router
     })
     .on('/test/:hotelName', function (params) {
         // Better naming after establishing what to search by
-        const hotelName = params.hotelName;
+        const hotelName = {name: params.hotelName};
         hotelDetailsController.displayContent('api/hotels', hotelName, 'hotelDetails', '#app-container');
     })
     .on('/sightTest/:sightseeingName', function (params) {
         // Better naming after establishing what to search by
-        const sightseeingName = params.sightseeingName;
+        const sightseeingName = {name: params.sightseeingName};
         sightseeingDetailsController.displayContent('api/sightseeing', sightseeingName, 'sightseeingDetails', '#app-container');
     })
     .on('/objects/:searchParam', function (params) {
@@ -68,21 +69,18 @@ router
         objectPagesController.displayContent('api/all', pageNumber, 'mainPage', '#app-container');
     });
 
+
 // TESTING PURPOSES
 
-function search(name) {
-    const searchParam = {
-        name: name
-    };
+function getUser(username) {
+    const searchParam = {a: "123"};
 
     const promise = new Promise((resolve, reject) => {
         $.ajax({
-            type: 'SEARCH',
-            url: 'api/all',
+            method: 'GET',
+            url: 'api/users/' + username,
             contentType: 'application/json',
-            data: JSON.stringify(searchParam),
-            success: data => resolve(data),
-            error: data => reject(data)
+            success: response => resolve(response)
         });
     });
 
@@ -93,5 +91,5 @@ function printData(data) {
     console.log(data);
 }
 
-search('Restaurant 1')
+getUser('User1')
     .then(printData);
