@@ -10,38 +10,45 @@ const controllerFactory = controllersFactory();
 const objectPagesController = controllerFactory.createObjectsPagesController();
 const hotelDetailsController = controllerFactory.createHotelDetailsController();
 const userController = controllerFactory.createUserController();
+//adding sightseeing controller
+const sightseeingDetailsController = controllerFactory.createSightseeingDetailsController();
 
 router
-    .on('/hotels/:pageNumber', function(params) {
+    .on('/hotels/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
         objectPagesController.displayContent('api/hotels', pageNumber, 'hotelsPage', '#app-container');
     })
-    .on('/hotels', function() {
+    .on('/hotels', function () {
         objectPagesController.displayContent('api/hotels', 1, 'hotelsPage', '#app-container');
     })
-    .on('/restaurants', function() {
+    .on('/restaurants', function () {
         objectPagesController.displayContent('api/restaurants', 1, 'restaurantsPage', '#app-container');
     })
-    .on('/restaurants/:pageNumber', function(params) {
+    .on('/restaurants/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
         objectPagesController.displayContent('api/restaurants', pageNumber, 'restaurantsPage', '#app-container');
     })
-    .on('/sightseeing', function() {
-        objectPagesController.displayContent('api/sightseeing', 1, 'sightseeingPage', '#app-container');        
+    .on('/sightseeing', function () {
+        objectPagesController.displayContent('api/sightseeing', 1, 'sightseeingPage', '#app-container');
     })
-    .on('/sightseeing/:pageNumber', function(params) {
+    .on('/sightseeing/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController.displayContent('api/sightseeing', pageNumber, 'sightseeingPage', '#app-container');  
+        objectPagesController.displayContent('api/sightseeing', pageNumber, 'sightseeingPage', '#app-container');
     })
-    .on('/test/:hotelName', function(params) {
+    .on('/test/:hotelName', function (params) {
         // Better naming after establishing what to search by
         const hotelName = params.hotelName;
         hotelDetailsController.displayContent('api/hotels', hotelName, 'hotelDetails', '#app-container');
     })
-    .on('/', function() {
+    .on('/sightTest/:sightseeingName', function (params) {
+        // Better naming after establishing what to search by
+        const sightseeingName = params.sightseeingName;
+        sightseeingDetailsController.displayContent('api/sightseeing', sightseeingName, 'sightseeingDetails', '#app-container');
+    })
+    .on('/', function () {
         objectPagesController.displayContent('api/all', 1, 'mainPage', '#app-container');
     })
-    .on('/:pageNumber', function(params) {
+    .on('/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
         objectPagesController.displayContent('api/all', pageNumber, 'mainPage', '#app-container');
     });

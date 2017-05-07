@@ -85,7 +85,14 @@
   ],
   "sightseeing": [
     {
-      "name": "Name 1"
+      "name": "Name1",
+      "description": "A description of the specific sightseeing",
+      "imageOne": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg",
+      "imageTwo": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg",
+      "imageThree": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg",
+      "imageFour": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg",
+      "imageFive": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg", 
+      "address": "13, Downing Street"
     },
     {
       "name": "Name 2",
