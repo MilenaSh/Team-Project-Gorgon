@@ -5,12 +5,7 @@ const userRequester = function (genericRequester) {
         return requester.post('api/users', body);
     }
 
-    function login(username, passHash) {
-        const body = {
-            username,
-            passHash
-        };
-
+    function login(body) {
         return requester.put('api/users', body);
     }
 
