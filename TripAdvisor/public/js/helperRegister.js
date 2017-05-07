@@ -43,6 +43,13 @@ const helperRegister = function () {
                 "<a href='#!sightseeing/" + link + "'>" + link + "</a>"
             );
         });
+
+        Handlebars.registerHelper('buttonsLinks', function(url) {
+
+            return new Handlebars.SafeString(
+                "<p><a href='#!/restaurantTest/" + url + "' class='btn btn-primary' role='button'>View details</a> <a href='#' class'btn btn-default' role='button'>Make a Reservation</a></p>"
+            );
+        });
     }
 
     return {

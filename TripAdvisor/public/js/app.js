@@ -46,10 +46,19 @@ router
         const sightseeingName = params.sightseeingName;
         sightseeingDetailsController.displayContent('api/sightseeing', sightseeingName, 'sightseeingDetails', '#app-container');
     })
-    .on('/restaurantTest/:restaurantName', function (params) {
-        // Better naming after establishing what to search by
-        const restaurantName = params.restaurantName;
-        restaurantDetailsController.displayContent('api/restaurants', restaurantName, 'restaurantDetails', '#app-container');
+    .on('/restaurantTest/:searchParam', function (params) {
+        // 1. Better naming after establishing what to search by
+        // 2. if-else in separate function
+        let searchParams = {};
+        if(params.searchParam.indexOf("-") !== -1) {
+            searchParams = {id: params.searchParam };
+        }
+        else if(params.searchParam.indexOf("-") === -1){
+            searchParams = {name: params.searchParam};
+        }
+
+        console.log(searchParams);
+        restaurantDetailsController.displayContent('api/all', searchParams, 'restaurantDetails', '#app-container');
     })
     .on('/', function () {
         objectPagesController.displayContent('api/all', 1, 'mainPage', '#app-container');

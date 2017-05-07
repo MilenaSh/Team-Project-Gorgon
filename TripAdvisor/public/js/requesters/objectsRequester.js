@@ -13,11 +13,7 @@ const objectsRequester = function(genericRequester) {
         return requester.post(directory, objectData);
     }
 
-    function getSpecificObject(directory, name) {
-        const searchParams = {
-            name: name
-        };
-
+    function getSpecificObject(directory, searchParams) {
         return requester.put(directory, searchParams);
     }
 

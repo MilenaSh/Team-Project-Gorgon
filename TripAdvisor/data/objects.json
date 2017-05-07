@@ -159,10 +159,12 @@
       "menu": [
         "Dish 1",
         "Dish 2"
-      ]
+      ],
+      "id": "1-2"
     },
     {
-      "name": "Restaurant2"
+      "name": "Restaurant2",
+      "id": "123-456"
     },
     {
       "name": "Restaurant3"

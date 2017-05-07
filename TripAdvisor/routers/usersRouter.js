@@ -3,6 +3,25 @@ var express = require('express');
 module.exports = function(db) {
     var router = express.Router();
 
+    router.get('/', function(req, res) {
+        const users = db.get('users');
+
+        const searchedUsername = req.body.username;
+
+        const foundUser = users.find({
+           username: searchedUsername 
+        }).value();
+
+        if(!foundUser) {
+            res.status(401)
+                .json('Username with that username does not exist.');
+            return;
+        }
+
+        // Remove some privacy invading stuff later
+        res.json(foundUser);        
+    });
+
     // Register new user
     router.post('/', function(req, res) {
         const users = db.get('users');

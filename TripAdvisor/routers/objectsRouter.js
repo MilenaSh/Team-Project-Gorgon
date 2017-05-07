@@ -53,5 +53,32 @@ module.exports = function (db) {
         });
     });
 
+    // Get specific by id or name
+    router.put('/', function(req, res) {
+        let searchParam = {};
+
+        if(req.body.id) {
+            searchParam = {
+                id: req.body.id
+            };
+        }
+        else if(req.body.name) {
+            searchParam = {
+                name: req.body.name
+            };
+        }
+
+        const foundObject = db.get('hotels').get('restaurants').find(searchParam)
+            .value();
+
+        if(!foundObject) {
+            res.status(400)
+                .json('Couldnt find an object with these search parameters');
+            return;
+        }
+
+        res.json(foundObject);
+    });
+
     return router;
 };
