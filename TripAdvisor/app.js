@@ -20,16 +20,16 @@ app.use(bodyParser.json());
 
 // Routers
 var hotelsRouter = require(__dirname + '/routers/hotelsRouter')(db);
-app.use('/hotels', hotelsRouter);
+app.use('/api/hotels', hotelsRouter);
 
 var sightseeingRouter = require(__dirname + '/routers/sightseeingRouter')(db);
-app.use('/sightseeing', sightseeingRouter);
+app.use('/api/sightseeing', sightseeingRouter);
 
 var restaurantsRouter = require(__dirname + '/routers/restaurantsRouter')(db);
-app.use('/restaurants', restaurantsRouter);
+app.use('/api/restaurants', restaurantsRouter);
 
 var objectsRouter = require(__dirname + '/routers/objectsRouter')(db);
-app.use('/objects', objectsRouter);
+app.use('/api/all', objectsRouter);
 
 var usersRouter = require(__dirname + '/routers/usersRouter')(db);
 app.use('/api/users', usersRouter);

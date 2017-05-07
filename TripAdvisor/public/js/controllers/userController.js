@@ -1,9 +1,12 @@
+import "jquery";
+import toastr from 'toastr';
+
 //TODO: add login logic
 
-import "jquery";
-import {userRequester} from "userRequester";
+const userController = function (usrRequester, usrValidator) {
+    const userRequester = usrRequester;
+    const userValidator = usrValidator;
 
-const userController = function () {
     function register(username, emailAddress, password, secretQuestion, secretAnswer) {
         const userData = {
             username: username,
@@ -14,7 +17,7 @@ const userController = function () {
             secretAnswer: secretAnswer,
         };
 
-        return userRequester().register(userData);
+        return userRequester.register(userData);
     }
 
     function login(username, password) {
@@ -22,8 +25,6 @@ const userController = function () {
             username: username,
             passHash: "hashed" + password + username
         };
-
-        return userRequester().login(userData);
     }
 
     $("#register-submit").on("click", function (ev) {
@@ -34,107 +35,35 @@ const userController = function () {
         const secretQuestion = $("#secret-question").val().trim();
         const secretAnswer = $("#secret-answer").val().trim();
 
+
+
         try {
-            validateUsername(username);
-            validateEmail(emailAddress);
-            validatePassword(password);
-            validateConfirmPassword(confirmPassword, password);
-            validateSecretQuestion(secretQuestion);
-            validateSecretAnswer(secretAnswer);
+            
+            const user = {
+                username: username,
+                email: emailAddress,
+                password: password,
+                confirmPassword: confirmPassword,
+                secretQuestion: secretQuestion,
+                secretAnswer: secretAnswer
+            };
+
+            userValidator.validateUser(user);
 
             register(username, emailAddress, password, secretQuestion, secretAnswer)
                 .then(function (data) {
-                    renderAlert("success", "You are successfully registered!");
-                    $('.dropdown').first().remove();
-                    $('.dropdown').replaceWith('<a href="#"><span class="glyphicon glyphicon-user"></span></a>');
-                    sessionStorage.setItem("username", username);
-                    sessionStorage.setItem("password", password);
+                    toastr.success("You are successfully registered!");
                 }, function (data) {
-                    renderAlert("danger", "This username already exists!")
+                    console.log(data);
                 });
+
         }
         catch (err){
-            renderAlert("danger", err)
+            // Replace with toastr, clear input fields
+            toastr.error(err);
         }
 
-        $("#login-submit").on("click", function (ev) {
-            const username = $("#")
-        })
     });
-
-    function renderAlert(type, msg){
-        const alertType = 'alert-'+ type;
-        if(type === "danger"){
-            type = "Error";
-        }
-        if(type === "success"){
-            type = "Success";
-        }
-        const $htmlAlert = '<div class="alert ' + alertType + '"> <strong>' + type + '! </strong>'+ msg +'</div>';
-        $('body').prepend($htmlAlert);
-        $(".alert").first().hide().fadeIn(200).delay(1000).fadeOut(1500, function () { $(this).remove(); });
-    }
-    function validateUsername(username) {
-        const usernameMinLength = 4;
-        const usernamePattern = new RegExp("^[a-zA-Z0-9]{" + usernameMinLength + ",}");
-
-        if(!username){
-            throw "Username cannot be empty!";
-        }
-
-        if(!username.match(usernamePattern)){
-            throw "Username must be more than " + usernameMinLength + " letters and should contain only latin letters and digits!"
-        }
-    }
-
-    function validateEmail(email) {
-        let emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-        if(!email) {
-            throw "Email cannot be empty!";
-        }
-
-        if(!email.match(emailPattern)){
-            throw "Invalid email address!";
-        }
-    }
-
-    function validatePassword(password) {
-        const passwordMinLength = 3;
-        if(!password) {
-            throw "Password cannot be empty!";
-        }
-        if(password.length < passwordMinLength){
-            throw "Password cannot be less than " + passwordMinLength + " symbols long!";
-        }
-    }
-
-    function validateConfirmPassword(confirmPassword, password) {
-        if(confirmPassword !== password){
-            throw "Passwords do not match!";
-        }
-    }
-
-    function validateSecretQuestion(secretQuestion) {
-        const secretQuestionMinLength = 3;
-        if(!secretQuestion){
-            throw "Secret question cannot be empty";
-        }
-
-        if(secretQuestion.length < secretQuestionMinLength){
-            throw "Secret question cannot be less than " + secretQuestionMinLength + " letters"
-        }
-    }
-
-    function validateSecretAnswer(secretAnswer) {
-        const secretAnswerMinLength = 3;
-        if(!secretAnswer){
-            throw "Secret answer cannot be empty";
-        }
-
-        if(secretAnswer.length < secretAnswerMinLength){
-            throw "Secret answer cannot be less than " + secretAnswerMinLength + " letters";
-        }
-    }
 };
 
-export {userController};
+export { userController };

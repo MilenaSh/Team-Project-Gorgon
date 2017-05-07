@@ -22,6 +22,7 @@
     "requester": "latest",
     "systemjs": "^0.20.12",
     "systemjs-plugin-babel": "0.0.21",
+    "toastr": "^2.1.2",
     "underscore-db": "^0.12.2"
   },
   "engines": {

@@ -1,6 +1,6 @@
 import 'jquery';
 
-const requester = function() {
+const genericRequester = function() {
     function get(url, body) {
         const promise = new Promise((resolve, reject) => {
             $.ajax({
@@ -62,11 +62,11 @@ const requester = function() {
     }
 
     return {
-        get,
-        post,
-        put,
-        patch
+        get: get,
+        post: post,
+        put: put,
+        patch: patch
     };
 };
 
-export { requester };
+export { genericRequester };

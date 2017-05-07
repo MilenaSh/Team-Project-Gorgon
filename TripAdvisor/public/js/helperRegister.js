@@ -24,7 +24,7 @@ const helperRegister = function () {
             const link = pageNumber;
 
             return new Handlebars.SafeString(
-                "<a href='#!/hotelObjects/" + link + "'>" + link + "</a>"
+                "<a href='#!/hotels/" + link + "'>" + link + "</a>"
             );
         });
 
@@ -32,7 +32,7 @@ const helperRegister = function () {
             const link = pageNumber;
 
             return new Handlebars.SafeString(
-                "<a href='#!/restaurantObjects/" + link + "'>" + link + "</a>"
+                "<a href='#!restaurants/" + link + "'>" + link + "</a>"
             );
         });
 
@@ -40,16 +40,14 @@ const helperRegister = function () {
             const link = pageNumber;
 
             return new Handlebars.SafeString(
-                "<a href='#!/sightseeingObjects/" + link + "'>" + link + "</a>"
+                "<a href='#!sightseeing/" + link + "'>" + link + "</a>"
             );
         });
     }
 
     return {
-        initHelpers
-    }
+        initHelpers: initHelpers
+    };
 };
 
-export {
-    helperRegister
-};
+export { helperRegister };

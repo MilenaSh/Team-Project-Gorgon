@@ -1,15 +1,15 @@
 import Handlebars from 'handlebars';
-import { requester } from 'requester';
 import { helperRegister } from 'helperRegister';
 
 // REGISTER TEMPLATE HELPERS
 helperRegister().initHelpers();
 
+const templateLoader = function (genericRequester) {
+    const requester = genericRequester;
 
-const templates = function () {
     // TODO: add caching
     function loadTemplate(templateName) {
-        return requester().get(`templates/${templateName}.handlebars`)
+        return requester.get(`templates/${templateName}.handlebars`)
             .then(template => {
                 const compiledTemplate = Handlebars.compile(template);
 
@@ -18,10 +18,8 @@ const templates = function () {
     }
 
     return {
-        loadTemplate
+        loadTemplate: loadTemplate
     };
 };
 
-export {
-    templates
-};
+export { templateLoader };

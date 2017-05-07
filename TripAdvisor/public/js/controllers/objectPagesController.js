@@ -1,23 +1,22 @@
 import 'jquery';
 import Handlebars from 'handlebars';
-import { templates } from 'templates';
-import { objectsRequester } from 'objectsRequester';
 
-const objectPagesController = function(containerID) {
-    const container = $(`#${containerID}`);
+const objectPagesController = function(objectsRequester, templateLoader) {
+    const objRequester = objectsRequester;
+    const loader = templateLoader;
 
-    function displayTemplate(directory, page, templateName) {
+    function displayContent(directory, page, templateName, containerSelector) {
         Promise.all([
-            templates().loadTemplate(templateName),
-            objectsRequester().getObjectsPage(directory, page)
+            loader.loadTemplate(templateName),
+            objRequester.getObjectsPage(directory, page)
         ])
         .then(([template, data]) => {
-            container.html(template(data));
+            $(containerSelector).html(template(data));
         });
     }   
 
     return {
-        displayTemplate
+        displayContent: displayContent
     };
 };
 
