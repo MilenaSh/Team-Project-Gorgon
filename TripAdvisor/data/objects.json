@@ -1,5 +1,6 @@
 {
   "hotels": [
+    //editting the first hotel data in order to test the template
     {
       "name": "Hotel1",
       "description": "I am described",
@@ -603,6 +604,14 @@
       "secretQuestion": "vypros",
       "secretAnswer": "otgovor",
       "id": "9ee24466-9fd0-474b-87a9-66ca2a85a6ea"
+    },
+    {
+      "username": "testeTest",
+      "emailAddress": "noemail@gmail.com",
+      "passHash": "hashed123testeTest",
+      "secretQuestion": "Favorite food",
+      "secretAnswer": "none",
+      "id": "5386cd34-5d45-4338-a9f9-41f7df16964a"
     }
   ]
 }
