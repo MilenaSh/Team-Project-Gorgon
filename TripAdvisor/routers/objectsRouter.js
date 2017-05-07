@@ -68,16 +68,32 @@ module.exports = function (db) {
             };
         }
 
-        const foundObject = db.get('hotels').get('restaurants').find(searchParam)
+        const foundHotel = db.get('hotels')
+            .find(searchParam)
             .value();
-
-        if(!foundObject) {
-            res.status(400)
-                .json('Couldnt find an object with these search parameters');
+        if(foundHotel) {
+            res.json(foundHotel);
             return;
         }
 
-        res.json(foundObject);
+        const foundRestaurant = db.get('restaurants')
+            .find(searchParam)
+            .value();
+        if(foundRestaurant) {
+            res.json(foundRestaurant);
+            return;
+        }
+
+        const foundSightseeing = db.get('sightseeing')
+            .find(searchParam)
+            .value();
+        if(foundSightseeing) {
+            res.json(foundSightseeing);
+            return;
+        }
+
+        res.status(400)
+            .json('No such object found');
     });
 
     return router;

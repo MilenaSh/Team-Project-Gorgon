@@ -46,7 +46,7 @@ router
         const sightseeingName = params.sightseeingName;
         sightseeingDetailsController.displayContent('api/sightseeing', sightseeingName, 'sightseeingDetails', '#app-container');
     })
-    .on('/restaurantTest/:searchParam', function (params) {
+    .on('/objects/:searchParam', function (params) {
         // 1. Better naming after establishing what to search by
         // 2. if-else in separate function
         let searchParams = {};
