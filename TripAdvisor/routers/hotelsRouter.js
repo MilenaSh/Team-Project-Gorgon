@@ -68,7 +68,7 @@ module.exports = function (db) {
             .insert(hotelToAdd)
             .write();
 
-        res.json("Succesfully added!");
+        res.json("Successfully added!");
     });
 
     // Get specific hotel
@@ -82,7 +82,7 @@ module.exports = function (db) {
 
         if(!foundHotel) {
             res.status(400)
-                .json("Hotel with such parameters(name) doesnt exist");
+                .json("Hotel with such parameters(name) doesn't exist");
                 return;
         }
 
