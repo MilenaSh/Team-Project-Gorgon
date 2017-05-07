@@ -2,7 +2,10 @@
   "hotels": [
     {
       "name": "Hotel1",
-      "description": "I am described",
+      "description": "Here we have a detailed hotel description",
+      "phone": "0035912345678",
+      "e-mail": "samplemail@gmail.com",
+      "address": "86 Pine St., Seattle, WA 98101-1571",                  
       "imageOne": "/imgs/sample-hotel.jpg",
       "imageTwo": "/imgs/sample-hotel.jpg",
       "imageThree": "/imgs/sample-hotel.jpg",
