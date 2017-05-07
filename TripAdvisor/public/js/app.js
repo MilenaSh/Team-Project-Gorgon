@@ -12,6 +12,7 @@ const hotelDetailsController = controllerFactory.createHotelDetailsController();
 const userController = controllerFactory.createUserController();
 //adding sightseeing controller
 const sightseeingDetailsController = controllerFactory.createSightseeingDetailsController();
+const restaurantDetailsController = controllerFactory.createRestaurantDetailsController();
 
 router
     .on('/hotels/:pageNumber', function (params) {

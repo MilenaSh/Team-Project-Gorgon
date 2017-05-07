@@ -146,17 +146,17 @@
   ],
   "restaurants": [
     {
-      "name": "Restaurant 1",
+      "name": "Restaurant1",
       "menu": [
         "Dish 1",
         "Dish 2"
       ]
     },
     {
-      "name": "Restaurant 2"
+      "name": "Restaurant2"
     },
     {
-      "name": "Restaurant 3"
+      "name": "Restaurant3"
     },
     {
       "name": "Restaurant 4"
