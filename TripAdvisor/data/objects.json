@@ -2,8 +2,15 @@
   "hotels": [
     {
       "name": "Hotel1",
-      "description": "I am described",
-      "image": "/imgs/sample-hotel.jpg"
+      "description": "Here we have a detailed hotel description",
+      "phone": "0035912345678",
+      "e-mail": "samplemail@gmail.com",
+      "address": "86 Pine St., Seattle, WA 98101-1571",     
+      "imageOne": "http://placehold.it/750x500",
+      "imageTwo": "http://placehold.it/500x300",
+      "imageThree": "http://placehold.it/500x300",
+      "imageFour": "http://placehold.it/500x300",
+      "imageFive": "http://placehold.it/500x300"      
     },
     {
       "name": "Hotel 2",
@@ -603,6 +610,14 @@
       "secretQuestion": "vypros",
       "secretAnswer": "otgovor",
       "id": "9ee24466-9fd0-474b-87a9-66ca2a85a6ea"
+    },
+    {
+      "username": "testeTest",
+      "emailAddress": "noemail@gmail.com",
+      "passHash": "hashed123testeTest",
+      "secretQuestion": "Favorite food",
+      "secretAnswer": "none",
+      "id": "5386cd34-5d45-4338-a9f9-41f7df16964a"
     }
   ]
 }
