@@ -67,3 +67,31 @@ router
         const pageNumber = params.pageNumber || 1;
         objectPagesController.displayContent('api/all', pageNumber, 'mainPage', '#app-container');
     });
+
+// TESTING PURPOSES
+
+function search(name) {
+    const searchParam = {
+        name: name
+    };
+
+    const promise = new Promise((resolve, reject) => {
+        $.ajax({
+            type: 'SEARCH',
+            url: 'api/all',
+            contentType: 'application/json',
+            data: JSON.stringify(searchParam),
+            success: data => resolve(data),
+            error: data => reject(data)
+        });
+    });
+
+    return promise;
+}
+
+function printData(data) {
+    console.log(data);
+}
+
+search('Restaurant 1')
+    .then(printData);

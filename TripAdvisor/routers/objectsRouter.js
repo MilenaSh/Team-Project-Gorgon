@@ -96,5 +96,35 @@ module.exports = function (db) {
             .json('No such object found');
     });
 
+    // Search for object(s) by name
+    router.search('/', function(req, res) {
+        const searchName = req.body.name;
+        const result = [];
+
+        const hotels = db.get('hotels').value();
+        const restaurants = db.get('restaurants').value();
+        const sightseeing = db.get('sightseeing').value();
+
+        hotels.forEach(hotel => {
+            if(hotel.name.indexOf(searchName) !== -1) {
+                result.push(hotel);
+            }
+        });
+
+        restaurants.forEach(restaurant => {
+            if(restaurant.name.indexOf(searchName) !== -1) {
+                result.push(restaurant);
+            }
+        });
+
+        sightseeing.forEach(sight => {
+            if(sight.name.indexOf(sight) !== -1) {
+                result.push(sight);
+            }
+        });
+
+        res.json(result);
+    });
+
     return router;
 };
