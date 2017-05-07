@@ -1,10 +1,13 @@
 {
   "hotels": [
-    //editting the first hotel data in order to test the template
     {
       "name": "Hotel1",
       "description": "I am described",
-      "image": "/imgs/sample-hotel.jpg"
+      "imageOne": "/imgs/sample-hotel.jpg",
+      "imageTwo": "/imgs/sample-hotel.jpg",
+      "imageThree": "/imgs/sample-hotel.jpg",
+      "imageFour": "/imgs/sample-hotel.jpg",
+      "imageFive": "/imgs/sample-hotel.jpg"     
     },
     {
       "name": "Hotel 2",
