@@ -14,6 +14,8 @@ const detailsPageController = controllerFactory.createDetailsPageController();
 const userProfileController = controllerFactory.createUserProfileController();
 const createItemController = controllerFactory.createAddItemController();
 
+
+
 router
     .on('/hotels/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
@@ -63,5 +65,6 @@ router
     .on('/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
         objectPagesController.displayContent('api/all', pageNumber, 'mainPage', '#app-container');
-    });
+    })
+    .resolve();
 

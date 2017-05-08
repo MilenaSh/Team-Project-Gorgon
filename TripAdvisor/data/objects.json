@@ -205,6 +205,20 @@
       "name": "Hotel jasdasd",
       "description": "I am described",
       "image": "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"
+    },
+    {
+      "name": "Random hotel",
+      "description": "random description",
+      "phone": "+696969",
+      "address": "Dat Adress",
+      "e-mail": "oshit@waddup.com",
+      "imageOne": "https://i.ytimg.com/vi/pCOb6Fykxz0/maxresdefault.jpg",
+      "imageTwo": "https://19818-presscdn-pagely.netdna-ssl.com/wp-content/uploads/55e/7e/27c6763f50c85c840ff213f96f94458b.jpg",
+      "imageThree": "http://a3.mzstatic.com/us/r30/Purple20/v4/90/99/e3/9099e34c-471f-dd73-c574-abce61c0db29/screen520x924.jpeg",
+      "imageFour": "http://a3.mzstatic.com/us/r30/Purple20/v4/90/99/e3/9099e34c-471f-dd73-c574-abce61c0db29/screen520x924.jpeg",
+      "imageFive": "http://a3.mzstatic.com/us/r30/Purple20/v4/90/99/e3/9099e34c-471f-dd73-c574-abce61c0db29/screen520x924.jpeg",
+      "addedBy": "someUser1",
+      "id": "bcc2c975-46f6-4327-837f-5ab5fb6526b7"
     }
   ],
   "sightseeing": [
@@ -281,6 +295,20 @@
           "text": "asdf"
         }
       ]
+    },
+    {
+      "name": "Sightseeeeee",
+      "description": "WOW",
+      "phone": "84654654",
+      "address": "Gorno nanadolnishte",
+      "e-mail": "asd@asdINC.com",
+      "imageOne": "http://placehold.it/750x500",
+      "imageTwo": "http://placehold.it/750x500",
+      "imageThree": "http://placehold.it/750x500",
+      "imageFour": "http://placehold.it/750x500",
+      "imageFive": "http://placehold.it/750x500",
+      "addedBy": "someUser1",
+      "id": "ebee108d-ecb6-46e4-8115-2286ca2212ff"
     }
   ],
   "restaurants": [
@@ -373,6 +401,20 @@
           "text": "kappa"
         }
       ]
+    },
+    {
+      "name": "Resto123",
+      "description": "Classy af",
+      "phone": "+359 1337",
+      "address": "Middle of nowhere",
+      "e-mail": "plsCome@gmail.com",
+      "imageOne": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageTwo": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageThree": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFour": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "addedBy": "someUser1",
+      "id": "a507f762-f9d1-43c5-a456-fa46d4534a9a"
     }
   ],
   "users": [
