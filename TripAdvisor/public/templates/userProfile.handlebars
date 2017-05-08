@@ -78,6 +78,20 @@
                     </div>
                 </div>
             </div>
+            {{#if added}}
+            <div>
+                <h4><a href="#" style="text-decoration:none;"><strong>Added Items</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+            </div>
+            <div>
+                <ul>
+                    {{#each added}}
+                    <li>{{name}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{else}}
+             <h4><a href="#" style="text-decoration:none;"><strong>No Items Added by the User</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+            {{/if}}
         </div>
     </div>
 </div>
