@@ -69,32 +69,3 @@ router
         objectPagesController.displayContent('api/all', pageNumber, 'mainPage', '#app-container');
     });
 
-
-// TESTING PURPOSES
-
-function addComment(hotelID, author, text) {
-    const comment = {
-        id: hotelID,
-        author: author,
-        text: text
-    };
-
-    const promise = new Promise((resolve, reject) => {
-        $.ajax({
-            method: 'PATCH',
-            url: 'api/hotels',
-            contentType: 'application/json',
-            data: JSON.stringify(comment),
-            success: response => resolve(response)
-        });
-    });
-
-    return promise;
-}
-
-function printData(data) {
-    console.log(data);
-}
-
-addComment("555-555" ,'az', 'some comment text3')
-    .then(printData);
