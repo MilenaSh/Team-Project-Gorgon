@@ -106,19 +106,19 @@ module.exports = function (db) {
         const sightseeing = db.get('sightseeing').value();
 
         hotels.forEach(hotel => {
-            if(hotel.name.indexOf(searchName) !== -1) {
+            if(hotel.name.toLowerCase().indexOf(searchName.toLowerCase()) !== -1) {
                 result.push(hotel);
             }
         });
 
         restaurants.forEach(restaurant => {
-            if(restaurant.name.indexOf(searchName) !== -1) {
+            if(restaurant.name.toLowerCase().indexOf(searchName.toLowerCase()) !== -1) {
                 result.push(restaurant);
             }
         });
 
         sightseeing.forEach(sight => {
-            if(sight.name.indexOf(sight) !== -1) {
+            if(sight.name.toLowerCase().indexOf(searchName.toLowerCase()) !== -1) {
                 result.push(sight);
             }
         });

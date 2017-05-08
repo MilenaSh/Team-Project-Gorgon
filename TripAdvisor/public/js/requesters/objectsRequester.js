@@ -17,13 +17,18 @@ const objectsRequester = function(genericRequester) {
         return requester.patch(directory, info);
     }
 
+    function searchAllObjects(name) {
+        return requester.search('api/all', {name: name});
+    }
+
     // more
 
     return {
         getObjectsPage: getObjectsPage,
         addNewObject: addNewObject,
         getSpecificObject: getSpecificObject,
-        editSpecificObject: editSpecificObject
+        editSpecificObject: editSpecificObject,
+        searchAllObjects: searchAllObjects
     };
 };
 

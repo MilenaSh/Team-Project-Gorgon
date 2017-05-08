@@ -8,34 +8,32 @@ const hash = '#!';
 const router = new Navigo(root, useHash, hash);
 
 const controllerFactory = controllersFactory();
-const objectPagesController = controllerFactory.createObjectsPagesController();
 const userController = controllerFactory.createUserController();
-const detailsPageController = controllerFactory.createDetailsPageController();
-const createItemController = controllerFactory.createAddItemController();
+const itemsController = controllerFactory.createItemsController();
 
 
 
 router
     .on('/hotels/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController.displayContent('api/hotels', pageNumber, 'hotelsPage', '#app-container');
+        itemsController.displayPagedList('api/hotels', pageNumber, 'hotelsPage', '#app-container');
     })
     .on('/hotels', function () {
-        objectPagesController.displayContent('api/hotels', 1, 'hotelsPage', '#app-container');
-    })
-    .on('/restaurants', function () {
-        objectPagesController.displayContent('api/restaurants', 1, 'restaurantsPage', '#app-container');
+        itemsController.displayPagedList('api/hotels', 1, 'hotelsPage', '#app-container');
     })
     .on('/restaurants/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController.displayContent('api/restaurants', pageNumber, 'restaurantsPage', '#app-container');
+        itemsController.displayPagedList('api/restaurants', pageNumber, 'restaurantsPage', '#app-container');
     })
-    .on('/sightseeing', function () {
-        objectPagesController.displayContent('api/sightseeing', 1, 'sightseeingPage', '#app-container');
+    .on('/restaurants', function () {
+        itemsController.displayPagedList('api/restaurants', 1, 'restaurantsPage', '#app-container');
     })
     .on('/sightseeing/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController.displayContent('api/sightseeing', pageNumber, 'sightseeingPage', '#app-container');
+        itemsController.displayPagedList('api/sightseeing', pageNumber, 'sightseeingPage', '#app-container');
+    })
+    .on('/sightseeing', function () {
+        itemsController.displayPagedList('api/sightseeing', 1, 'sightseeingPage', '#app-container');
     })
     .on('/objects/:searchParam', function (params) {
         // 1. Better naming after establishing what to search by
@@ -48,25 +46,24 @@ router
             searchParams = {name: params.searchParam};
         }
 
-        console.log(searchParams);
-        detailsPageController.displayContent('api/all', searchParams, 'itemDetails', '#app-container');
+        itemsController.displayItemDetailsPage('api/all', searchParams, 'itemDetails', '#app-container');
     })
     .on('/users/:username', function(params) {
         const username = params.username;
         userController.displayProfilePage(username, 'userProfile', '#app-container');
     })
     .on('/add', function() {
-        createItemController.displayContent('addNewItem', '#app-container');
+        itemsController.displayAddItemPage('addNewItem', '#app-container');
     })
     .on('/editUser', function() {
         userController.displayEditPage('editUserProfile', '#app-container');
     })
     .on('/', function () {
-        objectPagesController.displayContent('api/all', 1, 'mainPage', '#app-container');
+        itemsController.displayPagedList('api/all', 1, 'mainPage', '#app-container');
     })
     .on('/:pageNumber', function (params) {
         const pageNumber = params.pageNumber || 1;
-        objectPagesController.displayContent('api/all', pageNumber, 'mainPage', '#app-container');
+        itemsController.displayPagedList('api/all', pageNumber, 'mainPage', '#app-container');
     })
     .resolve();
 

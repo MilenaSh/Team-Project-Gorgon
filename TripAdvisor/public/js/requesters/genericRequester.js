@@ -31,14 +31,18 @@ const genericRequester = function () {
 
     function patch(url, body) {
         return send(url, 'PATCH', body);
+    }
 
+    function search(url, body) {
+        return send(url, 'SEARCH', body);
     }
 
     return {
         get: get, 
         post: post, 
         put: put, 
-        patch: patch
+        patch: patch,
+        search: search
     };
 };
 

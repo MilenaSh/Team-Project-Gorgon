@@ -115,7 +115,7 @@ const userController = function (usrRequester, objectRequester, usrValidator, pr
             sessionStorage.removeItem("userID");
             $('.dropdown').css("display", "block");
             $('#profile-dropdown').css("display", "none");
-            window.location.href = '/';
+            window.location.hash = '/';
         });
     }
 

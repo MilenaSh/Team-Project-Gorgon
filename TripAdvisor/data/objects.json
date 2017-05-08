@@ -569,7 +569,38 @@
       "imageFive": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
       "addedBy": "testUser1",
       "type": "restaurant",
-      "id": "948981de-cffd-4c4c-b0d8-1f51b97e70be"
+      "id": "948981de-cffd-4c4c-b0d8-1f51b97e70be",
+      "comments": [
+        {
+          "author": "testUser1",
+          "text": "1234"
+        }
+      ]
+    },
+    {
+      "name": "Restorant",
+      "description": "Opisanie",
+      "phone": "Telefon",
+      "address": "Adres",
+      "e-mail": "Imeil",
+      "imageOne": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+      "imageTwo": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+      "imageThree": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+      "imageFour": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+      "imageFive": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+      "addedBy": "testUser1",
+      "type": "restaurant",
+      "id": "48637c7f-c3bb-42f9-bec3-fdbc416dd156",
+      "comments": [
+        {
+          "author": "testUser1",
+          "text": "123123"
+        },
+        {
+          "author": "testUser1",
+          "text": "4444"
+        }
+      ]
     }
   ],
   "users": [
@@ -1018,6 +1049,9 @@
         },
         {
           "name": "aaa1"
+        },
+        {
+          "name": "Restorant"
         }
       ],
       "location": "AAAAA",
