@@ -358,6 +358,31 @@
           "text": "1234"
         }
       ]
+    },
+    {
+      "name": "AAAA",
+      "description": "Some description be written here",
+      "phone": "8778797987",
+      "address": "some street",
+      "e-mail": "email@abv.bg",
+      "imageOne": "https://images4.sw-cdn.net/product/picture/710x528_7480816_1496035_1459325206.jpg",
+      "imageTwo": "https://images4.sw-cdn.net/product/picture/710x528_7480816_1496035_1459325206.jpg",
+      "imageThree": "https://images4.sw-cdn.net/product/picture/710x528_7480816_1496035_1459325206.jpg",
+      "imageFour": "https://images4.sw-cdn.net/product/picture/710x528_7480816_1496035_1459325206.jpg",
+      "imageFive": "https://images4.sw-cdn.net/product/picture/710x528_7480816_1496035_1459325206.jpg",
+      "addedBy": "someUser1",
+      "type": "sightseeing",
+      "id": "5305f697-553a-4c77-9b64-71def11a9dd3",
+      "comments": [
+        {
+          "author": "someUser1",
+          "text": "asdfg"
+        },
+        {
+          "author": "someUser1",
+          "text": "asd.klajsdlk;ajsdl;kjasd;lk"
+        }
+      ]
     }
   ],
   "restaurants": [
@@ -382,7 +407,17 @@
     {
       "type": "restaurant",
       "name": "Restaurant2",
-      "id": "123-456"
+      "id": "123-456",
+      "comments": [
+        {
+          "author": "someUser1",
+          "text": "ss"
+        },
+        {
+          "author": "someUser1",
+          "text": "5345345"
+        }
+      ]
     },
     {
       "type": "restaurant",
@@ -910,7 +945,6 @@
       "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
       "secretQuestion": "vypros",
       "secretAnswer": "otgovor",
-<<<<<<< HEAD
       "id": "7c605cda-9b50-4e6d-adf6-ae12eac4b0b8",
       "added": [
         {
@@ -921,10 +955,11 @@
         },
         {
           "name": "LOLOLO1"
+        },
+        {
+          "name": "AAAA"
         }
       ]
-=======
-      "id": "7c605cda-9b50-4e6d-adf6-ae12eac4b0b8"
     },
     {
       "username": "Milena",
@@ -933,7 +968,6 @@
       "secretQuestion": "bla?",
       "secretAnswer": "bla",
       "id": "12d5b02c-ac1d-4981-8e39-8bf2a5ed4de3"
->>>>>>> 5e682ff2290de884f44a7d963e126c85ae4ee173
     }
   ]
 }
