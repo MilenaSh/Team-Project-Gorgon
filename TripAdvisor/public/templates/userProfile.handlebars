@@ -81,15 +81,15 @@
                 <h4><a href="#" style="text-decoration:none;"><strong>Added Items</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
             </div>
             <div>
-                <ul>
+                <ul style="list-style: none;">
                     {{#each added}}
-                    <li>{{{addedText name}}}</li>
+                    <li> {{addedText name}}</li>
                     {{/each}}
                 </ul>
             </div>
             {{else}}
             <h4><a href="#" style="text-decoration:none;"><strong>No items were added by this user</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
-            {{/if}}
+                {{/if}}
         </div>
     </div>
 </div>
