@@ -18,8 +18,6 @@ const objectsRequester = function(genericRequester) {
     }
 
     function editSpecificObject(directory, name, info) {
-        info['name'] = name;
-
         return requester.patch(directory, info);
     }
 

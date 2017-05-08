@@ -514,6 +514,21 @@
       "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
       "addedBy": "someUser1",
       "id": "a507f762-f9d1-43c5-a456-fa46d4534a9a"
+    },
+    {
+      "name": "AAAA",
+      "description": "asd",
+      "phone": "asd",
+      "address": "asd",
+      "e-mail": "asd",
+      "imageOne": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageTwo": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageThree": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageFour": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageFive": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "addedBy": "testUser1",
+      "type": "restaurant",
+      "id": "948981de-cffd-4c4c-b0d8-1f51b97e70be"
     }
   ],
   "users": [
@@ -956,8 +971,16 @@
       "added": [
         {
           "name": "Aaa1"
+        },
+        {
+          "name": "AAAA"
         }
-      ]
+      ],
+      "location": "Sofia",
+      "description": "Dat boi",
+      "gender": "1999 Ford focus",
+      "birthday": "13/37/2222",
+      "profilePicture": "https://beebom.com/wp-content/uploads/2016/01/Reverse-Image-Search-Engines-Apps-And-Its-Uses-2016.jpg"
     },
     {
       "username": "someUser1",

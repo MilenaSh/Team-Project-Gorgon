@@ -26,7 +26,7 @@ const controllersFactory = function() {
     }
 
     function createUserController() {
-        return userController(usrRequester, usrValidator);
+        return userController(usrRequester, objRequester, usrValidator, loader);
     }
 
     function createUserProfileController() {

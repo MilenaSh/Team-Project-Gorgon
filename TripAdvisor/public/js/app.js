@@ -59,6 +59,9 @@ router
     .on('/add', function() {
         createItemController.displayContent('addNewItem', '#app-container');
     })
+    .on('/editUser', function() {
+        userController.displayEditPage('editUserProfile', '#app-container');
+    })
     .on('/', function () {
         objectPagesController.displayContent('api/all', 1, 'mainPage', '#app-container');
     })
@@ -67,4 +70,5 @@ router
         objectPagesController.displayContent('api/all', pageNumber, 'mainPage', '#app-container');
     })
     .resolve();
+
 

@@ -69,7 +69,26 @@ module.exports = function(db) {
     });
 
     router.patch('/', function(req, res) {
-        
+        const searchedUserId = req.body.id;
+        const searchedUsername = req.body.username;
+        console.log(req.body);
+
+        const foundUser = db.get('users')
+            .find({
+                id: searchedUserId,
+                username: searchedUsername
+            });
+
+        if(!foundUser.value()) {
+            res.status(400)
+                .json('Invalid edit operation.');
+            return;
+        }
+
+        foundUser.assign(req.body)
+            .write();
+
+        res.json("User edited.");
     });
 
     return router;
