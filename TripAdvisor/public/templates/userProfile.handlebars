@@ -6,35 +6,44 @@
                 <div class="panel-body">
                     <div class="media">
                         <div align="center">
-                            <img class="thumbnail img-responsive" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="300px" height="300px">
+                            {{#if profilePicture}}
+                            <img class="thumbnail img-responsive" src="{{profilePicture}}" width="300px" height="300px">                            {{else}}
+                            <img class="thumbnail img-responsive" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="300px" height="300px">                            {{/if}}
                         </div>
                         <div class="media-body">
                             <hr>
                             <h3><strong>{{username}}</strong></h3>
-                            <p>
-                                <div contenteditable="true">
-                                    This text can be edited by the user.
-                                </div>
-                            </p>
                             <hr>
                             <h3><strong>Location</strong></h3>
                             <p>
                                 <div contenteditable="true">
-                                    This text can be edited by the user.
+                                    {{#if location}}
+                                    <p>{{location}}</p>
+                                    {{else}}
+                                    <p>Not Spcified.</p>
+                                    {{/if}}
                                 </div>
                             </p>
                             <hr>
                             <h3><strong>Gender</strong></h3>
                             <p>
                                 <div contenteditable="true">
-                                    This text can be edited by the user.
+                                    {{#if gender}}
+                                    <p>{{gender}}</p>
+                                    {{else}}
+                                    <p>Not Spcified.</p>
+                                    {{/if}}
                                 </div>
                             </p>
                             <hr>
                             <h3><strong>Birthday</strong></h3>
                             <p>
                                 <div contenteditable="true">
-                                    This text can be edited by the user.
+                                    {{#if birthday}}
+                                    <p>{{birthday}}</p>
+                                    {{else}}
+                                    <p>Not Spcified.</p>
+                                    {{/if}}
                                 </div>
                             </p>
                         </div>
@@ -48,33 +57,23 @@
                     <span>
                         <h1 class="panel-title pull-left" style="font-size:30px;">{{username}} <small>{{emailAddress}}</small> </h1>
                 </span>
-                    <br><br>
-                    <hr>
-                    <span class="pull-left">
-                        <a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-files-o" aria-hidden="true"></i> Posts</a>
-                        <a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-picture-o" aria-hidden="true"></i> Photos </a>
 
-                    </span>
                 </div>
             </div>
             <hr>
             <!-- Simple post content example. -->
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div class="pull-left">
-                        <a href="#">
-                            <img class="media-object img-circle" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="50px" height="50px"
-                                style="margin-right:8px; margin-top:-5px;">
-                        </a>
-                    </div>
-                    <h4><a href="#" style="text-decoration:none;"><strong>{{username}}</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+                    <h4><a href="#" style="text-decoration:none;"><strong>What Kind of Traveller are you? </strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
                         </small>
                     </h4>
                     <hr>
                     <div class="post-content">
-                        <p>Simple post content example.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel gravida metus, non ultrices
-                            sapien. Morbi odio metus, dapibus non nibh id amet.</p>
+                        {{#if description}}
+                        <p>{{description}}</p>
+                        {{else}}
+                        <p> Please enter a short description about yourself.</p>
+                        {{/if}}
                     </div>
                 </div>
             </div>
@@ -85,13 +84,34 @@
             <div>
                 <ul>
                     {{#each added}}
-                    <li>{{name}}</li>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="pull-left">
+                                <a href="#">
+                                    <img class="media-object" src="{{imageOne}}" width="50px" height="50px" style="margin-right:8px; margin-top:-5px;">
+                                </a>
+                            </div>
+                            <h4><a href="#" style="text-decoration:none;"><strong>{{name}}</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+                                </small>
+                            </h4>
+                            <hr>
+                            <div class="post-content">
+                                <p>{{description}}</p>
+                                <h3>Contacts:</h3>
+                                <ul style="list-style: none;">
+                                    <li><span class="glyphicon glyphicon-earphone"></span> {{phone}}</li>
+                                    <li><span class="glyphicon glyphicon-map-marker"></span> {{address}}</li>
+                                    <li><span class="glyphicon glyphicon-envelope"></span> {{e-mail}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     {{/each}}
                 </ul>
             </div>
             {{else}}
-             <h4><a href="#" style="text-decoration:none;"><strong>No Items were added by this user</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
-            {{/if}}
+            <h4><a href="#" style="text-decoration:none;"><strong>No items were added by this user</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+                {{/if}}
         </div>
     </div>
 </div>
