@@ -14,97 +14,114 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" id="my-navbar">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                 <!--Collapses the nav buttons for smaller screens-->
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/#!/" class="navbar-brand">
-            <img src="imgs/logo.PNG" id="myLogo" class="img-rounded" alt="Page logo">
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/#!/hotels">Accommodation</a></li>
-                <li><a href="/#!/restaurants">Restaurants & Bars</a></li>
-                <li><a href="/#!/sightseeing">Sightseeing</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" id="register-link" class="dropdown-toggle" data-toggle="dropdown">Register <span class="caret"></span></a>
-                    <ul id="register-dropdown" class="dropdown-menu dropdown-lr animated flipInX" role="menu">
-                        <div class="col-lg-12">
-                            <div class="text-center" id="register-text"><h3><b>Register</b></h3></div>
-                            <form id="ajax-register-form" action="#" role="form" autocomplete="off">
-                                <div class="form-group">
-                                    <input type="text" name="username" id="username-register" tabindex="1" class="form-control" placeholder="Username" value="">
+                <a href="/#!/" class="navbar-brand">
+                    <img src="imgs/logo.PNG" id="myLogo" class="img-rounded" alt="Page logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/#!/hotels">Accommodation</a></li>
+                    <li><a href="/#!/restaurants">Restaurants & Bars</a></li>
+                    <li><a href="/#!/sightseeing">Sightseeing</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" id="register-link" class="dropdown-toggle" data-toggle="dropdown">Register <span class="caret"></span></a>
+                        <ul id="register-dropdown" class="dropdown-menu dropdown-lr animated flipInX" role="menu">
+                            <div class="col-lg-12">
+                                <div class="text-center" id="register-text">
+                                    <h3><b>Register</b></h3>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" name="password" id="password-register" tabindex="2" class="form-control" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="secret-question" id="secret-question" tabindex="3" class="form-control" placeholder="Secret Question" value="">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="secret-answer" id="secret-answer" tabindex="3" class="form-control" placeholder="Secret Question" value="">
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-xs-6 col-xs-offset-3">
-                                            <input type="button" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-info" value="Register Now">
+                                <form id="ajax-register-form" action="#" role="form" autocomplete="off">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username-register" tabindex="1" class="form-control" placeholder="Username" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password-register" tabindex="2" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="secret-question" id="secret-question" tabindex="3" class="form-control" placeholder="Secret Question"
+                                            value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="secret-answer" id="secret-answer" tabindex="3" class="form-control" placeholder="Secret Question"
+                                            value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-xs-offset-3">
+                                                <input type="button" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-info" value="Register Now">
+                                            </div>
                                         </div>
                                     </div>
+                                    <!--<input type="hidden" class="hide" name="token" id="token-register" value="7c6f19960d63f53fcd05c3e0cbc434c0">-->
+                                </form>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="login-link" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                        <ul id="login-dropdown" class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
+                            <div class="col-lg-12">
+                                <div class="text-center" id="login-text">
+                                    <h3><b>Log In</b></h3>
                                 </div>
-                                <!--<input type="hidden" class="hide" name="token" id="token-register" value="7c6f19960d63f53fcd05c3e0cbc434c0">-->
-                            </form>
-                        </div>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" id="login-link" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
-                    <ul id="login-dropdown" class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
-                        <div class="col-lg-12">
-                            <div class="text-center" id="login-text"><h3><b>Log In</b></h3></div>
-                            <form id="ajax-login-form" action="#" method="post" role="form" autocomplete="off">
-                                <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
-                                </div>
+                                <form id="ajax-login-form" action="#" method="post" role="form" autocomplete="off">
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
+                                    </div>
 
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
-                                </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                                    </div>
 
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-xs-7">
-                                            <input type="checkbox" tabindex="3" name="remember" id="remember">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <input type="checkbox" tabindex="3" name="remember" id="remember">
                                                 <label for="remember" id="remember-me-text"> Remember Me</label>
-                                        </div>
-                                        <div class="col-xs-5 pull-right">
-                                            <input type="button" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                                            </div>
+                                            <div class="col-xs-5 pull-right">
+                                                <input type="button" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="text-center">
-                                                <!--TODO fix href tag-->
-                                                <a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <!--TODO fix href tag-->
+                                                    <a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -125,10 +142,11 @@
                 </li>
             </ul>
         </div>
+        <!--End of container -->
+    </nav>
+    <div>
+    <span>&nbsp</span> <div class="fb-share-button" data-href="https://mysterious-ocean-40232.herokuapp.com//" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmysterious-ocean-40232.herokuapp.com%2F&amp;src=sdkpreparse">Share</a></div>
     </div>
-    <!--End of container -->
-</nav>
-
     <div class="jumbotron full">
         <div class="container text-center">
             <h2 id="main-slogan">We help you to plan better, faster & cheaper</h2>

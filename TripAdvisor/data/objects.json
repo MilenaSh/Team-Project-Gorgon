@@ -984,6 +984,7 @@
     },
     {
       "username": "someUser1",
+      "location": "I am located",
       "emailAddress": "asd@asd.com",
       "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
       "secretQuestion": "vypros",
@@ -991,10 +992,20 @@
       "id": "7c605cda-9b50-4e6d-adf6-ae12eac4b0b8",
       "added": [
         {
-          "name": "asdasd"
+          "name": "asdasd",
+          "description": "Here we have a detailed hotel description",
+          "phone": "0035912345678",
+          "e-mail": "samplemail@gmail.com",
+          "address": "86 Pine St., Seattle, WA 98101-1571",
+          "imageOne": "http://placehold.it/750x500"
         },
         {
-          "name": "LOLOLO"
+          "name": "LOLOLO",
+          "description": "Here we have a detailed hotel description",
+          "phone": "0035912345678",
+          "e-mail": "samplemail@gmail.com",
+          "address": "86 Pine St., Seattle, WA 98101-1571",
+          "imageOne": "http://placehold.it/750x500"
         },
         {
           "name": "LOLOLO1"
