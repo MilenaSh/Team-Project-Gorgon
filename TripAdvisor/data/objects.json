@@ -378,6 +378,7 @@
   "users": [
     {
       "username": "User1",
+      "emailAddress": "sampleEmail@gmail.com",
       "passHash": "HashedUser1password1",
       "id": "0b6a40a0-1e26-45b9-b07f-0056f73f7dea"
     },
