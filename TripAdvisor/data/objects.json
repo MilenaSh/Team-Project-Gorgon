@@ -1,6 +1,7 @@
 {
   "hotels": [
     {
+      "type": "hotel",
       "name": "Hotel1",
       "description": "Here we have a detailed hotel description",
       "phone": "0035912345678",
@@ -11,6 +12,128 @@
       "imageThree": "http://placehold.it/500x300",
       "imageFour": "http://placehold.it/500x300",
       "imageFive": "http://placehold.it/500x300",
+      "comments": [
+        {
+          "author": "someone",
+          "text": "comm text"
+        },
+        {
+          "author": "az",
+          "text": "some comment text"
+        },
+        {
+          "author": "az",
+          "text": "some comment text2"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "someUser1",
+          "text": "This place rocks"
+        },
+        {
+          "author": "someUser1",
+          "text": "wow very comment"
+        },
+        {
+          "author": "someUser1",
+          "text": "some commentasdasd"
+        },
+        {
+          "author": "someUser1",
+          "text": "123456789"
+        },
+        {
+          "author": "someUser1",
+          "text": "asd fgh"
+        },
+        {
+          "author": "someUser1",
+          "text": "kek"
+        }
+      ],
       "id": "555-555"
     },
     {
@@ -141,12 +264,28 @@
       "name": "Name 15"
     },
     {
+      "type": "sightseeing",
       "name": "Name 16",
-      "id": "19457a3d-d667-4413-a220-1af85099345a"
+      "id": "19457a3d-d667-4413-a220-1af85099345a",
+      "comments": [
+        {
+          "author": "someUser1",
+          "text": "1234"
+        },
+        {
+          "author": "someUser1",
+          "text": "pogChamp"
+        },
+        {
+          "author": "someUser1",
+          "text": "asdf"
+        }
+      ]
     }
   ],
   "restaurants": [
     {
+      "type": "restaurant",
       "name": "Restaurant1",
       "phone": "0035912345678",
       "address": "86 Pine St., Seattle, WA 98101-1571",
@@ -164,16 +303,20 @@
       "id": "1-2"
     },
     {
+      "type": "restaurant",
       "name": "Restaurant2",
       "id": "123-456"
     },
     {
+      "type": "restaurant",
       "name": "Restaurant3"
     },
     {
+      "type": "restaurant",
       "name": "Restaurant 4"
     },
     {
+      "type": "restaurant",
       "name": "Restaurant 5"
     },
     {
@@ -213,8 +356,23 @@
       "name": "Restaurant 17"
     },
     {
+      "type": "restaurant",
       "name": "Some restaurant",
-      "id": "2666bf1c-52f4-4d70-8aab-a6c6a600bc77"
+      "id": "2666bf1c-52f4-4d70-8aab-a6c6a600bc77",
+      "comments": [
+        {
+          "author": "someUser1",
+          "text": "wow"
+        },
+        {
+          "author": "someUser1",
+          "text": "more wow"
+        },
+        {
+          "author": "someUser1",
+          "text": "kappa"
+        }
+      ]
     }
   ],
   "users": [
@@ -645,6 +803,22 @@
       "secretQuestion": "123",
       "secretAnswer": "123",
       "id": "8050251b-33d2-484b-82a9-d5b6b089c6aa"
+    },
+    {
+      "username": "testUser1",
+      "emailAddress": "asd@asd.com",
+      "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
+      "secretQuestion": "vypros",
+      "secretAnswer": "otgovor",
+      "id": "d4493a7b-9388-4850-8a53-ff27cd647333"
+    },
+    {
+      "username": "someUser1",
+      "emailAddress": "asd@asd.com",
+      "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
+      "secretQuestion": "vypros",
+      "secretAnswer": "otgovor",
+      "id": "7c605cda-9b50-4e6d-adf6-ae12eac4b0b8"
     }
   ]
 }

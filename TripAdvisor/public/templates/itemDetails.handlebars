@@ -11,10 +11,11 @@
     <div class="col-md-4">
         <h3>{{name}}</h3>
         <p>{{description}}</p>
-        <h3>Location: </h3>
-        {{!--TODO -make with a geolocation--}}
+        <h3>Contact us:</h3>
         <ul style="list-style: none;">
+            <li><span class="glyphicon glyphicon-earphone"></span> {{phone}}</li>
             <li><span class="glyphicon glyphicon-map-marker"></span> {{address}}</li>
+            <li><span class="glyphicon glyphicon-envelope"></span> {{e-mail}}</li>
         </ul>
     </div>
 </div>
@@ -48,8 +49,23 @@
             <img class="img-responsive portfolio-item" src="{{imageFive}}" alt="">
         </a>
     </div>
-
+    </hr>
 </div>
 <!-- /.row -->
 
-<hr>
+{{!--Comments--}}
+<div class="row">
+    <div class="input-group">
+        <input id="comment-input-field" type="text" class="form-control" placeholder="Add comment...">
+        <span class="input-group-btn">
+        <button id="add-comment-btn" class="btn btn-secondary" type="button">Add comment</button>
+      </span>
+    </div>
+</div>
+
+<div class="list-group">
+    {{#each comments}}
+    {{!--Add link to user profile later--}}
+    <li class="list-group-item list-group-item-success">{{{author}}} - {{{text}}}</li>
+</div>
+{{/each}}

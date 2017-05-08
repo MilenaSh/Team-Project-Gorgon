@@ -39,7 +39,6 @@ module.exports = function (db) {
             pages.push(i + 1);
         }
 
-        // Sort hotels by name and get by indices based on page selected
         const resultRestaurants = restaurantsDB.chain()
             .sortBy('name')
             .slice(startingIndex, endingIndex)
@@ -100,22 +99,38 @@ module.exports = function (db) {
         res.json(foundRestaurant);
     });
 
-    // Edit sightseeing object properties
+    // Add comment/edit
     router.patch('/', function(req, res) {
-        const searchedRestaurant = req.body;
-        console.log(req.body);
+        const searchedRestaurantId = req.body.id;
 
         const foundRestaurant = db.get('restaurants')
-            .find({name: searchedRestaurant.name});
+            .find({id: searchedRestaurantId});
 
         if(!foundRestaurant.value()) {
             res.status(400)
-                .json("No restaurant object with that name found");
+                .json("No restaurant with that ID found.");
             return;
         }
 
-        foundRestaurant.assign(searchedRestaurant).write();
-        res.json("Successfully edited.");
+        // Editing
+        if(!req.body.comment && !req.body.author) {
+            foundRestaurant.assign(req.body)
+                .write();
+            res.json("Restaurant edited.");
+            return;
+        }
+
+        // Adding comment
+        const currentComments = foundRestaurant.value().comments || [];
+        currentComments.push({
+            author: req.body.author,
+            text: req.body.text
+        });
+
+        foundRestaurant.assign({comments: currentComments})
+            .write();
+
+        res.json("Comment added.");
     });
 
     return router;

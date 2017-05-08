@@ -39,7 +39,6 @@ module.exports = function (db) {
             pages.push(i + 1);
         }
 
-        // Sort hotels by name and get by indices based on page selected
         const resultObjects = sightseeingDB.chain()
             .sortBy('name')
             .slice(startingIndex, endingIndex)
@@ -98,22 +97,38 @@ module.exports = function (db) {
         res.json(foundObject);
     });
 
-    // Edit sightseeing object properties
+    // Add comment/edit
     router.patch('/', function(req, res) {
-        const searchedObject = req.body;
-        console.log(req.body);
+        const searchedSightId = req.body.id;
 
-        const foundObject = db.get('sightseeing')
-            .find({name: searchedObject.name});
+        const foundSight = db.get('sightseeing')
+            .find({id: searchedSightId});
 
-        if(!foundObject.value()) {
+        if(!foundSight.value()) {
             res.status(400)
-                .json("No sightseeing object with that name found");
+                .json("No sightseeing object with that ID found.");
             return;
         }
 
-        foundObject.assign(searchedObject).write();
-        res.json("Successfully edited.");
+        // Editing
+        if(!req.body.comment && !req.body.author) {
+            foundSight.assign(req.body)
+                .write();
+            res.json("Sightseeing object edited.");
+            return;
+        }
+
+        // Adding comment
+        const currentComments = foundSight.value().comments || [];
+        currentComments.push({
+            author: req.body.author,
+            text: req.body.text
+        });
+
+        foundSight.assign({comments: currentComments})
+            .write();
+
+        res.json("Comment added.");
     });
 
     return router;
