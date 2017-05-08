@@ -70,11 +70,11 @@ const userController = function (usrRequester, usrValidator) {
         login(username, password)
             .then(function (data) {
                 toastr.success("You are successfully logged in!");
-                loadProfileIcon(username);
                 if ($("#remember").is(':checked')) {
                     localStorage.setItem("username", username);
                     localStorage.setItem("password", password);
                 }
+                loadProfileIcon(username);
             }, function (data) {
                 toastr.error("Username with this password does not exist!");
             })
@@ -95,18 +95,30 @@ const userController = function (usrRequester, usrValidator) {
     }());
 
     function loadProfileIcon(username) {
-        $('#login-link').text('Logout').attr('id', 'logout-link');
-        $('#logout-link').on("click", function () {
+        const userDropdownTemplate = '' +
+            '<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <span id="user-dropdown"> ' + username + ' </span><span class="caret"></span></a>' +
+            '<ul class="dropdown-menu">' +
+                '<li id="profile-link"><a href="#">Profile <span class="glyphicon glyphicon-user"></span></a></li>' +
+                '<li id="logout"><a href="#">Logout <span class="glyphicon glyphicon-off"></span></a></li>' +
+                '<li id="add-item-link"><a href="#">Add item <span class="glyphicon glyphicon-plus"></span></a></li>' +
+            '</ul>';
+
+        $('.dropdown:first').remove();
+        $('.dropdown').removeClass("open").html(userDropdownTemplate);
+
+        $('#profile-link').on("click", function () {
+            //TODO: open user page
+        });
+
+        $('#logout').on("click", function () {
             localStorage.removeItem("username");
             localStorage.removeItem("password");
             location.reload();
         });
-        $('#login-dropdown').remove();
-        $('#register-link').text(username).attr('id', 'profile-link');
-        $('#profile-link').on("click", function () {
-            //TODO: open user page
+
+        $('#add-item-link').on("click", function () {
+            //TODO: add new item logic
         });
-        $('#register-dropdown').remove();
     }
 };
 

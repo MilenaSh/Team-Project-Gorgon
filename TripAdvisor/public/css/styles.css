@@ -17,13 +17,13 @@ ul.dropdown-lr {
 }*/
 
 #myLogo {
-    max-width:100px;
+    max-width: 100px;
     margin-top: -15px;
 }
 
-/* TODO: Fix that */
-.glyphicon-user {
-    font-size: 45px;
+#user-dropdown {
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .navbar-custom {
