@@ -1,6 +1,7 @@
 import Handlebars from 'handlebars';
 
 // Init handlebars helpers
+// TODO: remove duplicating code
 
 const helperRegister = function () {
     function initHelpers() {
@@ -32,7 +33,7 @@ const helperRegister = function () {
             const link = pageNumber;
 
             return new Handlebars.SafeString(
-                "<a href='#!restaurants/" + link + "'>" + link + "</a>"
+                "<a href='#!/restaurants/" + link + "'>" + link + "</a>"
             );
         });
 
@@ -40,7 +41,14 @@ const helperRegister = function () {
             const link = pageNumber;
 
             return new Handlebars.SafeString(
-                "<a href='#!sightseeing/" + link + "'>" + link + "</a>"
+                "<a href='#!/sightseeing/" + link + "'>" + link + "</a>"
+            );
+        });
+
+        Handlebars.registerHelper('buttonsLinks', function(url) {
+
+            return new Handlebars.SafeString(
+                "<p><a href='#!/objects/" + url + "' class='btn btn-primary' role='button'>View details</a>"
             );
         });
     }

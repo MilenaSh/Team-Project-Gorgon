@@ -13,6 +13,8 @@ SystemJS.config({
         'objectPagesController': './js/controllers/objectPagesController.js',
         'userController':'./js/controllers/userController.js',
         'hotelDetailsController' : '/js/controllers/hotelDetailsController.js',
+        'sightseeingDetailsController' : '/js/controllers/sightseeingDetailsController.js',
+        'restaurantDetailsController' : '/js/controllers/restaurantDetailsController.js',
         'templateLoader': './js/templateLoader.js',
         'helperRegister': './js/helperRegister.js',
         'userValidator': './js/utils/userValidator.js',

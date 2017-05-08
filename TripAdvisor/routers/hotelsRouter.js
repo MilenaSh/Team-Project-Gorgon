@@ -74,10 +74,20 @@ module.exports = function (db) {
     // Get specific hotel
     router.put('/', function(req, res) {
         // Add logic for additional params (price, etc)
-        const searchedHotelName = req.body.name;
+        let searchParam = {};
+        if(req.body.id) {
+            searchParam = {
+                id: req.body.id
+            };
+        }
+        else if(req.body.name) {
+            searchParam = {
+                name: req.body.name
+            };
+        }
 
         const foundHotel = db.get('hotels')
-            .find({name: searchedHotelName})
+            .find(searchParam)
             .value();
 
         if(!foundHotel) {

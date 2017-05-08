@@ -53,5 +53,78 @@ module.exports = function (db) {
         });
     });
 
+    // Get specific by id or name
+    router.put('/', function(req, res) {
+        let searchParam = {};
+
+        if(req.body.id) {
+            searchParam = {
+                id: req.body.id
+            };
+        }
+        else if(req.body.name) {
+            searchParam = {
+                name: req.body.name
+            };
+        }
+
+        const foundHotel = db.get('hotels')
+            .find(searchParam)
+            .value();
+        if(foundHotel) {
+            res.json(foundHotel);
+            return;
+        }
+
+        const foundRestaurant = db.get('restaurants')
+            .find(searchParam)
+            .value();
+        if(foundRestaurant) {
+            res.json(foundRestaurant);
+            return;
+        }
+
+        const foundSightseeing = db.get('sightseeing')
+            .find(searchParam)
+            .value();
+        if(foundSightseeing) {
+            res.json(foundSightseeing);
+            return;
+        }
+
+        res.status(400)
+            .json('No such object found');
+    });
+
+    // Search for object(s) by name
+    router.search('/', function(req, res) {
+        const searchName = req.body.name;
+        const result = [];
+
+        const hotels = db.get('hotels').value();
+        const restaurants = db.get('restaurants').value();
+        const sightseeing = db.get('sightseeing').value();
+
+        hotels.forEach(hotel => {
+            if(hotel.name.indexOf(searchName) !== -1) {
+                result.push(hotel);
+            }
+        });
+
+        restaurants.forEach(restaurant => {
+            if(restaurant.name.indexOf(searchName) !== -1) {
+                result.push(restaurant);
+            }
+        });
+
+        sightseeing.forEach(sight => {
+            if(sight.name.indexOf(sight) !== -1) {
+                result.push(sight);
+            }
+        });
+
+        res.json(result);
+    });
+
     return router;
 };

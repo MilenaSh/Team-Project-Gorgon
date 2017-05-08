@@ -3,6 +3,22 @@ var express = require('express');
 module.exports = function(db) {
     var router = express.Router();
 
+    router.get('/:username', function(req, res) {
+        const searchedUsername = req.params.username;
+
+        const foundUser = db.get('users')
+            .find({username: searchedUsername})
+            .value();
+
+        if(!foundUser) {
+            res.status(401)
+                .json('User with that username cannot be found');
+            return;
+        }
+
+        res.json(foundUser);
+    });
+
     // Register new user
     router.post('/', function(req, res) {
         const users = db.get('users');
@@ -30,6 +46,7 @@ module.exports = function(db) {
 
     // Authenticate user
     router.put('/', function(req, res) {
+        console.log(req.body);
         const users = db.get('users');
 
         const userToLogIn = req.body;

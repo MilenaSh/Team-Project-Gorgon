@@ -73,11 +73,22 @@ module.exports = function (db) {
 
     // Get specific restaurant object
     router.put('/', function(req, res) {
+        console.log(req.body);
         // Add logic for additional params (price, etc)
-        const searchedRestaurantName = req.body.name;
+        let searchParam = {};
+        if(req.body.id) {
+            searchParam = {
+                id: req.body.id
+            };
+        }
+        else if(req.body.name) {
+            searchParam = {
+                name: req.body.name
+            };
+        }
 
         const foundRestaurant = db.get('restaurants')
-            .find({name: searchedRestaurantName})
+            .find(searchParam)
             .value();
 
         if(!foundRestaurant) {

@@ -73,11 +73,20 @@ module.exports = function (db) {
 
     // Get specific sightseeing object
     router.put('/', function(req, res) {
-        // Add logic for additional params (price, etc)
-        const searchedObjectName = req.body.name;
+        let searchParam = {};
+        if(req.body.id) {
+            searchParam = {
+                id: req.body.id
+            };
+        }
+        else if(req.body.name) {
+            searchParam = {
+                name: req.body.name
+            };
+        }
 
         const foundObject = db.get('sightseeing')
-            .find({name: searchedObjectName})
+            .find(searchParam)
             .value();
 
         if(!foundObject) {
