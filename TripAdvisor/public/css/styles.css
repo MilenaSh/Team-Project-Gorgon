@@ -21,9 +21,12 @@ ul.dropdown-lr {
     margin-top: -15px;
 }
 
-#user-dropdown {
+#user-dropdown-text {
     font-size: 17px;
     font-weight: bold;
+}
+#profile-dropdown {
+    display: none;
 }
 
 .navbar-custom {

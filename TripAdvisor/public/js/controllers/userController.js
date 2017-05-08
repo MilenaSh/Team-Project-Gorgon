@@ -1,7 +1,6 @@
 import "jquery";
 import toastr from 'toastr';
 
-
 const userController = function (usrRequester, usrValidator) {
     const userRequester = usrRequester;
     const userValidator = usrValidator;
@@ -10,7 +9,6 @@ const userController = function (usrRequester, usrValidator) {
         const userData = {
             username: username,
             emailAddress: emailAddress,
-            // TODO: hash
             passHash: CryptoJS.SHA1(password).toString(),
             secretQuestion: secretQuestion,
             secretAnswer: secretAnswer,
@@ -50,10 +48,10 @@ const userController = function (usrRequester, usrValidator) {
             userValidator.validateUser(user);
 
             register(username, emailAddress, password, secretQuestion, secretAnswer)
-                .then(function (data) {
+                .then(function () {
                     toastr.success("You are successfully registered!");
-                    loadProfileIcon(username);
-                }, function (data) {
+                    loadProfileDropdown(username);
+                }, function () {
                     toastr.error("User with that name already exists");
                 });
 
@@ -68,14 +66,18 @@ const userController = function (usrRequester, usrValidator) {
         const password = $("#password").val().trim();
 
         login(username, password)
-            .then(function (data) {
+            .then(function () {
                 toastr.success("You are successfully logged in!");
                 if ($("#remember").is(':checked')) {
                     localStorage.setItem("username", username);
                     localStorage.setItem("password", password);
                 }
-                loadProfileIcon(username);
-            }, function (data) {
+                else {
+                    sessionStorage.setItem("username", username);
+                    sessionStorage.setItem("password", password);
+                }
+                loadProfileDropdown(username);
+            }, function () {
                 toastr.error("Username with this password does not exist!");
             })
     });
@@ -94,17 +96,10 @@ const userController = function (usrRequester, usrValidator) {
         }
     }());
 
-    function loadProfileIcon(username) {
-        const userDropdownTemplate = '' +
-            '<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <span id="user-dropdown"> ' + username + ' </span><span class="caret"></span></a>' +
-            '<ul class="dropdown-menu">' +
-                '<li id="profile-link"><a href="#">Profile <span class="glyphicon glyphicon-user"></span></a></li>' +
-                '<li id="logout"><a href="#">Logout <span class="glyphicon glyphicon-off"></span></a></li>' +
-                '<li id="add-item-link"><a href="#">Add item <span class="glyphicon glyphicon-plus"></span></a></li>' +
-            '</ul>';
-
-        $('.dropdown:first').remove();
-        $('.dropdown').removeClass("open").html(userDropdownTemplate);
+    function loadProfileDropdown(username) {
+        $('.dropdown').css("display", "none");
+        $('#user-dropdown-text').text(username);
+        $('#profile-dropdown').css("display", "block");
 
         $('#profile-link').on("click", function () {
             //TODO: open user page
@@ -113,13 +108,17 @@ const userController = function (usrRequester, usrValidator) {
         $('#logout').on("click", function () {
             localStorage.removeItem("username");
             localStorage.removeItem("password");
-            location.reload();
+            sessionStorage.removeItem("username");
+            sessionStorage.removeItem("password");
+            $('.dropdown').css("display", "block");
+            $('#profile-dropdown').css("display", "none");
         });
 
         $('#add-item-link').on("click", function () {
             //TODO: add new item logic
         });
     }
+
 };
 
 export {userController};
