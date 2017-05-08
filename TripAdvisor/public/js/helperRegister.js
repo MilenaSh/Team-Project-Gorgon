@@ -51,6 +51,12 @@ const helperRegister = function () {
                 "<p><a href='#!/objects/" + url + "' class='btn btn-primary' role='button'>View details</a>"
             );
         });
+
+        Handlebars.registerHelper('addedText', function(url) {
+            return new Handlebars.SafeString(
+                "<p><a href='#!/objects/" + url + "'>" + url +"</a>"
+            );
+        });
     }
 
     return {

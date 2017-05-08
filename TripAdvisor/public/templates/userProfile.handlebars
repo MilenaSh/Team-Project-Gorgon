@@ -6,35 +6,48 @@
                 <div class="panel-body">
                     <div class="media">
                         <div align="center">
-                            <img class="thumbnail img-responsive" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="300px" height="300px">
+                            {{#if profilePicture}}
+                            {{else}}
+                                <img class="thumbnail img-responsive" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="300px" height="300px">                            
+                            {{/if}}
                         </div>
                         <div class="media-body">
                             <hr>
                             <h3><strong>{{username}}</strong></h3>
                             <p>
                                 <div contenteditable="true">
-                                    This text can be edited by the user.
+                                    
                                 </div>
                             </p>
                             <hr>
                             <h3><strong>Location</strong></h3>
                             <p>
-                                <div contenteditable="true">
-                                    This text can be edited by the user.
-                                </div>
+                                {{#if location}}
+                                    {{{location}}}
+                                {{else}}
+                                    Location not specified.
+                                {{/if}}
                             </p>
                             <hr>
                             <h3><strong>Gender</strong></h3>
                             <p>
                                 <div contenteditable="true">
-                                    This text can be edited by the user.
+                                {{#if gender}}
+                                    {{{gender}}}
+                                {{else}}
+                                    Gender not specified.
+                                {{/if}}
                                 </div>
                             </p>
                             <hr>
                             <h3><strong>Birthday</strong></h3>
                             <p>
                                 <div contenteditable="true">
-                                    This text can be edited by the user.
+                                {{#if birthday}}
+                                    {{{birthday}}}
+                                {{else}}
+                                    Birthday not specified.
+                                {{/if}}
                                 </div>
                             </p>
                         </div>
@@ -63,8 +76,11 @@
                 <div class="panel-body">
                     <div class="pull-left">
                         <a href="#">
+                            {{#if profilePicture}}
+                            {{else}}
                             <img class="media-object img-circle" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="50px" height="50px"
                                 style="margin-right:8px; margin-top:-5px;">
+                            {{/if}}
                         </a>
                     </div>
                     <h4><a href="#" style="text-decoration:none;"><strong>{{username}}</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
@@ -72,9 +88,14 @@
                     </h4>
                     <hr>
                     <div class="post-content">
-                        <p>Simple post content example.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel gravida metus, non ultrices
-                            sapien. Morbi odio metus, dapibus non nibh id amet.</p>
+                        <p>Description:</p>
+                        <p>
+                            {{#if description}}
+                                {{description}}
+                            {{else}}
+                                The user hasn`t added a description yet.
+                            {{/if}}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -85,7 +106,7 @@
             <div>
                 <ul>
                     {{#each added}}
-                    <li>{{name}}</li>
+                    <li>{{{addedText name}}}</li>
                     {{/each}}
                 </ul>
             </div>

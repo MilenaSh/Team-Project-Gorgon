@@ -383,6 +383,21 @@
           "text": "asd.klajsdlk;ajsdl;kjasd;lk"
         }
       ]
+    },
+    {
+      "name": "Aaa1",
+      "description": "asdasdasd",
+      "phone": "sadfgsdfsadf",
+      "address": "adfgsdffsdfsd",
+      "e-mail": "fdfsgsdfgdsfg",
+      "imageOne": "https://www.w3schools.com/css/img_fjords.jpg",
+      "imageTwo": "https://www.w3schools.com/css/img_fjords.jpg",
+      "imageThree": "https://www.w3schools.com/css/img_fjords.jpg",
+      "imageFour": "https://www.w3schools.com/css/img_fjords.jpg",
+      "imageFive": "https://www.w3schools.com/css/img_fjords.jpg",
+      "addedBy": "testUser1",
+      "type": "sightseeing",
+      "id": "4d223375-45d1-49f5-8172-db727c085bd5"
     }
   ],
   "restaurants": [
@@ -937,7 +952,12 @@
       "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
       "secretQuestion": "vypros",
       "secretAnswer": "otgovor",
-      "id": "d4493a7b-9388-4850-8a53-ff27cd647333"
+      "id": "d4493a7b-9388-4850-8a53-ff27cd647333",
+      "added": [
+        {
+          "name": "Aaa1"
+        }
+      ]
     },
     {
       "username": "someUser1",

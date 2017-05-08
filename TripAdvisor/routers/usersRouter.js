@@ -68,5 +68,9 @@ module.exports = function(db) {
         });
     });
 
+    router.patch('/', function(req, res) {
+        
+    });
+
     return router;
 };
