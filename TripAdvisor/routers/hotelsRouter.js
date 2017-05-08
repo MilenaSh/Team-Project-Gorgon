@@ -54,6 +54,7 @@ module.exports = function (db) {
     // Add new hotel
     router.post('/', function (req, res) {
         const hotelToAdd = req.body;
+        hotelToAdd.type = 'hotel';
 
         const duplicatingHotel = db.get('hotels')
             .find({name: hotelToAdd.name});
@@ -63,6 +64,17 @@ module.exports = function (db) {
                 .json("Hotel with such name already exists");
             return;
         }
+
+        const addingUser = db.get('users')
+            .find({username: hotelToAdd.addedBy});
+
+        const adderItems = addingUser.value().added || [];
+        adderItems.push({
+            name: hotelToAdd.name,            
+        });
+
+        addingUser.assign({added: adderItems})
+            .write();
 
         db.get('hotels')
             .insert(hotelToAdd)

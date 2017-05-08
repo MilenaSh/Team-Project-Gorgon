@@ -53,6 +53,7 @@ module.exports = function (db) {
     // Add new restaurant
     router.post('/', function (req, res) {
         const restaurantToAdd = req.body;
+        restaurantToAdd.type = 'restaurant';
 
         const duplicatedRestaurant = db.get('restaurants')
             .find({name: restaurantToAdd.name});
@@ -62,6 +63,17 @@ module.exports = function (db) {
                 .json("Restaurant with such name already exists");
             return;
         }
+
+        const addingUser = db.get('users')
+            .find({username: restaurantToAdd.addedBy});
+
+        const adderItems = addingUser.value().added || [];
+        adderItems.push({
+            name: restaurantToAdd.name,            
+        });
+
+        addingUser.assign({added: adderItems})
+            .write();
 
         db.get('restaurants')
             .insert(restaurantToAdd)

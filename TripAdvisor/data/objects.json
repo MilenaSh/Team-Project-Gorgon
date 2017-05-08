@@ -219,6 +219,20 @@
       "imageFive": "http://a3.mzstatic.com/us/r30/Purple20/v4/90/99/e3/9099e34c-471f-dd73-c574-abce61c0db29/screen520x924.jpeg",
       "addedBy": "someUser1",
       "id": "bcc2c975-46f6-4327-837f-5ab5fb6526b7"
+    },
+    {
+      "name": "asdasd",
+      "description": "asfasfasf",
+      "phone": "asfasfasf",
+      "address": "asfasfasf",
+      "e-mail": "asdasd@asd.scom",
+      "imageOne": "asd",
+      "imageTwo": "123",
+      "imageThree": "444",
+      "imageFour": "555",
+      "imageFive": "666",
+      "addedBy": "someUser1",
+      "id": "808dfcd2-ec2c-4423-9a69-8f1c17bf39f0"
     }
   ],
   "sightseeing": [
@@ -309,6 +323,41 @@
       "imageFive": "http://placehold.it/750x500",
       "addedBy": "someUser1",
       "id": "ebee108d-ecb6-46e4-8115-2286ca2212ff"
+    },
+    {
+      "name": "LOLOLO",
+      "description": "LOLOLO",
+      "phone": "LOLOLO",
+      "address": "LOLOLO",
+      "e-mail": "LOLOLO",
+      "imageOne": "LOLOLO",
+      "imageTwo": "LOLOLO",
+      "imageThree": "LOLOLO",
+      "imageFour": "LOLOLO",
+      "imageFive": "LOLOLO",
+      "addedBy": "someUser1",
+      "id": "f30896cc-a5a4-48b2-bb3c-9c838a54eb8c"
+    },
+    {
+      "name": "LOLOLO1",
+      "description": "LOLOLO",
+      "phone": "LOLOLO",
+      "address": "LOLOLO",
+      "e-mail": "LOLOLO",
+      "imageOne": "LOLOLO",
+      "imageTwo": "LOLOLO",
+      "imageThree": "LOLOLO",
+      "imageFour": "LOLOLO",
+      "imageFive": "LOLOLO",
+      "addedBy": "someUser1",
+      "type": "sightseeing",
+      "id": "015ada1e-5c91-4758-8c17-bf2fad69828b",
+      "comments": [
+        {
+          "author": "someUser1",
+          "text": "1234"
+        }
+      ]
     }
   ],
   "restaurants": [
@@ -861,7 +910,18 @@
       "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
       "secretQuestion": "vypros",
       "secretAnswer": "otgovor",
-      "id": "7c605cda-9b50-4e6d-adf6-ae12eac4b0b8"
+      "id": "7c605cda-9b50-4e6d-adf6-ae12eac4b0b8",
+      "added": [
+        {
+          "name": "asdasd"
+        },
+        {
+          "name": "LOLOLO"
+        },
+        {
+          "name": "LOLOLO1"
+        }
+      ]
     }
   ]
 }
