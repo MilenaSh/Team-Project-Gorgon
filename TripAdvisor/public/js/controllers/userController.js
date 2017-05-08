@@ -101,6 +101,9 @@ const userController = function (usrRequester, usrValidator) {
         $('#user-dropdown-text').text(username);
         $('#profile-dropdown').css("display", "block");
 
+        // Link to profile
+        $('#profile-link a').attr('href', '/#!/users/' + username);
+
         $('#profile-link').on("click", function () {
             //TODO: open user page
         });

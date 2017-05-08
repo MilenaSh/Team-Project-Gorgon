@@ -12,6 +12,7 @@ const objectPagesController = controllerFactory.createObjectsPagesController();
 const userController = controllerFactory.createUserController();
 const detailsPageController = controllerFactory.createDetailsPageController();
 const userProfileController = controllerFactory.createUserProfileController();
+const createItemController = controllerFactory.createAddItemController();
 
 router
     .on('/hotels/:pageNumber', function (params) {
@@ -52,6 +53,9 @@ router
     .on('/users/:username', function(params) {
         const username = params.username;
         userProfileController.displayContent('api/users', username, 'userProfile', '#app-container');
+    })
+    .on('/add', function() {
+        createItemController.displayContent('addNewItem', '#app-container');
     })
     .on('/', function () {
         objectPagesController.displayContent('api/all', 1, 'mainPage', '#app-container');

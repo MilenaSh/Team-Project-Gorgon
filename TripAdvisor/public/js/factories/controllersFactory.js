@@ -7,6 +7,7 @@ import { detailsPageController } from 'detailsPageController';
 import { objectPagesController } from 'objectPagesController';
 import { userController } from 'userController';
 import { userProfileController } from 'userProfileController';
+import { addItemController } from 'addItemController';
 
 const controllersFactory = function() {
     // Extracted here in case we decide to extract dependancies here too
@@ -32,11 +33,16 @@ const controllersFactory = function() {
         return userProfileController(requester, loader);
     }
 
+    function createAddItemController() {
+        return addItemController(objRequester, loader);
+    }
+
     return {
         createObjectsPagesController: createObjectsPagesController,
         createUserController: createUserController,
         createDetailsPageController: createDetailsPageController,
-        createUserProfileController: createUserProfileController
+        createUserProfileController: createUserProfileController,
+        createAddItemController: createAddItemController
     };
 };
 
