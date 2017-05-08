@@ -47,6 +47,9 @@ const detailsPageController = function (objectsRequester, templateLoader) {
                             })
                             .then(displayContent(directory, restaurantName, templateName, containerSelector));
                     }
+                    else {
+                        toastr.error('Invalid message or not logged in.');
+                    }
                 });
         });
     }

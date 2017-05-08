@@ -38,7 +38,7 @@ const addItemController = function(objectsRequester, templateLoader) {
     }   
 
     function addItem(item, itemCategory) {
-        // add validations
+        // add validations for picture link (to be actual link), names etc etc
         let directory;
         if(itemCategory === 'hotel') {
             directory = 'hotels';
