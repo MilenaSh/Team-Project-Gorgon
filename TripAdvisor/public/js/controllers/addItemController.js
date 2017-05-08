@@ -1,5 +1,6 @@
 import 'jquery';
 import Handlebars from 'handlebars';
+import toastr from 'toastr';
 
 const addItemController = function(objectsRequester, templateLoader) {
     const objRequester = objectsRequester;
@@ -11,10 +12,46 @@ const addItemController = function(objectsRequester, templateLoader) {
         ])
         .then(([template]) => {
             $(containerSelector).html(template());
+        })
+        .then(() => {
+            $('#add-item-btn').on('click', function(ev) {
+                const category = $('#type-selection').val().toLowerCase();
+                
+                const item = {
+                    "name": $('#item-name').val().trim(),
+                    "description": $('#item-description').val().trim(),
+                    "phone": $('#item-phone').val().trim(),
+                    "address": $('#item-address').val().trim(),
+                    "e-mail": $('#item-email').val().trim(),
+                    "imageOne":  $('#item-main-image').val().trim(),
+                    "imageTwo": $('#item-second-image').val().trim(),
+                    "imageThree":  $('#item-third-image').val().trim(),
+                    "imageFour":  $('#item-fourth-image').val().trim(),
+                    "imageFive":  $('#item-fifth-image').val().trim(),
+                    "addedBy": localStorage.getItem('username') || sessionStorage.getItem('username')
+                };
+
+                addItem(item, category)
+                    .then(toastr.success('Item added!'));
+            });
         });
     }   
 
-    // Add button click events, validation of input, different add logic for different type of item
+    function addItem(item, itemCategory) {
+        // add validations
+        let directory;
+        if(itemCategory === 'hotel') {
+            directory = 'hotels';
+        }
+        else if(itemCategory === 'sightseeing') {
+            directory = 'sightseeing';
+        }
+        else if(itemCategory === 'restaurant') {
+            directory = 'restaurants';
+        }
+
+        return objectsRequester.addNewObject('api/' + directory, item);
+    }
 
     return {
         displayContent: displayContent

@@ -104,6 +104,10 @@ const userController = function (usrRequester, usrValidator) {
         // Link to profile
         $('#profile-link a').attr('href', '/#!/users/' + username);
 
+        // Link to add item
+        $('#add-item-link a').attr('href', '/#!/add');
+
+
         $('#profile-link').on("click", function () {
             //TODO: open user page
         });
