@@ -53,8 +53,14 @@
 </div>
 <!-- /.row -->
 
-{{!--Comments--}}
+<hr> {{!--Comments--}}
 <div class="row">
+    <div class="pull-left">
+        <a href="#">
+            <img class="media-object img-circle" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="35px" height="35px"
+                style="margin-left:3px; margin-right:5px;">
+        </a>
+    </div>
     <div class="input-group">
         <input id="comment-input-field" type="text" class="form-control" placeholder="Add comment...">
         <span class="input-group-btn">
@@ -63,9 +69,25 @@
     </div>
 </div>
 
-<div class="list-group">
-    {{#each comments}}
-    {{!--Add link to user profile later--}}
-    <li class="list-group-item list-group-item-success">{{{author}}} - {{{text}}}</li>
+<div class="row">
+<div class="panel panel-default">
+    {{#each comments}} {{!--Add link to user profile later--}}
+    <div class="panel-body">
+        <div class="pull-left">
+            <a href="#">
+                <img class="media-object img-circle" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="50px" height="50px"
+                    style="margin-right:8px">
+            </a>
+        </div>
+        <h4><a href="#" style="text-decoration:none;"><strong>{{author}}</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+            </small>
+        </h4>
+        <hr>
+        <div class="post-content">
+            <p>{{text}}</p>
+        <hr>
+        </div>
+    </div>
+    {{/each}}
 </div>
-{{/each}}
+</div>
