@@ -1,6 +1,7 @@
 {
   "hotels": [
     {
+      "type": "hotel",
       "name": "Hotel1",
       "description": "Here we have a detailed hotel description",
       "phone": "0035912345678",
@@ -115,6 +116,22 @@
         {
           "author": "someUser1",
           "text": "wow very comment"
+        },
+        {
+          "author": "someUser1",
+          "text": "some commentasdasd"
+        },
+        {
+          "author": "someUser1",
+          "text": "123456789"
+        },
+        {
+          "author": "someUser1",
+          "text": "asd fgh"
+        },
+        {
+          "author": "someUser1",
+          "text": "kek"
         }
       ],
       "id": "555-555"
@@ -247,12 +264,28 @@
       "name": "Name 15"
     },
     {
+      "type": "sightseeing",
       "name": "Name 16",
-      "id": "19457a3d-d667-4413-a220-1af85099345a"
+      "id": "19457a3d-d667-4413-a220-1af85099345a",
+      "comments": [
+        {
+          "author": "someUser1",
+          "text": "1234"
+        },
+        {
+          "author": "someUser1",
+          "text": "pogChamp"
+        },
+        {
+          "author": "someUser1",
+          "text": "asdf"
+        }
+      ]
     }
   ],
   "restaurants": [
     {
+      "type": "restaurant",
       "name": "Restaurant1",
       "phone": "0035912345678",
       "address": "86 Pine St., Seattle, WA 98101-1571",
@@ -270,16 +303,20 @@
       "id": "1-2"
     },
     {
+      "type": "restaurant",
       "name": "Restaurant2",
       "id": "123-456"
     },
     {
+      "type": "restaurant",
       "name": "Restaurant3"
     },
     {
+      "type": "restaurant",
       "name": "Restaurant 4"
     },
     {
+      "type": "restaurant",
       "name": "Restaurant 5"
     },
     {
@@ -319,8 +356,23 @@
       "name": "Restaurant 17"
     },
     {
+      "type": "restaurant",
       "name": "Some restaurant",
-      "id": "2666bf1c-52f4-4d70-8aab-a6c6a600bc77"
+      "id": "2666bf1c-52f4-4d70-8aab-a6c6a600bc77",
+      "comments": [
+        {
+          "author": "someUser1",
+          "text": "wow"
+        },
+        {
+          "author": "someUser1",
+          "text": "more wow"
+        },
+        {
+          "author": "someUser1",
+          "text": "kappa"
+        }
+      ]
     }
   ],
   "users": [

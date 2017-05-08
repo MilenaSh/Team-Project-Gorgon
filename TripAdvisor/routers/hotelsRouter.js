@@ -121,7 +121,7 @@ module.exports = function (db) {
         }
 
         // Adding comment
-        const currentComments = foundHotel.value().comments;
+        const currentComments = foundHotel.value().comments || [];
         currentComments.push({
             author: req.body.author,
             text: req.body.text

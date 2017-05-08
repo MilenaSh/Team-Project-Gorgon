@@ -119,7 +119,7 @@ module.exports = function (db) {
         }
 
         // Adding comment
-        const currentComments = foundSight.value().comments;
+        const currentComments = foundSight.value().comments || [];
         currentComments.push({
             author: req.body.author,
             text: req.body.text

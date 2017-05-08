@@ -9,11 +9,8 @@ const router = new Navigo(root, useHash, hash);
 
 const controllerFactory = controllersFactory();
 const objectPagesController = controllerFactory.createObjectsPagesController();
-const hotelDetailsController = controllerFactory.createHotelDetailsController();
 const userController = controllerFactory.createUserController();
-//adding sightseeing controller
-const sightseeingDetailsController = controllerFactory.createSightseeingDetailsController();
-const restaurantDetailsController = controllerFactory.createRestaurantDetailsController();
+const detailsPageController = controllerFactory.createDetailsPageController();
 
 router
     .on('/hotels/:pageNumber', function (params) {
@@ -37,16 +34,6 @@ router
         const pageNumber = params.pageNumber || 1;
         objectPagesController.displayContent('api/sightseeing', pageNumber, 'sightseeingPage', '#app-container');
     })
-    .on('/test/:hotelName', function (params) {
-        // Better naming after establishing what to search by
-        const hotelName = {name: params.hotelName};
-        hotelDetailsController.displayContent('api/hotels', hotelName, 'hotelDetails', '#app-container');
-    })
-    .on('/sightTest/:sightseeingName', function (params) {
-        // Better naming after establishing what to search by
-        const sightseeingName = {name: params.sightseeingName};
-        sightseeingDetailsController.displayContent('api/sightseeing', sightseeingName, 'sightseeingDetails', '#app-container');
-    })
     .on('/objects/:searchParam', function (params) {
         // 1. Better naming after establishing what to search by
         // 2. if-else in separate function
@@ -59,7 +46,10 @@ router
         }
 
         console.log(searchParams);
-        restaurantDetailsController.displayContent('api/all', searchParams, 'restaurantDetails', '#app-container');
+        detailsPageController.displayContent('api/all', searchParams, 'itemDetails', '#app-container');
+    })
+    .on('/users/:username', function(params) {
+        // add code here.
     })
     .on('/', function () {
         objectPagesController.displayContent('api/all', 1, 'mainPage', '#app-container');
