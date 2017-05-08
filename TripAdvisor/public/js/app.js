@@ -11,6 +11,7 @@ const controllerFactory = controllersFactory();
 const objectPagesController = controllerFactory.createObjectsPagesController();
 const userController = controllerFactory.createUserController();
 const detailsPageController = controllerFactory.createDetailsPageController();
+const userProfileController = controllerFactory.createUserProfileController();
 
 router
     .on('/hotels/:pageNumber', function (params) {
@@ -49,7 +50,8 @@ router
         detailsPageController.displayContent('api/all', searchParams, 'itemDetails', '#app-container');
     })
     .on('/users/:username', function(params) {
-        // add code here.
+        const username = params.username;
+        userProfileController.displayContent('api/users', username, 'userProfile', '#app-container');
     })
     .on('/', function () {
         objectPagesController.displayContent('api/all', 1, 'mainPage', '#app-container');

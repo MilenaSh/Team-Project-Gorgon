@@ -13,6 +13,7 @@ SystemJS.config({
         'objectPagesController': './js/controllers/objectPagesController.js',
         'userController':'./js/controllers/userController.js',
         'detailsPageController' : '/js/controllers/detailsPageController.js',
+        'userProfileController': '/js/controllers/userProfileController.js',
         'templateLoader': './js/templateLoader.js',
         'helperRegister': './js/helperRegister.js',
         'userValidator': './js/utils/userValidator.js',
