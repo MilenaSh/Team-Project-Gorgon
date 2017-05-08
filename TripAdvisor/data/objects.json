@@ -5,7 +5,7 @@
       "description": "Here we have a detailed hotel description",
       "phone": "0035912345678",
       "e-mail": "samplemail@gmail.com",
-      "address": "86 Pine St., Seattle, WA 98101-1571",     
+      "address": "86 Pine St., Seattle, WA 98101-1571",
       "imageOne": "http://placehold.it/750x500",
       "imageTwo": "http://placehold.it/500x300",
       "imageThree": "http://placehold.it/500x300",
@@ -92,7 +92,7 @@
       "imageTwo": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg",
       "imageThree": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg",
       "imageFour": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg",
-      "imageFive": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg", 
+      "imageFive": "https://d1bvpoagx8hqbg.cloudfront.net/originals/park-guell-1238112da26d11a82e673fe0da34078e.jpg",
       "address": "13, Downing Street"
     },
     {
@@ -156,7 +156,7 @@
       "imageTwo": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
       "imageThree": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
       "imageFour": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
-      "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",      
+      "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
       "menu": [
         "Dish 1",
         "Dish 2"
@@ -637,6 +637,14 @@
       "secretQuestion": "Favorite food",
       "secretAnswer": "none",
       "id": "5386cd34-5d45-4338-a9f9-41f7df16964a"
+    },
+    {
+      "username": "vladi",
+      "emailAddress": "vladi@abv.bg",
+      "passHash": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+      "secretQuestion": "123",
+      "secretAnswer": "123",
+      "id": "8050251b-33d2-484b-82a9-d5b6b089c6aa"
     }
   ]
 }

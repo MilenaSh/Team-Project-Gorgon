@@ -11,7 +11,7 @@ const userController = function (usrRequester, usrValidator) {
             username: username,
             emailAddress: emailAddress,
             // TODO: hash
-            passHash: "hashed" + password + username,
+            passHash: CryptoJS.SHA1(password).toString(),
             secretQuestion: secretQuestion,
             secretAnswer: secretAnswer,
         };
@@ -22,13 +22,13 @@ const userController = function (usrRequester, usrValidator) {
     function login(username, password) {
         const userData = {
             username: username,
-            passHash: "hashed" + password + username
+            passHash: CryptoJS.SHA1(password).toString()
         };
 
         return userRequester.login(userData);
     }
 
-    $("#register-submit").on("click", function (ev) {
+    $("#register-submit").on("click", function () {
         const username = $("#username-register").val().trim();
         const emailAddress = $("#email").val().trim();
         const password = $("#password-register").val().trim();
@@ -63,7 +63,7 @@ const userController = function (usrRequester, usrValidator) {
         }
     });
 
-    $("#login-submit").on("click", function (ev) {
+    $("#login-submit").on("click", function () {
         const username = $("#username").val().trim();
         const password = $("#password").val().trim();
 
@@ -71,7 +71,7 @@ const userController = function (usrRequester, usrValidator) {
             .then(function (data) {
                 toastr.success("You are successfully logged in!");
                 loadProfileIcon(username);
-                if ($("#remember:checked")) {
+                if ($("#remember").is(':checked')) {
                     localStorage.setItem("username", username);
                     localStorage.setItem("password", password);
                 }
