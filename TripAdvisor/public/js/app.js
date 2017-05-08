@@ -11,7 +11,6 @@ const controllerFactory = controllersFactory();
 const objectPagesController = controllerFactory.createObjectsPagesController();
 const userController = controllerFactory.createUserController();
 const detailsPageController = controllerFactory.createDetailsPageController();
-const userProfileController = controllerFactory.createUserProfileController();
 const createItemController = controllerFactory.createAddItemController();
 
 
@@ -54,7 +53,7 @@ router
     })
     .on('/users/:username', function(params) {
         const username = params.username;
-        userProfileController.displayContent('api/users', username, 'userProfile', '#app-container');
+        userController.displayProfilePage(username, 'userProfile', '#app-container');
     })
     .on('/add', function() {
         createItemController.displayContent('addNewItem', '#app-container');

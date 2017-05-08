@@ -1,10 +1,6 @@
 const objectsRequester = function(genericRequester) {
     const requester = genericRequester;
 
-    function getAllObjects(directory) {
-        return requester.get(directory);
-    }
-
     function getObjectsPage(directory, pageNumber) {
         return requester.get(`${directory}/${pageNumber}`)
     }
@@ -17,12 +13,13 @@ const objectsRequester = function(genericRequester) {
         return requester.put(directory, searchParams);
     }
 
-    function editSpecificObject(directory, name, info) {
+    function editSpecificObject(directory, info) {
         return requester.patch(directory, info);
     }
 
+    // more
+
     return {
-        getAllObjects: getAllObjects,
         getObjectsPage: getObjectsPage,
         addNewObject: addNewObject,
         getSpecificObject: getSpecificObject,

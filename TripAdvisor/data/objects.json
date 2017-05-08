@@ -233,6 +233,39 @@
       "imageFive": "666",
       "addedBy": "someUser1",
       "id": "808dfcd2-ec2c-4423-9a69-8f1c17bf39f0"
+    },
+    {
+      "name": "aaa1",
+      "description": "123123123",
+      "phone": "123123123",
+      "address": "123123123",
+      "e-mail": "123123123123",
+      "imageOne": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
+      "imageTwo": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
+      "imageThree": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
+      "imageFour": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
+      "imageFive": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "26f00c9b-137f-4b64-858a-fce3931472f2",
+      "comments": [
+        {
+          "author": "testUser1",
+          "text": "1234"
+        },
+        {
+          "author": "testUser1",
+          "text": "2222"
+        },
+        {
+          "author": "testUser1",
+          "text": "66666"
+        },
+        {
+          "author": "testUser1",
+          "text": "99999999"
+        }
+      ]
     }
   ],
   "sightseeing": [
@@ -381,6 +414,14 @@
         {
           "author": "someUser1",
           "text": "asd.klajsdlk;ajsdl;kjasd;lk"
+        },
+        {
+          "author": "testUser1",
+          "text": "55555"
+        },
+        {
+          "author": "testUser1",
+          "text": "4444"
         }
       ]
     },
@@ -974,13 +1015,16 @@
         },
         {
           "name": "AAAA"
+        },
+        {
+          "name": "aaa1"
         }
       ],
-      "location": "Sofia",
-      "description": "Dat boi",
-      "gender": "1999 Ford focus",
-      "birthday": "13/37/2222",
-      "profilePicture": "https://beebom.com/wp-content/uploads/2016/01/Reverse-Image-Search-Engines-Apps-And-Its-Uses-2016.jpg"
+      "location": "AAAAA",
+      "description": "Wow very traveller",
+      "gender": "Asd",
+      "birthday": "1337/1337/1337",
+      "profilePicture": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg"
     },
     {
       "username": "someUser1",

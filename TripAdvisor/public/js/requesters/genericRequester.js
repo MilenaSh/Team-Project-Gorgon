@@ -1,72 +1,45 @@
 import 'jquery';
 
-const genericRequester = function() {
-    function get(url, body) {
+const genericRequester = function () {
+    function send(url, method, body) {
         const promise = new Promise((resolve, reject) => {
             $.ajax({
-                type: 'GET',
                 url: url,
-                data: JSON.stringify(body),
+                type: method,
                 contentType: 'application/json',
-                success: (data) => resolve(data),
-                error: (data) => reject(data)
+                data: JSON.stringify(body),
+                success: response => resolve(response),
+                error: response => reject(response)
             });
         });
 
         return promise;
+    }
+
+    function get(url, body) {
+        return send(url, 'GET', body);
     }
 
     function post(url, body) {
-        const promise = new Promise((resolve, reject) => {
-            $.ajax({
-                type: 'POST',
-                url: url,
-                data: JSON.stringify(body),
-                contentType: 'application/json',
-                success: (data) => resolve(data),
-                error: (data) => reject(data)
-            });
-        });
-
-        return promise;
+        return send(url, 'POST', body);
     }
 
-    function put(url, body) {        
-        const promise = new Promise((resolve, reject) => {
-            $.ajax({
-                type: 'PUT',
-                url: url,
-                data: JSON.stringify(body),
-                contentType: 'application/json',
-                success: (data) => resolve(data),
-                error: (data) => reject(data)
-            });
-        });
+    function put(url, body) {
+        return send(url, 'PUT', body);
 
-        return promise;
     }
 
-    function patch(url, body) {        
-        const promise = new Promise((resolve, reject) => {
-            $.ajax({
-                type: 'PATCH',
-                url: url,
-                data: JSON.stringify(body),
-                contentType: 'application/json',
-                success: (data) => resolve(data),
-                error: (data) => reject(data)
-            });
-        });
+    function patch(url, body) {
+        return send(url, 'PATCH', body);
 
-        return promise;
     }
 
     return {
-        get: get,
-        post: post,
-        put: put,
+        get: get, 
+        post: post, 
+        put: put, 
         patch: patch
     };
 };
 
-export { genericRequester };
+export {genericRequester};

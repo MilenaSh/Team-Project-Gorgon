@@ -8,10 +8,10 @@ const detailsPageController = function (objectsRequester, templateLoader) {
     const objRequester = objectsRequester;
     const loader = templateLoader;
 
-    function displayContent(directory, restaurantName, templateName, containerSelector) {
+    function displayContent(directory, searchParams, templateName, containerSelector) {
         Promise.all([
             loader.loadTemplate(templateName),
-            objRequester.getSpecificObject(directory, restaurantName)
+            objRequester.getSpecificObject(directory, searchParams)
         ]).then(([template, data]) => {
             $(containerSelector).html(template(data));
             return Promise.resolve(data.type);
@@ -34,7 +34,7 @@ const detailsPageController = function (objectsRequester, templateLoader) {
             $('#add-comment-btn')
                 .on('click', function (ev) {
                     console.log("Called");
-                    let author = localStorage.getItem('username');
+                    let author = localStorage.getItem('username') || sessionStorage.getItem('username');
                     let commentText = $('#comment-input-field')
                         .val()
                         .trim();
@@ -45,7 +45,7 @@ const detailsPageController = function (objectsRequester, templateLoader) {
                             .then(() => {
                                 toastr.success('Comment added.');
                             })
-                            .then(displayContent(directory, restaurantName, templateName, containerSelector));
+                            .then(displayContent(directory, searchParams, templateName, containerSelector));
                     }
                     else {
                         toastr.error('Invalid message or not logged in.');
@@ -63,17 +63,7 @@ const detailsPageController = function (objectsRequester, templateLoader) {
             text: text
         };
 
-        const promise = new Promise((resolve, reject) => {
-            $.ajax({
-                method: 'PATCH',
-                url: 'api/' + directory,
-                contentType: 'application/json',
-                data: JSON.stringify(comment),
-                success: response => resolve(response)
-            });
-        });
-
-        return promise;
+        return objRequester.editSpecificObject('api/' + directory, comment);
     }
 
     return {displayContent: displayContent};

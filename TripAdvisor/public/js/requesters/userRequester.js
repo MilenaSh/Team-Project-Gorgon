@@ -9,9 +9,24 @@ const userRequester = function (genericRequester) {
         return requester.put('api/users', body);
     }
 
+    function getUser(username) {
+        return requester.get('api/users/' + username);
+    }
+
+    function editUser(username, userId) {
+        const body = {
+            username: username,
+            id: userId
+        };
+
+        return requester.patch('api/users', body);
+    }
+
     return {
         register: register,
-        login: login
+        login: login,
+        getUser: getUser,
+        editUser: editUser
     };
 };
 
