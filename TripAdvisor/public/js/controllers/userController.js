@@ -1,6 +1,7 @@
 import "jquery";
 import toastr from 'toastr';
 
+
 const userController = function (usrRequester, usrValidator) {
     const userRequester = usrRequester;
     const userValidator = usrValidator;
@@ -36,7 +37,7 @@ const userController = function (usrRequester, usrValidator) {
         const secretAnswer = $("#secret-answer").val().trim();
 
         try {
-            
+
             const user = {
                 username: username,
                 email: emailAddress,
@@ -51,13 +52,13 @@ const userController = function (usrRequester, usrValidator) {
             register(username, emailAddress, password, secretQuestion, secretAnswer)
                 .then(function (data) {
                     toastr.success("You are successfully registered!");
-                    loadProfileIcon();
+                    loadProfileIcon(username);
                 }, function (data) {
                     toastr.error("User with that name already exists");
                 });
 
         }
-        catch (err){
+        catch (err) {
             toastr.error(err);
         }
     });
@@ -69,22 +70,44 @@ const userController = function (usrRequester, usrValidator) {
         login(username, password)
             .then(function (data) {
                 toastr.success("You are successfully logged in!");
-                loadProfileIcon();
-                if($("#remember:checked")){
-                    //TODO: finish local storage things
+                loadProfileIcon(username);
+                if ($("#remember:checked")) {
                     localStorage.setItem("username", username);
                     localStorage.setItem("password", password);
                 }
             }, function (data) {
                 toastr.error("Username with this password does not exist!");
             })
-
     });
 
-    function loadProfileIcon(){
-        $('.dropdown').first().remove();
-        $('.dropdown').replaceWith('<a href="#"><span class="glyphicon glyphicon-user"></span></a>');
+    (function checkIfUserIsRemembered() {
+        let username = localStorage.getItem("username");
+        let password = localStorage.getItem("password");
+
+        $("#username").val(username);
+        $("#password").val(password);
+
+        if (username && password) {
+            $("#login-submit").trigger('click');
+        } else {
+            console.log("Nothing is localstored!");
+        }
+    }());
+
+    function loadProfileIcon(username) {
+        $('#login-link').text('Logout').attr('id', 'logout-link');
+        $('#logout-link').on("click", function () {
+            localStorage.removeItem("username");
+            localStorage.removeItem("password");
+            location.reload();
+        });
+        $('#login-dropdown').remove();
+        $('#register-link').text(username).attr('id', 'profile-link');
+        $('#profile-link').on("click", function () {
+            //TODO: open user page
+        });
+        $('#register-dropdown').remove();
     }
 };
 
-export { userController };
+export {userController};
