@@ -72,14 +72,19 @@ router
 
 // TESTING PURPOSES
 
-function getUser(username) {
-    const searchParam = {a: "123"};
+function addComment(hotelID, author, text) {
+    const comment = {
+        id: hotelID,
+        author: author,
+        text: text
+    };
 
     const promise = new Promise((resolve, reject) => {
         $.ajax({
-            method: 'GET',
-            url: 'api/users/' + username,
+            method: 'PATCH',
+            url: 'api/hotels',
             contentType: 'application/json',
+            data: JSON.stringify(comment),
             success: response => resolve(response)
         });
     });
@@ -91,5 +96,5 @@ function printData(data) {
     console.log(data);
 }
 
-getUser('User1')
+addComment("555-555" ,'az', 'some comment text3')
     .then(printData);

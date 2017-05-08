@@ -11,6 +11,40 @@
       "imageThree": "http://placehold.it/500x300",
       "imageFour": "http://placehold.it/500x300",
       "imageFive": "http://placehold.it/500x300",
+      "comments": [
+        {
+          "author": "someone",
+          "text": "comm text"
+        },
+        {
+          "author": "az",
+          "text": "some comment text"
+        },
+        {
+          "author": "az",
+          "text": "some comment text2"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        },
+        {
+          "author": "az",
+          "text": "some comment text3"
+        }
+      ],
       "id": "555-555"
     },
     {

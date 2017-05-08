@@ -99,22 +99,38 @@ module.exports = function (db) {
         res.json(foundHotel);
     });
 
-    // Edit hotel properties
+    // Add comment/edit
     router.patch('/', function(req, res) {
-        const searchedHotel = req.body;
-        console.log(req.body);
+        const searchedHotelId = req.body.id;
 
         const foundHotel = db.get('hotels')
-            .find({name: searchedHotel.name});
+            .find({id: searchedHotelId});
 
         if(!foundHotel.value()) {
             res.status(400)
-                .json("No hotel with that name found");
+                .json("No hotel with that ID found.");
             return;
         }
 
-        foundHotel.assign(searchedHotel).write();
-        res.json("Successfully edited.");
+        // Editing
+        if(!req.body.comment && !req.body.author) {
+            foundHotel.assign(req.body)
+                .write();
+            res.json("Hotel edited.");
+            return;
+        }
+
+        // Adding comment
+        const currentComments = foundHotel.value().comments;
+        currentComments.push({
+            author: req.body.author,
+            text: req.body.text
+        });
+
+        foundHotel.assign({comments: currentComments})
+            .write();
+
+        res.json("Comment added.");
     });
 
     return router;
