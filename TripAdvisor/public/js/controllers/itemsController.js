@@ -7,6 +7,14 @@ const itemsController = function (objectRequester, templateLoader) {
     const objRequester = objectRequester;
     const loader = templateLoader;
 
+    if(!objRequester) {
+        throw 'Object requester cannot be null';
+    }
+
+    if(!loader) {
+        throw 'Template loader cannot be null';
+    }
+
     function displayAddItemPage(templateName, containerSelector) {
         Promise.all([
             loader.loadTemplate(templateName)
