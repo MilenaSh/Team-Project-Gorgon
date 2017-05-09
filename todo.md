@@ -4,4 +4,5 @@
 - [ ] Erase db and create new one with all-valid records
 - [ ] Provider validators
 - [ ] Unit tests
+- [ ] Return Promise instance in unit tests
 - More ?
