@@ -1425,6 +1425,21 @@
       "addedBy": "restaurantAdder",
       "type": "restaurant",
       "id": "253b2631-c7d5-4c32-ad64-3689f1dbd5e3"
+    },
+    {
+      "name": "qweqweqwe",
+      "description": "qweqweqwe",
+      "phone": "qweqweqw",
+      "address": "eqweqweqw",
+      "e-mail": "asdasd@gmail.com",
+      "imageOne": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageTwo": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageThree": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageFour": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageFive": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "addedBy": "parkAdder",
+      "type": "restaurant",
+      "id": "7efc8b47-b5c5-4a00-99b1-e1764b26ed83"
     }
   ],
   "users": [
@@ -1747,6 +1762,9 @@
         },
         {
           "name": "Flowerscent Plaza"
+        },
+        {
+          "name": "qweqweqwe"
         }
       ]
     }

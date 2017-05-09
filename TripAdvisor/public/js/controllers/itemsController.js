@@ -42,7 +42,8 @@ const itemsController = function (objectRequester, templateLoader) {
                 };
 
                 addItem(item, category)
-                    .then(toastr.success('Item added!'));
+                    .then(() => toastr.success("Item added!"),
+                        () => toastr.error("Item with such name already exists"));
             });
         });
     }
