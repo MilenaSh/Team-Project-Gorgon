@@ -4,8 +4,8 @@ Team project TripPlanner for JavaScript Application course - Telerik Academy Sea
 
 Participants:
 
-Viktor Metodiev (GitHub: vixataaa)
-Vladimir Petrov (GitHub: vladi99)
-Milena Shishkova (GitHub: MilenaSh)
+Viktor Metodiev (GitHub: vixataaa);
+Vladimir Petrov (GitHub: vladi99);
+Milena Shishkova (GitHub: MilenaSh);
 
 https://team-gorgon-jsa.herokuapp.com/
