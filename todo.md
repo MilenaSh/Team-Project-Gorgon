@@ -2,7 +2,6 @@
 - [ ] Minimize the amount of handlebars helpers
 - [ ] Fix some templates used for adding/editing
 - [x] Erase db and create new one with all-valid records
-- [ ] Provider validators
-- [ ] Unit tests
-- [ ] Return Promise instance in unit tests
+- [x] Provider validators
+- [x] Unit tests - kinda
 - More ?
