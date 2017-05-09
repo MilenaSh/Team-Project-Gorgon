@@ -20,6 +20,7 @@
     "lodash": "^4.17.4",
     "lowdb": "^0.16.2",
     "navigo": "^4.7.0",
+    "openurl": "^1.1.1",
     "requester": "latest",
     "systemjs": "^0.20.12",
     "systemjs-plugin-babel": "0.0.21",

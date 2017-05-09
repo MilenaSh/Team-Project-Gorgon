@@ -4,6 +4,8 @@
       <w>advisor</w>
       <w>authkey</w>
       <w>localstorage</w>
+      <w>localstored</w>
+      <w>toastr</w>
     </words>
   </dictionary>
 </component>

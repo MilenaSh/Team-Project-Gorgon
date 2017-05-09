@@ -235,37 +235,64 @@
       "id": "808dfcd2-ec2c-4423-9a69-8f1c17bf39f0"
     },
     {
-      "name": "aaa1",
-      "description": "123123123",
-      "phone": "123123123",
-      "address": "123123123",
-      "e-mail": "123123123123",
-      "imageOne": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
-      "imageTwo": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
-      "imageThree": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
-      "imageFour": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
-      "imageFive": "https://taj.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/master2/16x7/38849817-H1-Exterior_1-16x7.jpg",
-      "addedBy": "testUser1",
+      "name": "Pesho hotel",
+      "description": "very good hotel",
+      "phone": "08888888",
+      "address": "kaspichan",
+      "e-mail": "abv.bg",
+      "imageOne": "",
+      "imageTwo": "",
+      "imageThree": "",
+      "imageFour": "",
+      "imageFive": "",
+      "addedBy": "vladi",
       "type": "hotel",
-      "id": "26f00c9b-137f-4b64-858a-fce3931472f2",
-      "comments": [
-        {
-          "author": "testUser1",
-          "text": "1234"
-        },
-        {
-          "author": "testUser1",
-          "text": "2222"
-        },
-        {
-          "author": "testUser1",
-          "text": "66666"
-        },
-        {
-          "author": "testUser1",
-          "text": "99999999"
-        }
-      ]
+      "id": "8c09c125-ccaf-4db8-b04f-746c6024f9bd"
+    },
+    {
+      "name": "",
+      "description": "",
+      "phone": "",
+      "address": "",
+      "e-mail": "",
+      "imageOne": "",
+      "imageTwo": "",
+      "imageThree": "",
+      "imageFour": "",
+      "imageFive": "",
+      "addedBy": "vladi",
+      "type": "hotel",
+      "id": "5424cc24-acea-422c-94fd-7b5460ba9457"
+    },
+    {
+      "name": "vladi",
+      "description": "12345678",
+      "phone": "",
+      "address": "",
+      "e-mail": "",
+      "imageOne": "",
+      "imageTwo": "",
+      "imageThree": "",
+      "imageFour": "",
+      "imageFive": "",
+      "addedBy": "vladi",
+      "type": "hotel",
+      "id": "43c7e182-52d7-495f-9e0b-2d6cb9eaaef3"
+    },
+    {
+      "name": "гхдъйдтъй",
+      "description": "йдтъйукук",
+      "phone": "08-9845 454",
+      "address": "",
+      "e-mail": "",
+      "imageOne": "",
+      "imageTwo": "",
+      "imageThree": "",
+      "imageFour": "",
+      "imageFive": "",
+      "addedBy": "vladi",
+      "type": "hotel",
+      "id": "36b75a6d-8934-466f-a806-0c5da9a4c27f"
     }
   ],
   "sightseeing": [
@@ -414,31 +441,8 @@
         {
           "author": "someUser1",
           "text": "asd.klajsdlk;ajsdl;kjasd;lk"
-        },
-        {
-          "author": "testUser1",
-          "text": "55555"
-        },
-        {
-          "author": "testUser1",
-          "text": "4444"
         }
       ]
-    },
-    {
-      "name": "Aaa1",
-      "description": "asdasdasd",
-      "phone": "sadfgsdfsadf",
-      "address": "adfgsdffsdfsd",
-      "e-mail": "fdfsgsdfgdsfg",
-      "imageOne": "https://www.w3schools.com/css/img_fjords.jpg",
-      "imageTwo": "https://www.w3schools.com/css/img_fjords.jpg",
-      "imageThree": "https://www.w3schools.com/css/img_fjords.jpg",
-      "imageFour": "https://www.w3schools.com/css/img_fjords.jpg",
-      "imageFive": "https://www.w3schools.com/css/img_fjords.jpg",
-      "addedBy": "testUser1",
-      "type": "sightseeing",
-      "id": "4d223375-45d1-49f5-8172-db727c085bd5"
     }
   ],
   "restaurants": [
@@ -555,52 +559,6 @@
       "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
       "addedBy": "someUser1",
       "id": "a507f762-f9d1-43c5-a456-fa46d4534a9a"
-    },
-    {
-      "name": "AAAA",
-      "description": "asd",
-      "phone": "asd",
-      "address": "asd",
-      "e-mail": "asd",
-      "imageOne": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
-      "imageTwo": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
-      "imageThree": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
-      "imageFour": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
-      "imageFive": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
-      "addedBy": "testUser1",
-      "type": "restaurant",
-      "id": "948981de-cffd-4c4c-b0d8-1f51b97e70be",
-      "comments": [
-        {
-          "author": "testUser1",
-          "text": "1234"
-        }
-      ]
-    },
-    {
-      "name": "Restorant",
-      "description": "Opisanie",
-      "phone": "Telefon",
-      "address": "Adres",
-      "e-mail": "Imeil",
-      "imageOne": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
-      "imageTwo": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
-      "imageThree": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
-      "imageFour": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
-      "imageFive": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
-      "addedBy": "testUser1",
-      "type": "restaurant",
-      "id": "48637c7f-c3bb-42f9-bec3-fdbc416dd156",
-      "comments": [
-        {
-          "author": "testUser1",
-          "text": "123123"
-        },
-        {
-          "author": "testUser1",
-          "text": "4444"
-        }
-      ]
     }
   ],
   "users": [
@@ -1031,7 +989,21 @@
       "passHash": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
       "secretQuestion": "123",
       "secretAnswer": "123",
-      "id": "8050251b-33d2-484b-82a9-d5b6b089c6aa"
+      "id": "8050251b-33d2-484b-82a9-d5b6b089c6aa",
+      "added": [
+        {
+          "name": "Pesho hotel"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": "vladi"
+        },
+        {
+          "name": "гхдъйдтъй"
+        }
+      ]
     },
     {
       "username": "testUser1",
@@ -1039,30 +1011,10 @@
       "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
       "secretQuestion": "vypros",
       "secretAnswer": "otgovor",
-      "id": "d4493a7b-9388-4850-8a53-ff27cd647333",
-      "added": [
-        {
-          "name": "Aaa1"
-        },
-        {
-          "name": "AAAA"
-        },
-        {
-          "name": "aaa1"
-        },
-        {
-          "name": "Restorant"
-        }
-      ],
-      "location": "AAAAA",
-      "description": "Wow very traveller",
-      "gender": "Asd",
-      "birthday": "1337/1337/1337",
-      "profilePicture": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg"
+      "id": "d4493a7b-9388-4850-8a53-ff27cd647333"
     },
     {
       "username": "someUser1",
-      "location": "I am located",
       "emailAddress": "asd@asd.com",
       "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
       "secretQuestion": "vypros",
@@ -1070,20 +1022,10 @@
       "id": "7c605cda-9b50-4e6d-adf6-ae12eac4b0b8",
       "added": [
         {
-          "name": "asdasd",
-          "description": "Here we have a detailed hotel description",
-          "phone": "0035912345678",
-          "e-mail": "samplemail@gmail.com",
-          "address": "86 Pine St., Seattle, WA 98101-1571",
-          "imageOne": "http://placehold.it/750x500"
+          "name": "asdasd"
         },
         {
-          "name": "LOLOLO",
-          "description": "Here we have a detailed hotel description",
-          "phone": "0035912345678",
-          "e-mail": "samplemail@gmail.com",
-          "address": "86 Pine St., Seattle, WA 98101-1571",
-          "imageOne": "http://placehold.it/750x500"
+          "name": "LOLOLO"
         },
         {
           "name": "LOLOLO1"

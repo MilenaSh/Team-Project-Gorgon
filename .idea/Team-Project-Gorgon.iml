@@ -10,5 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="handlebars" level="application" />
     <orderEntry type="library" name="node-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="toastr-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="systemjs-DefinitelyTyped" level="application" />
   </component>
 </module>

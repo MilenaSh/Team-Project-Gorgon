@@ -56,6 +56,8 @@ const userController = function (usrRequester, objectRequester, usrValidator, pr
             register(username, emailAddress, password, secretQuestion, secretAnswer)
                 .then(function () {
                     toastr.success("You are successfully registered!");
+                    sessionStorage.setItem("username", username);
+                    sessionStorage.setItem("password", password);
                     loadProfileDropdown(username);
                 }, function () {
                     toastr.error("User with that name already exists");

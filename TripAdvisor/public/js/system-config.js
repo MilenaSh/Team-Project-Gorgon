@@ -18,7 +18,7 @@ SystemJS.config({
         'propertyValidator': '/js/utils/propertyValidator.js',
         'controllersFactory': './js/factories/controllersFactory.js',
         'requesterFactory': './js/factories/requesterFactory.js',
-
+        'addItemValidator': './js/utils/addItemValidator.js',
         // Libraries
         'jquery' : 'libs/jquery/dist/jquery.js',
         'bootstrap': 'libs/bootstrap/dist/js/bootstrap.js',

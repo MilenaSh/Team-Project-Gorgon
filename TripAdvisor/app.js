@@ -35,7 +35,8 @@ var usersRouter = require(__dirname + '/routers/usersRouter')(db);
 app.use('/api/users', usersRouter);
 
 app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+    require("openurl").open(`http://localhost:${app.get('port')}`);
+    console.log('Node app is running on port', app.get('port'));
 });
 
 
