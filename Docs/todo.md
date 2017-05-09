@@ -1,4 +1,4 @@
-- [ ] Deploy to heroku
+- [x] Deploy to heroku
 - [ ] Upload to best.telerikacademy
 - [ ] Record video
 - [x] Minimize the amount of handlebars helpers
