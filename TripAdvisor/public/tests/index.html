@@ -8,12 +8,16 @@
     <div id="mocha"></div>
     <script src="../libs/mocha/mocha.js"></script>
     <script src="../libs/chai/chai.js"></script>
+    <script src="../libs/sinon/pkg/sinon.js"></script>
     <script>mocha.setup('bdd')</script>
 
     <script src="../libs/systemjs/dist/system.js"></script>
     <script src="systemJS/system-config.js"></script>
     <script>
         System.import('./userValidator-tests.js');
+        System.import('./requesters/genericRequester-tests.js');
+
+        // mocha.run() on last test always
     </script>
 
     <!--Code to test-->
