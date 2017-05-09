@@ -1,5 +1,7 @@
 - [ ] Deploy to heroku
-- [ ] Minimize the amount of handlebars helpers
+- [ ] Upload to best.telerikacademy
+- [ ] Record video
+- [x] Minimize the amount of handlebars helpers
 - [ ] Fix some templates used for adding/editing
 - [x] Erase db and create new one with all-valid records
 - [x] Provider validators
