@@ -822,7 +822,13 @@
       "imageFive": "http://uncontainedlife.com/wp-content/uploads/2016/02/London-335-750x500.jpg",
       "addedBy": "parkAdder",
       "type": "sightseeing",
-      "id": "11a50dc3-87b5-4e46-8d0e-570666edf50d"
+      "id": "11a50dc3-87b5-4e46-8d0e-570666edf50d",
+      "comments": [
+        {
+          "author": "parkAdder",
+          "text": "Cool stuff"
+        }
+      ]
     },
     {
       "name": "Klytalt Plaza",
@@ -1766,7 +1772,8 @@
         {
           "name": "qweqweqwe"
         }
-      ]
+      ],
+      "profilePicture": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg"
     }
   ]
 }

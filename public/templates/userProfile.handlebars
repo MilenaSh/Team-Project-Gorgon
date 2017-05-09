@@ -7,7 +7,8 @@
                     <div class="media">
                         <div align="center">
                             {{#if profilePicture}}
-                            <img class="thumbnail img-responsive" src="{{profilePicture}}" width="300px" height="300px">                            {{else}}
+                            <img class="thumbnail img-responsive" src="{{profilePicture}}" width="300px" height="300px">                            
+                            {{else}}
                             <img class="thumbnail img-responsive" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="300px" height="300px">                            {{/if}}
                         </div>
                         <div class="media-body">
@@ -20,7 +21,7 @@
                                     {{#if location}}
                                     <p>{{location}}</p>
                                     {{else}}
-                                    <p>Not Spcified.</p>
+                                    <p>Not Specified.</p>
                                     {{/if}}
                                 </div>
                             </p>
@@ -31,7 +32,7 @@
                                     {{#if gender}}
                                     <p>{{gender}}</p>
                                     {{else}}
-                                    <p>Not Spcified.</p>
+                                    <p>Not Specified.</p>
                                     {{/if}}
                                 </div>
                             </p>
@@ -42,7 +43,7 @@
                                     {{#if birthday}}
                                     <p>{{birthday}}</p>
                                     {{else}}
-                                    <p>Not Spcified.</p>
+                                    <p>Not Specified.</p>
                                     {{/if}}
                                 </div>
                             </p>
@@ -71,7 +72,7 @@
                         {{#if description}}
                         <p>{{description}}</p>
                         {{else}}
-                        <p> Please enter a short description about yourself.</p>
+                        <p> User hasn`t added a description yet.</p>
                         {{/if}}
                     </div>
                 </div>
@@ -83,7 +84,7 @@
             <div>
                 <ul style="list-style: none;">
                     {{#each added}}
-                    <li> {{addedText name}}</li>
+                    <li>{{addedText name}}</li>
                     {{/each}}
                 </ul>
             </div>

@@ -5,14 +5,6 @@ import Handlebars from 'handlebars';
 
 const helperRegister = function () {
     function initHelpers() {
-        Handlebars.registerHelper('img', function (object) {
-            const src = object;
-
-            return new Handlebars.SafeString(
-                "<img src='" + src + "'></img>"
-            );
-        });
-
         Handlebars.registerHelper('objectPage', function (pageNumber) {
             const link = pageNumber;
 
