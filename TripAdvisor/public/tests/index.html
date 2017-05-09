@@ -14,10 +14,13 @@
     <script src="../libs/systemjs/dist/system.js"></script>
     <script src="systemJS/system-config.js"></script>
     <script>
-        System.import('./userValidator-tests.js');
-        System.import('./requesters/genericRequester-tests.js');
-        System.import('./requesters/objectsRequester-tests.js');
-        // mocha.run() on last test always
+        Promise.all([
+            System.import('./userValidator-tests.js'),
+            System.import('./requesters/genericRequester-tests.js'),
+            System.import('./requesters/objectsRequester-tests.js'),
+            System.import('./requesters/userRequester-tests.js')
+        ])
+        .then(() => mocha.run());
     </script>
 
     <!--Code to test-->

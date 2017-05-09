@@ -144,5 +144,3 @@ describe('objectsRequester tests', function() {
         });
     });
 });
-
-mocha.run();

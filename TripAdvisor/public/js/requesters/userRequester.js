@@ -1,6 +1,10 @@
 const userRequester = function (genericRequester) {
     const requester = genericRequester;
 
+    if(!requester) {
+        throw 'Requester cannot be null';
+    }
+
     function register(body) {
         return requester.post('api/users', body);
     }
