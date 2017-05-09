@@ -1097,7 +1097,7 @@
       "imageOne": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
       "imageTwo": "https://www.unitourismorocco.com/wp-content/uploads/2017/01/news-moroccan-restaurant-750x500.jpg",
       "imageThree": "https://spar-international.com/wp-content/uploads/2016/09/AT-The-INTERSPAR-Floridsdorf-restaurant-750x500.jpg",
-      "imageFour": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52qHzlUqL--icqq_K23n4swNftR1w31qo6Hxj1jsy85Z-eEevrA",
+      "imageFour": "http://prod-cdn.thekrazycouponlady.com/wp-content/uploads/2016/02/restaurant-4-750x500.png",
       "imageFive": "https://exclusivelybritishmagazine.com/wp-content/uploads/2017/03/Bokan-Restaurant.jpg",
       "addedBy": "restaurantAdder",
       "type": "restaurant",
@@ -1334,7 +1334,7 @@
       "phone": "+35987774455",
       "address": "Vitosha bld.",
       "e-mail": "The Thai Balcony@hotmail.com",
-      "imageOne": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52qHzlUqL--icqq_K23n4swNftR1w31qo6Hxj1jsy85Z-eEevrA",
+      "imageOne": "http://prod-cdn.thekrazycouponlady.com/wp-content/uploads/2016/02/restaurant-4-750x500.png",
       "imageTwo": "http://static1.squarespace.com/static/527679aee4b06f1a7db2bffd/5276a43ee4b02ee843116503/5380e240e4b0c9ba92a508fe/1490351469772/LaBalsaRestaurant-Barcelona.jpg?format=1000w",
       "imageThree": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPZFPuztr55snamHlMC-TRzl268QXk7hZK08Ck07PkJ5rBdQ_y",
       "imageFour": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
@@ -1364,7 +1364,7 @@
       "phone": "+35987774455",
       "address": "Vitosha bld.",
       "e-mail": "The Curry Exhibit@hotmail.com",
-      "imageOne": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52qHzlUqL--icqq_K23n4swNftR1w31qo6Hxj1jsy85Z-eEevrA",
+      "imageOne": "http://prod-cdn.thekrazycouponlady.com/wp-content/uploads/2016/02/restaurant-4-750x500.png",
       "imageTwo": "http://www.hotel-praia.com/assets/images/restaurante/restaurante-1.jpg",
       "imageThree": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
       "imageFour": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
@@ -1434,7 +1434,7 @@
       "imageTwo": "http://static1.squarespace.com/static/527679aee4b06f1a7db2bffd/5276a43ee4b02ee843116503/5380e240e4b0c9ba92a508fe/1490351469772/LaBalsaRestaurant-Barcelona.jpg?format=1000w",
       "imageThree": "http://www.hotel-praia.com/assets/images/restaurante/restaurante-1.jpg",
       "imageFour": "https://static1.squarespace.com/static/55e383e4e4b097814b02f211/55f32d08e4b0e0c7bc0c6df0/55f32d09e4b0e0c7bc0c6df5/1442000138270/207_1_mg_0800_hdr_01-750x500.jpg",
-      "imageFive": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52qHzlUqL--icqq_K23n4swNftR1w31qo6Hxj1jsy85Z-eEevrA",
+      "imageFive": "http://prod-cdn.thekrazycouponlady.com/wp-content/uploads/2016/02/restaurant-4-750x500.png",
       "addedBy": "restaurantAdder",
       "type": "restaurant",
       "id": "0387c335-b011-4411-8a54-68dcf1e72b83"
@@ -1831,6 +1831,14 @@
           "name": "A demo hotel"
         }
       ]
+    },
+    {
+      "username": "Milena",
+      "emailAddress": "someemail@gmail.com",
+      "passHash": "7c4a8d09ca3762af61e59520943dc26494f8941b",
+      "secretQuestion": "question?",
+      "secretAnswer": "answer",
+      "id": "db4fa8a6-7ce9-43f1-8c21-94eb549712b7"
     }
   ]
 }
