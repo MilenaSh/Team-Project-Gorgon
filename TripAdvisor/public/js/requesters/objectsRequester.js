@@ -1,5 +1,8 @@
 const objectsRequester = function(genericRequester) {
     const requester = genericRequester;
+    if(!requester) {
+        throw 'Requester provider cannot be null.';
+    }
 
     function getObjectsPage(directory, pageNumber) {
         return requester.get(`${directory}/${pageNumber}`)

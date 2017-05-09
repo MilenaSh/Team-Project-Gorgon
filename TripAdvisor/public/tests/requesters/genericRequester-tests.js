@@ -215,5 +215,3 @@ describe('genericRequester tests', function () {
         });
     });
 });
-
-mocha.run();
