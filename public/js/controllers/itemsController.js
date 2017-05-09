@@ -43,7 +43,11 @@ const itemsController = function (objectRequester, templateLoader) {
 
                 addItem(item, category)
                     .then(() => toastr.success("Item added!"),
-                        () => toastr.error("Item with such name already exists"));
+                        (resp) => {
+                            if(typeof(resp) !== 'string') {
+                                toastr.error('Item with such name already exists');
+                            }
+                        });
             });
         });
     }
@@ -105,6 +109,13 @@ const itemsController = function (objectRequester, templateLoader) {
 
     function addItem(item, itemCategory) {
         // add validations for picture link (to be actual link), names etc etc
+        for(let key in item) {
+            if(item[key].trim().length < 4) {
+                toastr.error('Invalid ' + key);
+                return Promise.reject(key);
+            }
+        }
+
         let directory;
         if(itemCategory === 'hotel') {
             directory = 'hotels';

@@ -1,6 +1,12 @@
 body {
     padding-top: 90px;
+    padding-bottom: 50px;
 }
+
+input {
+    margin: 5px 0px;
+}
+
 /* General sizing */
 ul.dropdown-lr {
     width: 300px;
