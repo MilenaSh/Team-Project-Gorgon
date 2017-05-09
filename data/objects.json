@@ -1,0 +1,1836 @@
+{
+  "hotels": [
+    {
+      "name": "Hotel 1",
+      "description": "Descript",
+      "phone": "+3598888888",
+      "address": "Al. Malinov str 8",
+      "e-mail": "email@gmail.com",
+      "imageOne": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageTwo": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageThree": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFour": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "9285efcb-5198-425c-9e33-ba167265546a",
+      "comments": [
+        {
+          "author": "testUser1",
+          "text": "Comment"
+        }
+      ]
+    },
+    {
+      "name": "Snowy Ridge Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Saffron Plaza Resort@gmail.com",
+      "imageOne": "http://moneyinc.com/wp-content/uploads/2016/08/Schlossle-Hotel-750x500.jpg",
+      "imageTwo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2k_WrUpBAHpDmJkmeu3xnkL124L9QNAfybl7mJ0QxAMvXugai2w",
+      "imageThree": "https://s3.amazonaws.com/mk-site-prod/assets/travel-packages/hotel-lobby-750x500-0f813caf733e55a8b09c60913cc7b24b.jpg",
+      "imageFour": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2k_WrUpBAHpDmJkmeu3xnkL124L9QNAfybl7mJ0QxAMvXugai2w",
+      "imageFive": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEF3xtFTrx_waUMEADBj_qROUR4k5NidvbVxKUBPwnxCFdSD_GuA",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "d740c25f-903c-44e7-b45f-360865d42d33"
+    },
+    {
+      "name": "Saffron Tide Hotel & Spa",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Felicity Resort@gmail.com",
+      "imageOne": "http://moneyinc.com/wp-content/uploads/2017/01/Los-Tajibos-Hotel-and-Convention-Center-in-Santa-Cruz-750x500.jpg",
+      "imageTwo": "http://qminmagazine.com/wp-content/uploads/2016/09/hotel-elysee2-750x500.jpg",
+      "imageThree": "http://entreedestinations.com/wp-content/uploads/2016/07/fairmont-pac-rim-resized-750x500.jpg",
+      "imageFour": "http://entreedestinations.com/wp-content/uploads/2016/07/fairmont-pac-rim-resized-750x500.jpg",
+      "imageFive": "https://www.greatsmallhotels.com/photos/92267_d-omah-yogya-hotel_.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "2ee92ca8-0080-4b15-88e9-a5f30eb36cb9",
+      "comments": [
+        {
+          "author": "testUser1",
+          "text": "Good place."
+        }
+      ]
+    },
+    {
+      "name": "Mellow Expanse Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Malachite Galaxy Resort & Spa@gmail.com",
+      "imageOne": "http://www.ninoshotel.com/home/fierro-hotel-v2-750-500.jpeg",
+      "imageTwo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEF3xtFTrx_waUMEADBj_qROUR4k5NidvbVxKUBPwnxCFdSD_GuA",
+      "imageThree": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2k_WrUpBAHpDmJkmeu3xnkL124L9QNAfybl7mJ0QxAMvXugai2w",
+      "imageFour": "https://www.greatsmallhotels.com/photos/92267_d-omah-yogya-hotel_.jpg",
+      "imageFive": "https://static1.squarespace.com/static/5810140c725e25ff5499a94f/5828ba4ec534a550aaf852aa/5828ba58c534a550aaf85326/1479064159629/19611630_Hotel_Exterior_Nighttime_High_Res-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "19b0fd90-aa1f-45c0-bc63-3c851bc1de93"
+    },
+    {
+      "name": "Radiance Resort",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Soft Raven Resort@gmail.com",
+      "imageOne": "http://cdn.freshome.com/wp-content/uploads/2011/04/Grace-Santorini-Hotel-13-750x500.jpg",
+      "imageTwo": "http://moneyinc.com/wp-content/uploads/2016/08/Schlossle-Hotel-750x500.jpg",
+      "imageThree": "http://adventuresallaround.com/wp-content/uploads/2017/03/IMG_0828-750x500.jpg",
+      "imageFour": "http://www.keystonearch.ca/architecture/wp-content/uploads/2017/01/Quality-Hotel-1-750x500.jpg",
+      "imageFive": "http://cdn.freshome.com/wp-content/uploads/2011/04/Grace-Santorini-Hotel-13-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "479ce9aa-52c8-4fdc-81b0-25901a8760d5"
+    },
+    {
+      "name": "Sunway Resort & Spa",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Saffron Tide Hotel & Spa@gmail.com",
+      "imageOne": "http://adventuresallaround.com/wp-content/uploads/2016/05/Ambassador-a%CC%80-l%E2%80%99Ope%CC%81ra-small-luxury-hotel-Zurich-750x500.jpg",
+      "imageTwo": "http://robbreport.com/sites/default/files/kempinski-hotels-cuba-02.jpg",
+      "imageThree": "http://www.vipponholidays.com/userfiles//hotels/34568-891769679.jpg",
+      "imageFour": "https://www.greatsmallhotels.com/photos/38550_farol-design-hotel_.jpg",
+      "imageFive": "http://moneyinc.com/wp-content/uploads/2017/01/Los-Tajibos-Hotel-and-Convention-Center-in-Santa-Cruz-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "460bbf57-ac83-45e8-9987-33573d2720cc"
+    },
+    {
+      "name": "Vanilla Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Ivory Arc Resort@gmail.com",
+      "imageOne": "http://robbreport.com/sites/default/files/kempinski-hotels-cuba-02.jpg",
+      "imageTwo": "http://moneyinc.com/wp-content/uploads/2017/01/Los-Tajibos-Hotel-and-Convention-Center-in-Santa-Cruz-750x500.jpg",
+      "imageThree": "https://s3.amazonaws.com/mk-site-prod/assets/travel-packages/hotel-lobby-750x500-0f813caf733e55a8b09c60913cc7b24b.jpg",
+      "imageFour": "https://www.greatsmallhotels.com/photos/109168_perdue-hotel_.jpg",
+      "imageFive": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST6pvhDF9kspLsG59VTdIXOkOcuWB9-ASx79XE4UPq6c4SXHIg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "0d9bf9c4-cdd6-453a-a9c6-a2bac58e26d8"
+    },
+    {
+      "name": "Riverside Meadows Resort & Spa",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Ivory Wolf Hotel@gmail.com",
+      "imageOne": "http://cdn2.insidermonkey.com/blog/wp-content/uploads/2017/02/12122950/shutterstock_504078133-750x500.jpg",
+      "imageTwo": "http://www.vipponholidays.com/userfiles//hotels/34581-219404345.jpg",
+      "imageThree": "http://www.itsluxurytravel.com/wp-content/uploads/2015/06/2.png",
+      "imageFour": "http://robbreport.com/sites/default/files/kempinski-hotels-cuba-02.jpg",
+      "imageFive": "https://s3.amazonaws.com/mk-site-prod/assets/travel-packages/hotel-lobby-750x500-0f813caf733e55a8b09c60913cc7b24b.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "b7914465-68f1-446b-b216-ec5fe22aabbb"
+    },
+    {
+      "name": "Lunar Pool Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Snowy Ridge Hotel@gmail.com",
+      "imageOne": "http://adventuresallaround.com/wp-content/uploads/2017/03/IMG_0828-750x500.jpg",
+      "imageTwo": "http://adventuresallaround.com/wp-content/uploads/2016/05/Ambassador-a%CC%80-l%E2%80%99Ope%CC%81ra-small-luxury-hotel-Zurich-750x500.jpg",
+      "imageThree": "http://www.vipponholidays.com/userfiles//hotels/34568-891769679.jpg",
+      "imageFour": "http://cdn2.insidermonkey.com/blog/wp-content/uploads/2017/02/12122950/shutterstock_504078133-750x500.jpg",
+      "imageFive": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDabGnYw0k4d6zafikgV7qNQ4zTyTRZzbzAINyD4_oW8PMiJvuKw",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "14ea7919-0c7d-4821-b29d-22d5215f93d7"
+    },
+    {
+      "name": "Private Obelisk Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Windmill Resort@gmail.com",
+      "imageOne": "https://static1.squarespace.com/static/5810140c725e25ff5499a94f/5828ba4ec534a550aaf852aa/5828ba58c534a550aaf85326/1479064159629/19611630_Hotel_Exterior_Nighttime_High_Res-750x500.jpg",
+      "imageTwo": "http://qminmagazine.com/wp-content/uploads/2016/09/hotel-elysee2-750x500.jpg",
+      "imageThree": "http://www.itsluxurytravel.com/wp-content/uploads/2015/06/2.png",
+      "imageFour": "http://adventuresallaround.com/wp-content/uploads/2016/05/Ambassador-a%CC%80-l%E2%80%99Ope%CC%81ra-small-luxury-hotel-Zurich-750x500.jpg",
+      "imageFive": "http://moneyinc.com/wp-content/uploads/2016/08/Schlossle-Hotel-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "ae5c714e-671c-4a71-adf7-9b1ab2e16d27"
+    },
+    {
+      "name": "Sapphire Rainbow Resort",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Jade Resort@gmail.com",
+      "imageOne": "https://www.greatsmallhotels.com/photos/109168_perdue-hotel_.jpg",
+      "imageTwo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEF3xtFTrx_waUMEADBj_qROUR4k5NidvbVxKUBPwnxCFdSD_GuA",
+      "imageThree": "http://moneyinc.com/wp-content/uploads/2016/09/RCLATAH_00097.png-750x500.jpg",
+      "imageFour": "http://moneyinc.com/wp-content/uploads/2016/08/Schlossle-Hotel-750x500.jpg",
+      "imageFive": "http://moneyinc.com/wp-content/uploads/2016/09/RCLATAH_00097.png-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "a8124886-78c0-4a20-bea4-cc77702ef82f"
+    },
+    {
+      "name": "Crown Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Vanilla Hotel@gmail.com",
+      "imageOne": "http://entreedestinations.com/wp-content/uploads/2016/07/fairmont-pac-rim-resized-750x500.jpg",
+      "imageTwo": "http://moneyinc.com/wp-content/uploads/2017/01/Los-Tajibos-Hotel-and-Convention-Center-in-Santa-Cruz-750x500.jpg",
+      "imageThree": "http://cdn.freshome.com/wp-content/uploads/2011/04/Grace-Santorini-Hotel-13-750x500.jpg",
+      "imageFour": "http://adventuresallaround.com/wp-content/uploads/2017/03/IMG_0828-750x500.jpg",
+      "imageFive": "http://adventuresallaround.com/wp-content/uploads/2017/03/IMG_0828-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "a9112b39-1746-447f-beb7-51b2cbb696d7"
+    },
+    {
+      "name": "Crown Square Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Western Gem Hotel@gmail.com",
+      "imageOne": "http://adventuresallaround.com/wp-content/uploads/2016/05/Ambassador-a%CC%80-l%E2%80%99Ope%CC%81ra-small-luxury-hotel-Zurich-750x500.jpg",
+      "imageTwo": "http://magentolive.com/au/wp-content/uploads/sites/2/2015/07/Exterior.jpg",
+      "imageThree": "http://qminmagazine.com/wp-content/uploads/2016/09/hotel-elysee2-750x500.jpg",
+      "imageFour": "http://www.keystonearch.ca/architecture/wp-content/uploads/2017/01/Quality-Hotel-1-750x500.jpg",
+      "imageFive": "http://magentolive.com/au/wp-content/uploads/sites/2/2015/07/Exterior.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "8947c7c3-18d5-4b1c-9e15-2995e2b67c71"
+    },
+    {
+      "name": "Diorama Resort & Spa",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Ivory Wolf Hotel@gmail.com",
+      "imageOne": "http://www.keystonearch.ca/architecture/wp-content/uploads/2017/01/Quality-Hotel-1-750x500.jpg",
+      "imageTwo": "http://thepeakmagazine.com.sg/wp-content/uploads/2013/12/bellechasse-750x500.jpg",
+      "imageThree": "https://static1.squarespace.com/static/5810140c725e25ff5499a94f/5828ba4ec534a550aaf852aa/5828ba58c534a550aaf85326/1479064159629/19611630_Hotel_Exterior_Nighttime_High_Res-750x500.jpg",
+      "imageFour": "https://static1.squarespace.com/static/5810140c725e25ff5499a94f/5828ba4ec534a550aaf852aa/5828ba58c534a550aaf85326/1479064159629/19611630_Hotel_Exterior_Nighttime_High_Res-750x500.jpg",
+      "imageFive": "http://moneyinc.com/wp-content/uploads/2017/01/Los-Tajibos-Hotel-and-Convention-Center-in-Santa-Cruz-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "e0d9e1c5-62da-4a23-9997-a9ec721bb819"
+    },
+    {
+      "name": "Amuse Hotel & Spa",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Sunway Resort & Spa@gmail.com",
+      "imageOne": "http://thepeakmagazine.com.sg/wp-content/uploads/2013/12/bellechasse-750x500.jpg",
+      "imageTwo": "http://www.vipponholidays.com/userfiles//hotels/34568-891769679.jpg",
+      "imageThree": "http://cdn1.buuteeq.com/upload/2035996/alden_exterior_2.png.1920x807_default.png",
+      "imageFour": "http://cdn2.insidermonkey.com/blog/wp-content/uploads/2017/02/12122950/shutterstock_504078133-750x500.jpg",
+      "imageFive": "http://thepeakmagazine.com.sg/wp-content/uploads/2013/12/bellechasse-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "6f69b030-690e-4d76-9689-37c1b3c96b1e"
+    },
+    {
+      "name": "Majestic Pyramid Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Windmill Resort@gmail.com",
+      "imageOne": "http://moneyinc.com/wp-content/uploads/2017/01/Los-Tajibos-Hotel-and-Convention-Center-in-Santa-Cruz-750x500.jpg",
+      "imageTwo": "http://adventuresallaround.com/wp-content/uploads/2017/03/IMG_0828-750x500.jpg",
+      "imageThree": "https://www.greatsmallhotels.com/photos/38550_farol-design-hotel_.jpg",
+      "imageFour": "http://www.sipatours.com/wp-content/uploads/2015/04/andon-lapa-hotel-P1580526-750x500.jpg",
+      "imageFive": "https://s3.amazonaws.com/mk-site-prod/assets/travel-packages/hotel-lobby-750x500-0f813caf733e55a8b09c60913cc7b24b.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "e26be8f6-4ae2-42c2-9b15-37ef27119fc6"
+    },
+    {
+      "name": "Sunrise Flower Resort & Spa",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Elder Aegis Hotel@gmail.com",
+      "imageOne": "https://static1.squarespace.com/static/5810140c725e25ff5499a94f/5828ba4ec534a550aaf852aa/5828ba58c534a550aaf85326/1479064159629/19611630_Hotel_Exterior_Nighttime_High_Res-750x500.jpg",
+      "imageTwo": "https://www.greatsmallhotels.com/photos/38550_farol-design-hotel_.jpg",
+      "imageThree": "http://www.itsluxurytravel.com/wp-content/uploads/2015/06/2.png",
+      "imageFour": "https://www.greatsmallhotels.com/photos/109168_perdue-hotel_.jpg",
+      "imageFive": "http://www.ninoshotel.com/home/fierro-hotel-v2-750-500.jpeg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "2f9fd009-6ccc-4cab-babe-7d8f0f2120e2"
+    },
+    {
+      "name": "Malachite Heights Resort",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Amuse Hotel & Spa@gmail.com",
+      "imageOne": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2k_WrUpBAHpDmJkmeu3xnkL124L9QNAfybl7mJ0QxAMvXugai2w",
+      "imageTwo": "http://www.vipponholidays.com/userfiles//hotels/34568-891769679.jpg",
+      "imageThree": "http://magentolive.com/au/wp-content/uploads/sites/2/2015/07/Exterior.jpg",
+      "imageFour": "https://www.halalbeds.com/dbimg/db_images/120/12/316/102628_61981.jpg",
+      "imageFive": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2k_WrUpBAHpDmJkmeu3xnkL124L9QNAfybl7mJ0QxAMvXugai2w",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "d67e4cb1-990b-4fd4-adeb-398d3cb9c8e4"
+    },
+    {
+      "name": "Azure Prairie Hotel",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Ivory Wolf Hotel@gmail.com",
+      "imageOne": "http://cdn.freshome.com/wp-content/uploads/2011/04/Grace-Santorini-Hotel-13-750x500.jpg",
+      "imageTwo": "https://www.greatsmallhotels.com/photos/92267_d-omah-yogya-hotel_.jpg",
+      "imageThree": "http://cdn.freshome.com/wp-content/uploads/2011/04/Grace-Santorini-Hotel-13-750x500.jpg",
+      "imageFour": "http://moneyinc.com/wp-content/uploads/2016/09/RCLATAH_00097.png-750x500.jpg",
+      "imageFive": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEF3xtFTrx_waUMEADBj_qROUR4k5NidvbVxKUBPwnxCFdSD_GuA",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "cb0f4ed9-59b9-4b87-acee-b5694211ef45"
+    },
+    {
+      "name": "Paragon Resort & Spa",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Al. Stamboliiski 44",
+      "e-mail": "Delight Hotel@gmail.com",
+      "imageOne": "http://adventuresallaround.com/wp-content/uploads/2016/05/Ambassador-a%CC%80-l%E2%80%99Ope%CC%81ra-small-luxury-hotel-Zurich-750x500.jpg",
+      "imageTwo": "http://moneyinc.com/wp-content/uploads/2016/08/Schlossle-Hotel-750x500.jpg",
+      "imageThree": "https://static1.squarespace.com/static/5810140c725e25ff5499a94f/5828ba4ec534a550aaf852aa/5828ba58c534a550aaf85326/1479064159629/19611630_Hotel_Exterior_Nighttime_High_Res-750x500.jpg",
+      "imageFour": "https://static1.squarespace.com/static/5810140c725e25ff5499a94f/5828ba4ec534a550aaf852aa/5828ba58c534a550aaf85326/1479064159629/19611630_Hotel_Exterior_Nighttime_High_Res-750x500.jpg",
+      "imageFive": "http://thepeakmagazine.com.sg/wp-content/uploads/2013/12/bellechasse-750x500.jpg",
+      "addedBy": "testUser1",
+      "type": "hotel",
+      "id": "6e57cb35-a0f8-4380-94c9-5a7a34a50554"
+    },
+    {
+      "name": "A demo hotel",
+      "description": "A description of the given hotel",
+      "phone": "+359 88 1337",
+      "address": "Vitosha bld. 69",
+      "e-mail": "contactus@gmail.com",
+      "imageOne": "https://s3.amazonaws.com/mk-site-prod/assets/travel-packages/hotel-lobby-750x500-0f813caf733e55a8b09c60913cc7b24b.jpg",
+      "imageTwo": "http://moneyinc.com/wp-content/uploads/2016/07/Raffles-Hotel-Singapore-750x500.jpg",
+      "imageThree": "http://robbreport.com/sites/default/files/kempinski-hotels-cuba-02.jpg",
+      "imageFour": "http://moneyinc.com/wp-content/uploads/2016/07/Raffles-Hotel-Singapore-750x500.jpg",
+      "imageFive": "https://s3.amazonaws.com/mk-site-prod/assets/travel-packages/hotel-lobby-750x500-0f813caf733e55a8b09c60913cc7b24b.jpg",
+      "addedBy": "testUser2",
+      "type": "hotel",
+      "id": "9c55bc81-c350-4b91-b4f9-24a3e0c86e50",
+      "comments": [
+        {
+          "author": "testUser2",
+          "text": "A nice place."
+        },
+        {
+          "author": "testUser2",
+          "text": "Wow."
+        }
+      ]
+    }
+  ],
+  "sightseeing": [
+    {
+      "name": "Sightsee1",
+      "description": "descr",
+      "phone": "phone",
+      "address": "addr",
+      "e-mail": "mail@mail.com",
+      "imageOne": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageTwo": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageThree": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFour": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "addedBy": "testUser1",
+      "type": "sightseeing",
+      "id": "115c25a2-de5c-46b8-abed-2f832b1cf4a1"
+    },
+    {
+      "name": "Curiosity Museum",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Vault of Kinetics@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageTwo": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageThree": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageFour": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageFive": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkC9eMktZDMdYeObXzm_-ZKMTCXwUutBRamXh9W8RY8-SQI-vh5Q",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "55b831d0-ea3b-4086-86cb-91fe6c7eda59"
+    },
+    {
+      "name": "Vault of Kinetics",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "International Museum of Sports@hotmail.com",
+      "imageOne": "http://artlog.art50.net/wp-content/uploads/2017/04/DaliMuseum_Credit_Beck___Mike_Rixon_Photography.jpg",
+      "imageTwo": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "imageThree": "http://www.nycgo.com/images/venues/2255/bronx-museum-julienne-schaer-028__card.jpg",
+      "imageFour": "http://cdn3.discovertuscany.com/img/san-gimignano/art-museum.jpg?w=750&q=65",
+      "imageFive": "http://images.adsttc.com/media/images/58ed/54b9/e58e/ce8f/0300/0421/newsletter/Museum_Russian_Impressionism_gallery_interior2_%C2%A9Mikhail_Rozanov.jpg?1491948724",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "edc3766e-f0fb-4e91-b8c1-d267efb4ebf4"
+    },
+    {
+      "name": "Center of Legacies",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Treasury of Change@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/2924/city-lore-gallery-exhibit-view__card.jpg",
+      "imageTwo": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "imageThree": "http://www.nycgo.com/images/venues/2255/bronx-museum-julienne-schaer-028__card.jpg",
+      "imageFour": "http://artlog.art50.net/wp-content/uploads/2017/04/DaliMuseum_Credit_Beck___Mike_Rixon_Photography.jpg",
+      "imageFive": "http://www.nycgo.com/images/venues/2924/city-lore-gallery-exhibit-view__card.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "0934fda3-c883-44d0-b994-87e2e219231f"
+    },
+    {
+      "name": "Central Garden Institution",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Central Garden Institution@hotmail.com",
+      "imageOne": "https://static1.squarespace.com/static/53e6b903e4b0cf25d06c4bb8/t/56e859d0d210b84f5e9f6405/1458311414023/Teylers+Museum+Paintings+Gallery+Detail?format=750w",
+      "imageTwo": "http://www.arup.com/~/media/Images/Projects/C/Clyfford_Still_Museum/ClyffordStillgallery3_750Wx500h_cJeremyBitterman_cpyJeremyBitterman.ashx?mh=800&mw=1000",
+      "imageThree": "http://www.nycgo.com/images/venues/6347/afa-gallery-courtesy-005__card.jpg",
+      "imageFour": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageFive": "http://images.adsttc.com/media/images/568c/7435/e58e/ce2d/3c00/0556/large_jpg/18_%C2%A9Xia_Zhi.jpg?1452045339",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "08a76ad2-ed93-4502-b01e-9bfb76cada19",
+      "comments": [
+        {
+          "author": "testUser1",
+          "text": "123123"
+        }
+      ]
+    },
+    {
+      "name": "Hall of Design",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Hall of Portraits@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/2220/more-photos-5__card.jpg",
+      "imageTwo": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageThree": "http://www.nycgo.com/images/venues/2924/city-lore-gallery-exhibit-view__card.jpg",
+      "imageFour": "http://www.nycgo.com/images/venues/1171/staten-island-museum-staten-island-seen-amesse-photography__card.jpg",
+      "imageFive": "http://artlog.art50.net/wp-content/uploads/2017/04/DaliMuseum_Credit_Beck___Mike_Rixon_Photography.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "8b4354ca-1f99-45b4-9ce5-c464d51df74d"
+    },
+    {
+      "name": "International Happiness Gallery",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "International Center of Fiction@hotmail.com",
+      "imageOne": "http://www.sftravel.com/sites/sftraveldev.prod.acquia-sites.com/files/parters/images/P0000724_3_20141003174509_12.JPG",
+      "imageTwo": "http://images.adsttc.com/media/images/568c/7435/e58e/ce2d/3c00/0556/large_jpg/18_%C2%A9Xia_Zhi.jpg?1452045339",
+      "imageThree": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageFour": "http://images.adsttc.com/media/images/58ed/54b9/e58e/ce8f/0300/0421/newsletter/Museum_Russian_Impressionism_gallery_interior2_%C2%A9Mikhail_Rozanov.jpg?1491948724",
+      "imageFive": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkC9eMktZDMdYeObXzm_-ZKMTCXwUutBRamXh9W8RY8-SQI-vh5Q",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "5549d556-070e-4b5f-814a-e66b9ab393ad"
+    },
+    {
+      "name": "Museum of Living",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Frost Center@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/1171/staten-island-museum-staten-island-seen-amesse-photography__card.jpg",
+      "imageTwo": "http://www.sftravel.com/sites/sftraveldev.prod.acquia-sites.com/files/parters/images/P0000724_3_20141003174509_12.JPG",
+      "imageThree": "http://artlog.art50.net/wp-content/uploads/2017/04/DaliMuseum_Credit_Beck___Mike_Rixon_Photography.jpg",
+      "imageFour": "http://images.adsttc.com/media/images/568c/7435/e58e/ce2d/3c00/0556/large_jpg/18_%C2%A9Xia_Zhi.jpg?1452045339",
+      "imageFive": "http://www.nycgo.com/images/venues/2220/more-photos-5__card.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "99f49002-5223-4af6-b62a-44ab6ed47d28"
+    },
+    {
+      "name": "Museum of Culture",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Play Exhibition@hotmail.com",
+      "imageOne": "http://cdn4.discovertuscany.com/img/florence/museums/accademia/accademia-bartolini-entrance.jpg?w=750&q=65",
+      "imageTwo": "http://artlog.art50.net/wp-content/uploads/2017/04/DaliMuseum_Credit_Beck___Mike_Rixon_Photography.jpg",
+      "imageThree": "http://www.nycgo.com/images/venues/1171/staten-island-museum-staten-island-seen-amesse-photography__card.jpg",
+      "imageFour": "http://www.nycgo.com/images/venues/6347/afa-gallery-courtesy-005__card.jpg",
+      "imageFive": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "5dd4b645-159a-428c-aa36-abe4de387cfd"
+    },
+    {
+      "name": "Royal Gallery of Aerospace",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Central Garden Institution@hotmail.com",
+      "imageOne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkC9eMktZDMdYeObXzm_-ZKMTCXwUutBRamXh9W8RY8-SQI-vh5Q",
+      "imageTwo": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageThree": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageFour": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "imageFive": "https://static1.squarespace.com/static/5533da26e4b09a66347ae812/5533e4cbe4b09627e6f6d9ab/578a5ed0579fb3f7b3040f72/1490900974897/mxcp27874784821_e5b01a248a_h.jpg?format=750w",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "d292dc76-e40b-4f11-ab4e-efeb522ad59e"
+    },
+    {
+      "name": "Center of Innovation",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Treasury of Change@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/2220/more-photos-5__card.jpg",
+      "imageTwo": "http://www.nycgo.com/images/venues/188/metmuseum_taggeryanceyiv_5224__card.jpg",
+      "imageThree": "http://cdn4.discovertuscany.com/img/florence/museums/accademia/accademia-bartolini-entrance.jpg?w=750&q=65",
+      "imageFour": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageFive": "http://www.nycgo.com/images/venues/2255/bronx-museum-julienne-schaer-028__card.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "0ad8f4fb-5ce7-43ae-ae88-370f33987312"
+    },
+    {
+      "name": "Hall of Portraits",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Museum of Gadgets@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/188/metmuseum_taggeryanceyiv_5224__card.jpg",
+      "imageTwo": "http://www.nycgo.com/images/venues/2255/bronx-museum-julienne-schaer-028__card.jpg",
+      "imageThree": "http://www.nycgo.com/images/venues/1171/staten-island-museum-staten-island-seen-amesse-photography__card.jpg",
+      "imageFour": "http://cdn3.discovertuscany.com/img/san-gimignano/art-museum.jpg?w=750&q=65",
+      "imageFive": "http://www.nycgo.com/images/venues/1171/staten-island-museum-staten-island-seen-amesse-photography__card.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "aa60d9ec-87b3-4b59-abce-c94b9b747e79"
+    },
+    {
+      "name": "Play Exhibition",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Royal Gallery of Aerospace@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/188/metmuseum_taggeryanceyiv_5224__card.jpg",
+      "imageTwo": "http://www.nycgo.com/images/venues/1171/staten-island-museum-staten-island-seen-amesse-photography__card.jpg",
+      "imageThree": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageFour": "https://static1.squarespace.com/static/5533da26e4b09a66347ae812/5533e4cbe4b09627e6f6d9ab/578a5ed0579fb3f7b3040f72/1490900974897/mxcp27874784821_e5b01a248a_h.jpg?format=750w",
+      "imageFive": "http://images.adsttc.com/media/images/568c/7435/e58e/ce2d/3c00/0556/large_jpg/18_%C2%A9Xia_Zhi.jpg?1452045339",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "b2ffc655-08f9-46cd-9542-ec8c87c3bec0"
+    },
+    {
+      "name": "Gold Hall",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Grand Treasury of Natural History@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageTwo": "http://images.adsttc.com/media/images/568c/7435/e58e/ce2d/3c00/0556/large_jpg/18_%C2%A9Xia_Zhi.jpg?1452045339",
+      "imageThree": "http://artlog.art50.net/wp-content/uploads/2017/04/DaliMuseum_Credit_Beck___Mike_Rixon_Photography.jpg",
+      "imageFour": "http://cdn3.discovertuscany.com/img/san-gimignano/art-museum.jpg?w=750&q=65",
+      "imageFive": "http://www.nycgo.com/images/venues/6347/afa-gallery-courtesy-005__card.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "40883ae7-71fd-452d-83c1-96cbde3dcbea"
+    },
+    {
+      "name": "Secrets Institute",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Central Garden Institution@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/6347/afa-gallery-courtesy-005__card.jpg",
+      "imageTwo": "http://www.arup.com/~/media/Images/Projects/C/Clyfford_Still_Museum/ClyffordStillgallery3_750Wx500h_cJeremyBitterman_cpyJeremyBitterman.ashx?mh=800&mw=1000",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkC9eMktZDMdYeObXzm_-ZKMTCXwUutBRamXh9W8RY8-SQI-vh5Q",
+      "imageFour": "http://cdn4.discovertuscany.com/img/florence/museums/accademia/accademia-bartolini-entrance.jpg?w=750&q=65",
+      "imageFive": "http://www.nycgo.com/images/venues/6347/afa-gallery-courtesy-005__card.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "0d286e45-efb8-4172-a26a-e9a509a221ca"
+    },
+    {
+      "name": "Grand Vault of Anthropology",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Secrets Institute@hotmail.com",
+      "imageOne": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "imageTwo": "http://cdn3.discovertuscany.com/img/san-gimignano/art-museum.jpg?w=750&q=65",
+      "imageThree": "http://cdn3.discovertuscany.com/img/san-gimignano/art-museum.jpg?w=750&q=65",
+      "imageFour": "http://cdn3.discovertuscany.com/img/san-gimignano/art-museum.jpg?w=750&q=65",
+      "imageFive": "https://static1.squarespace.com/static/5533da26e4b09a66347ae812/5533e4cbe4b09627e6f6d9ab/578a5ed0579fb3f7b3040f72/1490900974897/mxcp27874784821_e5b01a248a_h.jpg?format=750w",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "3703d95f-75db-4bbf-82ce-de94145ee1fd"
+    },
+    {
+      "name": "Great Space Museum",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "International Happiness Gallery@hotmail.com",
+      "imageOne": "https://static1.squarespace.com/static/5533da26e4b09a66347ae812/5533e4cbe4b09627e6f6d9ab/578a5ed0579fb3f7b3040f72/1490900974897/mxcp27874784821_e5b01a248a_h.jpg?format=750w",
+      "imageTwo": "http://www.nycgo.com/images/venues/2255/bronx-museum-julienne-schaer-028__card.jpg",
+      "imageThree": "http://www.nycgo.com/images/venues/188/metmuseum_taggeryanceyiv_5224__card.jpg",
+      "imageFour": "http://cdn3.discovertuscany.com/img/florence/museums/accademia/colosso-entrance-music.jpg?w=750&q=65",
+      "imageFive": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "e1d7dd30-08aa-4f9c-9870-c1e0613102c1"
+    },
+    {
+      "name": "Grand Treasury of Natural History",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Central Garden Institution@hotmail.com",
+      "imageOne": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageTwo": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageThree": "http://www.arup.com/~/media/Images/Projects/C/Clyfford_Still_Museum/ClyffordStillgallery3_750Wx500h_cJeremyBitterman_cpyJeremyBitterman.ashx?mh=800&mw=1000",
+      "imageFour": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "imageFive": "https://static1.squarespace.com/static/575085fa859fd016768e7b48/57f53a59f5e231214b23b4cc/57fd301d725e258d5f0c5dec/1476211262745/MAG_EXHIBITIONS_01JUL16_0109.jpg?format=750w",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "4bfd7035-a4fe-43ae-bfec-afd4cd7122a9"
+    },
+    {
+      "name": "National Emergency Gallery",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Frost Center@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/2924/city-lore-gallery-exhibit-view__card.jpg",
+      "imageTwo": "http://images.adsttc.com/media/images/58ed/54b9/e58e/ce8f/0300/0421/newsletter/Museum_Russian_Impressionism_gallery_interior2_%C2%A9Mikhail_Rozanov.jpg?1491948724",
+      "imageThree": "http://www.nycgo.com/images/venues/188/metmuseum_taggeryanceyiv_5224__card.jpg",
+      "imageFour": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "imageFive": "http://cdn3.discovertuscany.com/img/florence/museums/accademia/colosso-entrance-music.jpg?w=750&q=65",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "70b07560-b04f-488c-80e2-14e26759c329"
+    },
+    {
+      "name": "Zoology Centre",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Great Space Museum@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageTwo": "http://www.nycgo.com/images/venues/2220/more-photos-5__card.jpg",
+      "imageThree": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "imageFour": "https://static1.squarespace.com/static/5533da26e4b09a66347ae812/5533e4cbe4b09627e6f6d9ab/578a5ed0579fb3f7b3040f72/1490900974897/mxcp27874784821_e5b01a248a_h.jpg?format=750w",
+      "imageFive": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "19e88b6a-5250-46f9-a6af-7dd268befabc"
+    },
+    {
+      "name": "Maritime Treasury",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Hall of Portraits@hotmail.com",
+      "imageOne": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "imageTwo": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageThree": "http://www.nycgo.com/images/venues/1171/staten-island-museum-staten-island-seen-amesse-photography__card.jpg",
+      "imageFour": "http://www.nycgo.com/images/venues/6347/afa-gallery-courtesy-005__card.jpg",
+      "imageFive": "http://cdn3.discovertuscany.com/img/florence/museums/accademia/colosso-entrance-music.jpg?w=750&q=65",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "0f6166e5-4dc9-4859-9919-621b92ecc469"
+    },
+    {
+      "name": "International Museum of Sports",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Center of Innovation@hotmail.com",
+      "imageOne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkC9eMktZDMdYeObXzm_-ZKMTCXwUutBRamXh9W8RY8-SQI-vh5Q",
+      "imageTwo": "http://images.adsttc.com/media/images/58ed/54b9/e58e/ce8f/0300/0421/newsletter/Museum_Russian_Impressionism_gallery_interior2_%C2%A9Mikhail_Rozanov.jpg?1491948724",
+      "imageThree": "http://artlog.art50.net/wp-content/uploads/2017/04/DaliMuseum_Credit_Beck___Mike_Rixon_Photography.jpg",
+      "imageFour": "http://cdn3.discovertuscany.com/img/florence/museums/accademia/colosso-entrance-music.jpg?w=750&q=65",
+      "imageFive": "http://cdn4.discovertuscany.com/img/florence/museums/accademia/accademia-bartolini-entrance.jpg?w=750&q=65",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "370723e3-10dc-42bf-b2b9-3c2b0d974f8f"
+    },
+    {
+      "name": "Learning Institute",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Royal Gallery of Aerospace@hotmail.com",
+      "imageOne": "https://static1.squarespace.com/static/53e6b903e4b0cf25d06c4bb8/t/56e859d0d210b84f5e9f6405/1458311414023/Teylers+Museum+Paintings+Gallery+Detail?format=750w",
+      "imageTwo": "https://static1.squarespace.com/static/53e6b903e4b0cf25d06c4bb8/t/56e859d0d210b84f5e9f6405/1458311414023/Teylers+Museum+Paintings+Gallery+Detail?format=750w",
+      "imageThree": "http://www.arup.com/~/media/Images/Projects/C/Clyfford_Still_Museum/ClyffordStillgallery3_750Wx500h_cJeremyBitterman_cpyJeremyBitterman.ashx?mh=800&mw=1000",
+      "imageFour": "http://www.nycgo.com/images/venues/2255/bronx-museum-julienne-schaer-028__card.jpg",
+      "imageFive": "http://www.flightcentre.co.nz/sites/flightcentre.co.nz/files/nz-travel-blog/files/2017/01/Canberra-museum_2.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "280cfc21-446a-4658-9a2c-c5012900b09e"
+    },
+    {
+      "name": "Treasury of Change",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "International Happiness Gallery@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/1481/moca_core_exhibition_with_a_single_step__stories_in_the_making_of_america_nyc_go__card.jpg",
+      "imageTwo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkC9eMktZDMdYeObXzm_-ZKMTCXwUutBRamXh9W8RY8-SQI-vh5Q",
+      "imageThree": "http://artlog.art50.net/wp-content/uploads/2017/04/DaliMuseum_Credit_Beck___Mike_Rixon_Photography.jpg",
+      "imageFour": "http://www.nycgo.com/images/venues/2220/more-photos-5__card.jpg",
+      "imageFive": "http://www.nycgo.com/images/venues/6347/afa-gallery-courtesy-005__card.jpg",
+      "addedBy": "sightseeingAdder",
+      "type": "sightseeing",
+      "id": "e9c0e07f-6f7d-4a29-b2d8-f204bab0907a"
+    },
+    {
+      "name": "Community Gardens",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Harmony Garden@hotmail.com",
+      "imageOne": "http://www.traveller.ee/media/cache/59/9a/599a14776aaeb5fd37123c58f9d43e30.jpg",
+      "imageTwo": "https://www.likealocalguide.com/media/cache/bc/ef/bcef64d63f78894bbb32c1e3d6c33d81.jpg",
+      "imageThree": "http://www.mccooltravel.com/wp-content/uploads/2016/05/Margaret-island-Budapest.jpeg",
+      "imageFour": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "imageFive": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "f6e1b7e1-9562-434b-b390-f6bfa50c684c"
+    },
+    {
+      "name": "Tiimt Plaza",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Gardenland Grounds@hotmail.com",
+      "imageOne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbrryEn3PTtw84FLg42wSIxvHpVu7ZkyZX0zvpKdrp8nWZWnr",
+      "imageTwo": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageThree": "https://www.likealocalguide.com/media/cache/bc/ef/bcef64d63f78894bbb32c1e3d6c33d81.jpg",
+      "imageFour": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbrryEn3PTtw84FLg42wSIxvHpVu7ZkyZX0zvpKdrp8nWZWnr",
+      "imageFive": "http://uncontainedlife.com/wp-content/uploads/2016/02/London-335-750x500.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "f04022eb-b455-4472-b879-c78dbad552a9"
+    },
+    {
+      "name": "Pryhurb Plaza",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Tiimt Plaza@hotmail.com",
+      "imageOne": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageTwo": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "imageThree": "http://www.mccooltravel.com/wp-content/uploads/2016/05/Margaret-island-Budapest.jpeg",
+      "imageFour": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageFive": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "4aaae0b9-1136-44d5-a48d-b644871e8c39"
+    },
+    {
+      "name": "Qrehugh Meadows",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Pineneedle Meadows@hotmail.com",
+      "imageOne": "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2014/12/park.jpg",
+      "imageTwo": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "imageThree": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageFour": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "imageFive": "http://uncontainedlife.com/wp-content/uploads/2016/02/London-335-750x500.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "2990ce31-d8ad-4167-8216-a6e944616c7e"
+    },
+    {
+      "name": "Harmony Garden",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Crystal Cove Meadows@hotmail.com",
+      "imageOne": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageTwo": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "imageThree": "http://www.nycgo.com/images/made/images/photo_gallery/NYC_in_bloom/01-CentralParkSpring-JenDavis_750_500_40_c1.jpg",
+      "imageFour": "http://uncontainedlife.com/wp-content/uploads/2016/05/Plitvice-Lake-283-750x500.jpg",
+      "imageFive": "http://www.traveller.ee/media/cache/59/9a/599a14776aaeb5fd37123c58f9d43e30.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "501e5335-2095-43a6-9be4-09cc29e4eb10"
+    },
+    {
+      "name": "Sea Breeze Grounds",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Red Fern Grounds@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/11941/walkingtour__card.jpg",
+      "imageTwo": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbrryEn3PTtw84FLg42wSIxvHpVu7ZkyZX0zvpKdrp8nWZWnr",
+      "imageFour": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "imageFive": "http://uncontainedlife.com/wp-content/uploads/2016/05/Plitvice-Lake-283-750x500.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "ce408be0-3d59-40e1-b79a-97b6b9f739a1"
+    },
+    {
+      "name": "Virgin Plaza",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Flowerscent Plaza@hotmail.com",
+      "imageOne": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageTwo": "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2014/12/park.jpg",
+      "imageThree": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "imageFour": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "imageFive": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "b8381722-36e8-4b1c-8e79-ad3a01269634"
+    },
+    {
+      "name": "Crown Grounds",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Crown Grounds@hotmail.com",
+      "imageOne": "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2014/12/park.jpg",
+      "imageTwo": "http://www.mccooltravel.com/wp-content/uploads/2016/05/Margaret-island-Budapest.jpeg",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbrryEn3PTtw84FLg42wSIxvHpVu7ZkyZX0zvpKdrp8nWZWnr",
+      "imageFour": "http://uncontainedlife.com/wp-content/uploads/2016/05/Plitvice-Lake-283-750x500.jpg",
+      "imageFive": "https://www.likealocalguide.com/media/cache/bc/ef/bcef64d63f78894bbb32c1e3d6c33d81.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "94a071fd-7ed9-4b2d-92be-4b5f909ea5a4"
+    },
+    {
+      "name": "New Forest Grounds",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Pryhurb Plaza@hotmail.com",
+      "imageOne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbrryEn3PTtw84FLg42wSIxvHpVu7ZkyZX0zvpKdrp8nWZWnr",
+      "imageTwo": "http://uncontainedlife.com/wp-content/uploads/2016/05/Plitvice-Lake-283-750x500.jpg",
+      "imageThree": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "imageFour": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageFive": "http://www.nycgo.com/images/venues/11941/walkingtour__card.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "444ecfb0-7650-4a9b-a686-7528e77b1797"
+    },
+    {
+      "name": "Angel Grounds",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Harmony Garden@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/11941/walkingtour__card.jpg",
+      "imageTwo": "http://www.nycgo.com/images/made/images/photo_gallery/NYC_in_bloom/01-CentralParkSpring-JenDavis_750_500_40_c1.jpg",
+      "imageThree": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "imageFour": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "imageFive": "http://uncontainedlife.com/wp-content/uploads/2016/02/London-335-750x500.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "11a50dc3-87b5-4e46-8d0e-570666edf50d",
+      "comments": [
+        {
+          "author": "parkAdder",
+          "text": "Cool stuff"
+        }
+      ]
+    },
+    {
+      "name": "Klytalt Plaza",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Gardenland Grounds@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/made/images/photo_gallery/NYC_in_bloom/01-CentralParkSpring-JenDavis_750_500_40_c1.jpg",
+      "imageTwo": "http://www.traveller.ee/media/cache/59/9a/599a14776aaeb5fd37123c58f9d43e30.jpg",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbrryEn3PTtw84FLg42wSIxvHpVu7ZkyZX0zvpKdrp8nWZWnr",
+      "imageFour": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "imageFive": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "3486b9cd-c2bf-4479-9682-c472576cdbdb"
+    },
+    {
+      "name": "Flowerscent Grounds",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Yquhr Grounds@hotmail.com",
+      "imageOne": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageTwo": "http://www.nycgo.com/images/venues/11941/walkingtour__card.jpg",
+      "imageThree": "http://www.mccooltravel.com/wp-content/uploads/2016/05/Margaret-island-Budapest.jpeg",
+      "imageFour": "http://uncontainedlife.com/wp-content/uploads/2016/05/Plitvice-Lake-283-750x500.jpg",
+      "imageFive": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "d4ced7b8-dfc7-4c10-bcfe-8cd7e99868e2"
+    },
+    {
+      "name": "Procaln Plaza",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Clires Grounds@hotmail.com",
+      "imageOne": "http://www.traveller.ee/media/cache/59/9a/599a14776aaeb5fd37123c58f9d43e30.jpg",
+      "imageTwo": "http://www.mccooltravel.com/wp-content/uploads/2016/05/Margaret-island-Budapest.jpeg",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "imageFour": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "imageFive": "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2014/12/park.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "91d6129d-87b8-4dea-b626-78c24e0d17fb"
+    },
+    {
+      "name": "Imihz Plaza",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Angel Grounds@hotmail.com",
+      "imageOne": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "imageTwo": "https://www.likealocalguide.com/media/cache/bc/ef/bcef64d63f78894bbb32c1e3d6c33d81.jpg",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPrvXVTBCl8LnEz_EL4RTaSiPv4rZkSgr9yzRhx-RqnRalXYF6",
+      "imageFour": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "imageFive": "http://uncontainedlife.com/wp-content/uploads/2016/05/Plitvice-Lake-283-750x500.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "4e7299ff-8da8-4af8-8d31-c85a5eefdc38"
+    },
+    {
+      "name": "Sunnyside Plaza",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Crown Grounds@hotmail.com",
+      "imageOne": "http://www.nycgo.com/images/venues/11941/walkingtour__card.jpg",
+      "imageTwo": "http://www.nycgo.com/images/venues/11941/walkingtour__card.jpg",
+      "imageThree": "http://www.traveller.ee/media/cache/59/9a/599a14776aaeb5fd37123c58f9d43e30.jpg",
+      "imageFour": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPrvXVTBCl8LnEz_EL4RTaSiPv4rZkSgr9yzRhx-RqnRalXYF6",
+      "imageFive": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "b858eca5-1754-4b8f-a341-a2b1cceb9976"
+    },
+    {
+      "name": "Azab Park",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Community Gardens@hotmail.com",
+      "imageOne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbrryEn3PTtw84FLg42wSIxvHpVu7ZkyZX0zvpKdrp8nWZWnr",
+      "imageTwo": "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2014/12/park.jpg",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "imageFour": "https://www.likealocalguide.com/media/cache/bc/ef/bcef64d63f78894bbb32c1e3d6c33d81.jpg",
+      "imageFive": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "9a4e50f0-989f-4f48-b094-38ea3712a7b5"
+    },
+    {
+      "name": "Midland Meadows",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Sunnyside Plaza@hotmail.com",
+      "imageOne": "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2014/12/park.jpg",
+      "imageTwo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "imageThree": "http://www.nycgo.com/images/made/images/photo_gallery/NYC_in_bloom/01-CentralParkSpring-JenDavis_750_500_40_c1.jpg",
+      "imageFour": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "imageFive": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "75301a09-f87d-4f11-a5bf-85fef22a4008"
+    },
+    {
+      "name": "Kraax Garden",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Sunnyside Plaza@hotmail.com",
+      "imageOne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "imageTwo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPrvXVTBCl8LnEz_EL4RTaSiPv4rZkSgr9yzRhx-RqnRalXYF6",
+      "imageThree": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "imageFour": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageFive": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "13285fec-66e3-4065-89fd-8389db77caeb"
+    },
+    {
+      "name": "Meadows Gardens",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Tiimt Plaza@hotmail.com",
+      "imageOne": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageTwo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "imageFour": "http://www.mccooltravel.com/wp-content/uploads/2016/05/Margaret-island-Budapest.jpeg",
+      "imageFive": "http://uncontainedlife.com/wp-content/uploads/2016/02/London-335-750x500.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "024d87fd-2a5f-4a0c-95e9-02b4ed2f4948"
+    },
+    {
+      "name": "Gardenland Grounds",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Cherry Blossom Plaza@hotmail.com",
+      "imageOne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPrvXVTBCl8LnEz_EL4RTaSiPv4rZkSgr9yzRhx-RqnRalXYF6",
+      "imageTwo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCqkpWh1To9LSNYoG3k9hejB4vq0XLk7lHQswSvJenDVX92OK",
+      "imageThree": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpFlRiz-LkeSYrELDJHks4rEbX7tBQbtAY5VQrsyObjgxzdbcI",
+      "imageFour": "http://www.mccooltravel.com/wp-content/uploads/2016/05/Margaret-island-Budapest.jpeg",
+      "imageFive": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "ac4e8fab-a56b-44fa-8d80-5d80dec18d2b"
+    },
+    {
+      "name": "Red Fern Grounds",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Flowerscent Grounds@hotmail.com",
+      "imageOne": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "imageTwo": "http://photos.longjaunt.com/2008/05/02/heading_south_through_croatia/007.jpg",
+      "imageThree": "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2014/12/park.jpg",
+      "imageFour": "http://uncontainedlife.com/wp-content/uploads/2016/02/London-335-750x500.jpg",
+      "imageFive": "http://www.traveller.ee/media/cache/59/9a/599a14776aaeb5fd37123c58f9d43e30.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "83cfa8e9-4a18-4b23-8051-9e268e3e8de4"
+    },
+    {
+      "name": "Yquhr Grounds",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Meadows Gardens@hotmail.com",
+      "imageOne": "http://cdn4.discovertuscany.com/img/lucca/walkable-walls.jpg?w=750&q=65",
+      "imageTwo": "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2014/12/park.jpg",
+      "imageThree": "http://www.nycgo.com/images/made/images/photo_gallery/NYC_in_bloom/01-CentralParkSpring-JenDavis_750_500_40_c1.jpg",
+      "imageFour": "https://www.likealocalguide.com/media/cache/bc/ef/bcef64d63f78894bbb32c1e3d6c33d81.jpg",
+      "imageFive": "http://www.nycgo.com/images/made/images/photo_gallery/NYC_in_bloom/01-CentralParkSpring-JenDavis_750_500_40_c1.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "6124d203-8062-44f0-8203-430431fa6448"
+    },
+    {
+      "name": "Flowerscent Plaza",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Clires Grounds@hotmail.com",
+      "imageOne": "https://static.barcelona-home.com/750x500/galleries/27/pictures/p17am9vfqo1naevsh1kra12mb15rd8.jpg",
+      "imageTwo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbrryEn3PTtw84FLg42wSIxvHpVu7ZkyZX0zvpKdrp8nWZWnr",
+      "imageThree": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPrvXVTBCl8LnEz_EL4RTaSiPv4rZkSgr9yzRhx-RqnRalXYF6",
+      "imageFour": "http://www.nycgo.com/images/venues/11941/walkingtour__card.jpg",
+      "imageFive": "http://www.nycgo.com/images/venues/11941/walkingtour__card.jpg",
+      "addedBy": "parkAdder",
+      "type": "sightseeing",
+      "id": "8c348a4e-a87c-41fc-b7bc-977a10b907ee"
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "Restaurant 1",
+      "description": "descr",
+      "phone": "phone",
+      "address": "adddr",
+      "e-mail": "mail@mail.bg",
+      "imageOne": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageTwo": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageThree": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFour": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "imageFive": "https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg",
+      "addedBy": "testUser1",
+      "type": "restaurant",
+      "id": "e4d1ac1e-63c3-4a00-8c1f-b989098387d5"
+    },
+    {
+      "name": "After Dark",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "After Dark@hotmail.com",
+      "imageOne": "http://www.lumarestaurant.com/wp-content/uploads/sites/2/2015/10/luma-restaurant-about-lounge-750x500.jpg",
+      "imageTwo": "https://www.unitourismorocco.com/wp-content/uploads/2017/01/news-moroccan-restaurant-750x500.jpg",
+      "imageThree": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-restaurant-coral-walls-750x500.jpg",
+      "imageFour": "http://www.lumarestaurant.com/wp-content/uploads/sites/2/2015/10/luma-restaurant-about-lounge-750x500.jpg",
+      "imageFive": "http://www.ramadaiskenderun.com/wp-content/uploads/2016/11/ramada-restaurant-1.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "33d8bbff-a23c-479f-9498-bfc7cb42034d"
+    },
+    {
+      "name": "The Island",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Nightowl@hotmail.com",
+      "imageOne": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
+      "imageTwo": "https://www.unitourismorocco.com/wp-content/uploads/2017/01/news-moroccan-restaurant-750x500.jpg",
+      "imageThree": "https://spar-international.com/wp-content/uploads/2016/09/AT-The-INTERSPAR-Floridsdorf-restaurant-750x500.jpg",
+      "imageFour": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52qHzlUqL--icqq_K23n4swNftR1w31qo6Hxj1jsy85Z-eEevrA",
+      "imageFive": "https://exclusivelybritishmagazine.com/wp-content/uploads/2017/03/Bokan-Restaurant.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "922eb605-397e-476b-85da-c92fb00159df"
+    },
+    {
+      "name": "The Thai Balcony",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Eclipse@hotmail.com",
+      "imageOne": "https://www.jean-georges.com/content/slides/jg-interior-750x500.jpg",
+      "imageTwo": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-restaurant-coral-walls-750x500.jpg",
+      "imageThree": "http://2017designtrends.com/wp-content/uploads/2016/11/privacy-trend-restaurants-750x500.jpg",
+      "imageFour": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4YewXlwdaTGjRTyQyQVeZ3QUenQ-xTs1xctI4HWCG3KnFoGWGA",
+      "imageFive": "http://www.lcti.org/uploads/culinary-arts-1-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "10af20d2-b841-4977-b319-2e3c83abea49"
+    },
+    {
+      "name": "Retro",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Pearl@hotmail.com",
+      "imageOne": "https://contentwriters.com/blog/wp-content/uploads/shutterstock_195519860-750x500.jpg",
+      "imageTwo": "http://www.thearcadiaonline.com/wp-content/uploads/2016/07/Wallace-restaurant-2-750x500.jpg",
+      "imageThree": "http://www.hotel-praia.com/assets/images/restaurante/restaurante-1.jpg",
+      "imageFour": "https://www.jean-georges.com/content/slides/jg-interior-750x500.jpg",
+      "imageFive": "http://www.hotelsanmarco.com/images/ristorante/roof-garden-2.png",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "75b1b573-d600-4d26-9eed-f7a86f4e5095"
+    },
+    {
+      "name": "The Pearl",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Pink Monument@hotmail.com",
+      "imageOne": "https://exclusivelybritishmagazine.com/wp-content/uploads/2017/03/Bokan-Restaurant.jpg",
+      "imageTwo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPZFPuztr55snamHlMC-TRzl268QXk7hZK08Ck07PkJ5rBdQ_y",
+      "imageThree": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageFour": "http://www.thearcadiaonline.com/wp-content/uploads/2016/07/Wallace-restaurant-2-750x500.jpg",
+      "imageFive": "https://static1.squarespace.com/static/58cabdfe9f74567f6f5b90b5/58d168a3e4fcb53b16bb353e/59076c5dd2b8574b000470a8/1493658908353/IMG_7917.jpg?format=750w",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "03d93a7d-be2e-4d6f-8c9e-7d02bd55e595"
+    },
+    {
+      "name": "Arch",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Island@hotmail.com",
+      "imageOne": "http://2017designtrends.com/wp-content/uploads/2016/11/privacy-trend-restaurants-750x500.jpg",
+      "imageTwo": "https://static1.squarespace.com/static/58cabdfe9f74567f6f5b90b5/58d168a3e4fcb53b16bb353e/59076c5dd2b8574b000470a8/1493658908353/IMG_7917.jpg?format=750w",
+      "imageThree": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageFour": "http://www.lcti.org/uploads/culinary-arts-1-750x500.jpg",
+      "imageFive": "https://static1.squarespace.com/static/55e383e4e4b097814b02f211/55f32d08e4b0e0c7bc0c6df0/55f32d09e4b0e0c7bc0c6df5/1442000138270/207_1_mg_0800_hdr_01-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "f92a3ee8-a92c-40ff-92d4-888353bc3c16"
+    },
+    {
+      "name": "The Warm Spices",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "After Dark@hotmail.com",
+      "imageOne": "https://contentwriters.com/blog/wp-content/uploads/shutterstock_195519860-750x500.jpg",
+      "imageTwo": "https://static1.squarespace.com/static/58cabdfe9f74567f6f5b90b5/58d168a3e4fcb53b16bb353e/59076c5dd2b8574b000470a8/1493658908353/IMG_7917.jpg?format=750w",
+      "imageThree": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageFour": "http://www.lcti.org/uploads/culinary-arts-1-750x500.jpg",
+      "imageFive": "https://exclusivelybritishmagazine.com/wp-content/uploads/2017/03/Bokan-Restaurant.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "3b4c2c9b-132f-4755-85da-320c0d6a9836"
+    },
+    {
+      "name": "The Pink Monument",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Purity@hotmail.com",
+      "imageOne": "https://truetahitivacation.com/wp-content/uploads/2015/10/four-seasons-bora-bora-resort-restaurant-750x500.jpg",
+      "imageTwo": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageThree": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_VRsxPTVVDcp-NHq10VvD64sgnsdy1QqeW3UP2CtJI2IdjElf2w",
+      "imageFour": "http://static1.squarespace.com/static/527679aee4b06f1a7db2bffd/5276a43ee4b02ee843116503/5380e240e4b0c9ba92a508fe/1490351469772/LaBalsaRestaurant-Barcelona.jpg?format=1000w",
+      "imageFive": "http://moneyinc.com/wp-content/uploads/2016/04/MG_6316-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "45a14459-4344-4317-8706-6b45fb6a2a19"
+    },
+    {
+      "name": "The Dwarf Cuisine",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Cool Blend@hotmail.com",
+      "imageOne": "http://www.hotelsanmarco.com/images/ristorante/roof-garden-2.png",
+      "imageTwo": "http://moneyinc.com/wp-content/uploads/2016/04/MG_6316-750x500.jpg",
+      "imageThree": "https://www.unitourismorocco.com/wp-content/uploads/2017/01/news-moroccan-restaurant-750x500.jpg",
+      "imageFour": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
+      "imageFive": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-restaurant-coral-walls-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "195e429e-02ff-436d-8a92-bbdf2da2b1b8"
+    },
+    {
+      "name": "Nightowl",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Pearl@hotmail.com",
+      "imageOne": "http://www.ramadaiskenderun.com/wp-content/uploads/2016/11/ramada-restaurant-1.jpg",
+      "imageTwo": "http://www.lcti.org/uploads/culinary-arts-1-750x500.jpg",
+      "imageThree": "http://www.thearcadiaonline.com/wp-content/uploads/2016/07/Wallace-restaurant-2-750x500.jpg",
+      "imageFour": "http://sphm-female-site-production.s3-ap-southeast-1.amazonaws.com/2015/11/aura-restaurant-instagram-750x500.jpg",
+      "imageFive": "http://www.hotel-angelic.com/wp-content/uploads/13-salle-restaurant-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "84b962a3-6bbd-4b02-838e-de5d8025fe9d"
+    },
+    {
+      "name": "The Silver Afternoon",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Paramount@hotmail.com",
+      "imageOne": "http://www.thearcadiaonline.com/wp-content/uploads/2016/07/Wallace-restaurant-2-750x500.jpg",
+      "imageTwo": "http://static1.squarespace.com/static/527679aee4b06f1a7db2bffd/5276a43ee4b02ee843116503/5380e240e4b0c9ba92a508fe/1490351469772/LaBalsaRestaurant-Barcelona.jpg?format=1000w",
+      "imageThree": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-restaurant-coral-walls-750x500.jpg",
+      "imageFour": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_VRsxPTVVDcp-NHq10VvD64sgnsdy1QqeW3UP2CtJI2IdjElf2w",
+      "imageFive": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4YewXlwdaTGjRTyQyQVeZ3QUenQ-xTs1xctI4HWCG3KnFoGWGA",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "cd360e65-f669-45c8-ac19-ace86e88887f"
+    },
+    {
+      "name": "The Curry Exhibit",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Purity@hotmail.com",
+      "imageOne": "https://spar-international.com/wp-content/uploads/2016/09/AT-The-INTERSPAR-Floridsdorf-restaurant-750x500.jpg",
+      "imageTwo": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageThree": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageFour": "https://spar-international.com/wp-content/uploads/2016/09/AT-The-INTERSPAR-Floridsdorf-restaurant-750x500.jpg",
+      "imageFive": "http://2017designtrends.com/wp-content/uploads/2016/11/privacy-trend-restaurants-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "6311df13-57b6-49d6-b75c-b7c3e4ffb3f8"
+    },
+    {
+      "name": "The City Taste",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Thai Balcony@hotmail.com",
+      "imageOne": "http://www.lcti.org/uploads/culinary-arts-1-750x500.jpg",
+      "imageTwo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_VRsxPTVVDcp-NHq10VvD64sgnsdy1QqeW3UP2CtJI2IdjElf2w",
+      "imageThree": "http://www.thearcadiaonline.com/wp-content/uploads/2016/07/Wallace-restaurant-2-750x500.jpg",
+      "imageFour": "https://contentwriters.com/blog/wp-content/uploads/shutterstock_195519860-750x500.jpg",
+      "imageFive": "http://2017designtrends.com/wp-content/uploads/2016/11/privacy-trend-restaurants-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "3b0dcfd0-b1e9-4319-8993-9c58a582de5d"
+    },
+    {
+      "name": "The Spring Oak",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Mockingbird@hotmail.com",
+      "imageOne": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageTwo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4YewXlwdaTGjRTyQyQVeZ3QUenQ-xTs1xctI4HWCG3KnFoGWGA",
+      "imageThree": "https://contentwriters.com/blog/wp-content/uploads/shutterstock_195519860-750x500.jpg",
+      "imageFour": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
+      "imageFive": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-restaurant-coral-walls-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "bf2c7f87-5b54-4b7d-9229-3edb3f43bbb6"
+    },
+    {
+      "name": "The Eclipse",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Royal Blanket@hotmail.com",
+      "imageOne": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG2zKqUNNgv70pM8so24sY8tvKAN8qNOSiLs6OjTen8cCls4qNxQ",
+      "imageTwo": "http://budgetmaldives.co/wp-content/uploads/2016/10/anntara-kihavah-sea-restaurant-wine-750x500.jpg",
+      "imageThree": "https://spar-international.com/wp-content/uploads/2016/09/AT-The-INTERSPAR-Floridsdorf-restaurant-750x500.jpg",
+      "imageFour": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
+      "imageFive": "http://www.hotel-praia.com/assets/images/restaurante/restaurante-1.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "c87f37ac-2899-4f0f-881e-1b59e13f8c9f"
+    },
+    {
+      "name": "The Caribbean Garden",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Charm@hotmail.com",
+      "imageOne": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageTwo": "https://www.unitourismorocco.com/wp-content/uploads/2017/01/news-moroccan-restaurant-750x500.jpg",
+      "imageThree": "https://www.jean-georges.com/content/slides/jg-interior-750x500.jpg",
+      "imageFour": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4YewXlwdaTGjRTyQyQVeZ3QUenQ-xTs1xctI4HWCG3KnFoGWGA",
+      "imageFive": "https://www.jean-georges.com/content/slides/jg-interior-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "381bef98-a358-4cb8-9abd-e576ffe8bcd3"
+    },
+    {
+      "name": "The Queen's Windmill",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Mockingbird@hotmail.com",
+      "imageOne": "http://moneyinc.com/wp-content/uploads/2016/04/MG_6316-750x500.jpg",
+      "imageTwo": "https://truetahitivacation.com/wp-content/uploads/2015/11/hotels-tahiti-pearl-beach-resort-restaurant-750x500.jpg",
+      "imageThree": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageFour": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPZFPuztr55snamHlMC-TRzl268QXk7hZK08Ck07PkJ5rBdQ_y",
+      "imageFive": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-restaurant-coral-walls-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "bc214435-bec5-4ad1-a943-e02cbc641ab8"
+    },
+    {
+      "name": "Charm",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Thai Balcony@hotmail.com",
+      "imageOne": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52qHzlUqL--icqq_K23n4swNftR1w31qo6Hxj1jsy85Z-eEevrA",
+      "imageTwo": "http://static1.squarespace.com/static/527679aee4b06f1a7db2bffd/5276a43ee4b02ee843116503/5380e240e4b0c9ba92a508fe/1490351469772/LaBalsaRestaurant-Barcelona.jpg?format=1000w",
+      "imageThree": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPZFPuztr55snamHlMC-TRzl268QXk7hZK08Ck07PkJ5rBdQ_y",
+      "imageFour": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageFive": "http://murwab-static.s3-eu-central-1.amazonaws.com/wp-content/uploads/sites/2/2016/05/11074200/Restaurant-Buffet-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "d6c06ae3-79fd-46e7-b420-a7922149dd77"
+    },
+    {
+      "name": "The Mockingbird",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Island@hotmail.com",
+      "imageOne": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
+      "imageTwo": "https://spar-international.com/wp-content/uploads/2016/09/AT-The-INTERSPAR-Floridsdorf-restaurant-750x500.jpg",
+      "imageThree": "http://2017designtrends.com/wp-content/uploads/2016/11/privacy-trend-restaurants-750x500.jpg",
+      "imageFour": "http://2017designtrends.com/wp-content/uploads/2016/11/privacy-trend-restaurants-750x500.jpg",
+      "imageFive": "https://www.unitourismorocco.com/wp-content/uploads/2017/01/news-moroccan-restaurant-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "d01a7670-6544-46b3-8849-f46c94be9b80"
+    },
+    {
+      "name": "Lemon",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Curry Exhibit@hotmail.com",
+      "imageOne": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52qHzlUqL--icqq_K23n4swNftR1w31qo6Hxj1jsy85Z-eEevrA",
+      "imageTwo": "http://www.hotel-praia.com/assets/images/restaurante/restaurante-1.jpg",
+      "imageThree": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageFour": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
+      "imageFive": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPZFPuztr55snamHlMC-TRzl268QXk7hZK08Ck07PkJ5rBdQ_y",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "82065512-f024-49d1-bfab-7753ef6b9359"
+    },
+    {
+      "name": "The Cool Blend",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Thai Balcony@hotmail.com",
+      "imageOne": "http://www.ramadaiskenderun.com/wp-content/uploads/2016/11/ramada-restaurant-1.jpg",
+      "imageTwo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG2zKqUNNgv70pM8so24sY8tvKAN8qNOSiLs6OjTen8cCls4qNxQ",
+      "imageThree": "https://vcollectionresorts.com/wp-content/uploads/2016/05/Rosmarino-restaurant-750x500.jpg",
+      "imageFour": "http://budgetmaldives.co/wp-content/uploads/2016/10/anntara-kihavah-sea-restaurant-wine-750x500.jpg",
+      "imageFive": "https://contentwriters.com/blog/wp-content/uploads/shutterstock_195519860-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "cc53603a-631d-4249-9a25-14bf364dd2aa"
+    },
+    {
+      "name": "Paramount",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Fresh Windmill@hotmail.com",
+      "imageOne": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_VRsxPTVVDcp-NHq10VvD64sgnsdy1QqeW3UP2CtJI2IdjElf2w",
+      "imageTwo": "http://theplate.nationalgeographic.com/files/2016/04/restaurant-750x500.jpg",
+      "imageThree": "http://static1.squarespace.com/static/527679aee4b06f1a7db2bffd/5276a43ee4b02ee843116503/5380e240e4b0c9ba92a508fe/1490351469772/LaBalsaRestaurant-Barcelona.jpg?format=1000w",
+      "imageFour": "http://moneyinc.com/wp-content/uploads/2016/04/MG_6316-750x500.jpg",
+      "imageFive": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-italian-restaurant-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "47c1299d-1f04-4978-aa2c-b6b7497ce7f2"
+    },
+    {
+      "name": "Fabled",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Nightowl@hotmail.com",
+      "imageOne": "https://www.jean-georges.com/content/slides/jg-interior-750x500.jpg",
+      "imageTwo": "http://www.hotel-praia.com/assets/images/restaurante/restaurante-1.jpg",
+      "imageThree": "http://moneyinc.com/wp-content/uploads/2016/04/MG_6316-750x500.jpg",
+      "imageFour": "https://truetahitivacation.com/wp-content/uploads/2015/07/st-regis-bora-bora-resort-restaurant-coral-walls-750x500.jpg",
+      "imageFive": "http://theplate.nationalgeographic.com/files/2016/04/restaurant-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "cc831aa0-eecc-4731-8efb-b361a1e9460d",
+      "comments": [
+        {
+          "author": "testUser1",
+          "text": "ASD FGH"
+        }
+      ]
+    },
+    {
+      "name": "The Chili Leaf",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Nightowl@hotmail.com",
+      "imageOne": "https://www.unitourismorocco.com/wp-content/uploads/2017/01/news-moroccan-restaurant-750x500.jpg",
+      "imageTwo": "http://static1.squarespace.com/static/527679aee4b06f1a7db2bffd/5276a43ee4b02ee843116503/5380e240e4b0c9ba92a508fe/1490351469772/LaBalsaRestaurant-Barcelona.jpg?format=1000w",
+      "imageThree": "http://www.hotel-praia.com/assets/images/restaurante/restaurante-1.jpg",
+      "imageFour": "https://static1.squarespace.com/static/55e383e4e4b097814b02f211/55f32d08e4b0e0c7bc0c6df0/55f32d09e4b0e0c7bc0c6df5/1442000138270/207_1_mg_0800_hdr_01-750x500.jpg",
+      "imageFive": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52qHzlUqL--icqq_K23n4swNftR1w31qo6Hxj1jsy85Z-eEevrA",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "0387c335-b011-4411-8a54-68dcf1e72b83"
+    },
+    {
+      "name": "Purity",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "Retro@hotmail.com",
+      "imageOne": "https://www.unitourismorocco.com/wp-content/uploads/2017/01/news-moroccan-restaurant-750x500.jpg",
+      "imageTwo": "http://www.ramadaiskenderun.com/wp-content/uploads/2016/11/ramada-restaurant-1.jpg",
+      "imageThree": "http://www.lumarestaurant.com/wp-content/uploads/sites/2/2015/10/luma-restaurant-about-lounge-750x500.jpg",
+      "imageFour": "http://www.hotelsanmarco.com/images/ristorante/roof-garden-2.png",
+      "imageFive": "http://static1.squarespace.com/static/527679aee4b06f1a7db2bffd/5276a43ee4b02ee843116503/5380e240e4b0c9ba92a508fe/1490351469772/LaBalsaRestaurant-Barcelona.jpg?format=1000w",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "0b6d998d-7946-477f-9e9c-dd22a4bc6d2b"
+    },
+    {
+      "name": "The Royal Blanket",
+      "description": "A description",
+      "phone": "+35987774455",
+      "address": "Vitosha bld.",
+      "e-mail": "The Sumo Moment@hotmail.com",
+      "imageOne": "http://budgetmaldives.co/wp-content/uploads/2016/10/anntara-kihavah-sea-restaurant-wine-750x500.jpg",
+      "imageTwo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4YewXlwdaTGjRTyQyQVeZ3QUenQ-xTs1xctI4HWCG3KnFoGWGA",
+      "imageThree": "https://www.jean-georges.com/content/slides/jg-interior-750x500.jpg",
+      "imageFour": "https://truetahitivacation.com/wp-content/uploads/2015/11/hotels-tahiti-pearl-beach-resort-restaurant-750x500.jpg",
+      "imageFive": "https://static1.squarespace.com/static/55e383e4e4b097814b02f211/55f32d08e4b0e0c7bc0c6df0/55f32d09e4b0e0c7bc0c6df5/1442000138270/207_1_mg_0800_hdr_01-750x500.jpg",
+      "addedBy": "restaurantAdder",
+      "type": "restaurant",
+      "id": "253b2631-c7d5-4c32-ad64-3689f1dbd5e3"
+    },
+    {
+      "name": "qweqweqwe",
+      "description": "qweqweqwe",
+      "phone": "qweqweqw",
+      "address": "eqweqweqw",
+      "e-mail": "asdasd@gmail.com",
+      "imageOne": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageTwo": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageThree": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageFour": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "imageFive": "http://www.pdcdc.org/wp-content/uploads/2016/03/restaurant-939435_960_720.jpg",
+      "addedBy": "parkAdder",
+      "type": "restaurant",
+      "id": "7efc8b47-b5c5-4a00-99b1-e1764b26ed83"
+    }
+  ],
+  "users": [
+    {
+      "username": "testUser1",
+      "emailAddress": "testUser@gmail.com",
+      "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
+      "secretQuestion": "Very secret Q",
+      "secretAnswer": "Very secret A",
+      "id": "535a2f13-9fab-49c1-88a6-d5071ce17db6",
+      "added": [
+        {
+          "name": "Hotel 1"
+        },
+        {
+          "name": "Restaurant 1"
+        },
+        {
+          "name": "Sightsee1"
+        },
+        {
+          "name": "Snowy Ridge Hotel"
+        },
+        {
+          "name": "Saffron Tide Hotel & Spa"
+        },
+        {
+          "name": "Mellow Expanse Hotel"
+        },
+        {
+          "name": "Radiance Resort"
+        },
+        {
+          "name": "Sunway Resort & Spa"
+        },
+        {
+          "name": "Vanilla Hotel"
+        },
+        {
+          "name": "Riverside Meadows Resort & Spa"
+        },
+        {
+          "name": "Lunar Pool Hotel"
+        },
+        {
+          "name": "Private Obelisk Hotel"
+        },
+        {
+          "name": "Sapphire Rainbow Resort"
+        },
+        {
+          "name": "Crown Hotel"
+        },
+        {
+          "name": "Crown Square Hotel"
+        },
+        {
+          "name": "Diorama Resort & Spa"
+        },
+        {
+          "name": "Amuse Hotel & Spa"
+        },
+        {
+          "name": "Majestic Pyramid Hotel"
+        },
+        {
+          "name": "Sunrise Flower Resort & Spa"
+        },
+        {
+          "name": "Malachite Heights Resort"
+        },
+        {
+          "name": "Azure Prairie Hotel"
+        },
+        {
+          "name": "Paragon Resort & Spa"
+        }
+      ]
+    },
+    {
+      "username": "restaurantAdder",
+      "emailAddress": "contactMe@gmail.com",
+      "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
+      "secretQuestion": "secret Q",
+      "secretAnswer": "secret A",
+      "id": "83ef069c-4c22-484c-a13a-4f1f8a176e51",
+      "added": [
+        {
+          "name": "After Dark"
+        },
+        {
+          "name": "The Island"
+        },
+        {
+          "name": "The Thai Balcony"
+        },
+        {
+          "name": "Retro"
+        },
+        {
+          "name": "The Pearl"
+        },
+        {
+          "name": "Arch"
+        },
+        {
+          "name": "The Warm Spices"
+        },
+        {
+          "name": "The Pink Monument"
+        },
+        {
+          "name": "The Dwarf Cuisine"
+        },
+        {
+          "name": "Nightowl"
+        },
+        {
+          "name": "The Silver Afternoon"
+        },
+        {
+          "name": "The Curry Exhibit"
+        },
+        {
+          "name": "The City Taste"
+        },
+        {
+          "name": "The Spring Oak"
+        },
+        {
+          "name": "The Eclipse"
+        },
+        {
+          "name": "The Caribbean Garden"
+        },
+        {
+          "name": "The Queen's Windmill"
+        },
+        {
+          "name": "Charm"
+        },
+        {
+          "name": "The Mockingbird"
+        },
+        {
+          "name": "Lemon"
+        },
+        {
+          "name": "The Cool Blend"
+        },
+        {
+          "name": "Paramount"
+        },
+        {
+          "name": "Fabled"
+        },
+        {
+          "name": "The Chili Leaf"
+        },
+        {
+          "name": "Purity"
+        },
+        {
+          "name": "The Royal Blanket"
+        }
+      ]
+    },
+    {
+      "username": "sightseeingAdder",
+      "emailAddress": "email@hotmail.com",
+      "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
+      "secretQuestion": "secret Q",
+      "secretAnswer": "secret A",
+      "id": "f972b3c5-7549-44e1-97df-8ee8843bfb51",
+      "added": [
+        {
+          "name": "Curiosity Museum"
+        },
+        {
+          "name": "Vault of Kinetics"
+        },
+        {
+          "name": "Center of Legacies"
+        },
+        {
+          "name": "Central Garden Institution"
+        },
+        {
+          "name": "Hall of Design"
+        },
+        {
+          "name": "International Happiness Gallery"
+        },
+        {
+          "name": "Museum of Living"
+        },
+        {
+          "name": "Museum of Culture"
+        },
+        {
+          "name": "Royal Gallery of Aerospace"
+        },
+        {
+          "name": "Center of Innovation"
+        },
+        {
+          "name": "Hall of Portraits"
+        },
+        {
+          "name": "Play Exhibition"
+        },
+        {
+          "name": "Gold Hall"
+        },
+        {
+          "name": "Secrets Institute"
+        },
+        {
+          "name": "Grand Vault of Anthropology"
+        },
+        {
+          "name": "Great Space Museum"
+        },
+        {
+          "name": "Grand Treasury of Natural History"
+        },
+        {
+          "name": "National Emergency Gallery"
+        },
+        {
+          "name": "Zoology Centre"
+        },
+        {
+          "name": "Maritime Treasury"
+        },
+        {
+          "name": "International Museum of Sports"
+        },
+        {
+          "name": "Learning Institute"
+        },
+        {
+          "name": "Treasury of Change"
+        }
+      ]
+    },
+    {
+      "username": "parkAdder",
+      "emailAddress": "contactinfo@email.com",
+      "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
+      "secretQuestion": "secret Q",
+      "secretAnswer": "secret A",
+      "id": "552c0c74-9ee0-4bf9-bc06-d0926b2b63cc",
+      "added": [
+        {
+          "name": "Community Gardens"
+        },
+        {
+          "name": "Tiimt Plaza"
+        },
+        {
+          "name": "Pryhurb Plaza"
+        },
+        {
+          "name": "Qrehugh Meadows"
+        },
+        {
+          "name": "Harmony Garden"
+        },
+        {
+          "name": "Sea Breeze Grounds"
+        },
+        {
+          "name": "Virgin Plaza"
+        },
+        {
+          "name": "Crown Grounds"
+        },
+        {
+          "name": "New Forest Grounds"
+        },
+        {
+          "name": "Angel Grounds"
+        },
+        {
+          "name": "Klytalt Plaza"
+        },
+        {
+          "name": "Flowerscent Grounds"
+        },
+        {
+          "name": "Procaln Plaza"
+        },
+        {
+          "name": "Imihz Plaza"
+        },
+        {
+          "name": "Sunnyside Plaza"
+        },
+        {
+          "name": "Azab Park"
+        },
+        {
+          "name": "Midland Meadows"
+        },
+        {
+          "name": "Kraax Garden"
+        },
+        {
+          "name": "Meadows Gardens"
+        },
+        {
+          "name": "Gardenland Grounds"
+        },
+        {
+          "name": "Red Fern Grounds"
+        },
+        {
+          "name": "Yquhr Grounds"
+        },
+        {
+          "name": "Flowerscent Plaza"
+        },
+        {
+          "name": "qweqweqwe"
+        },
+        {
+          "name": ""
+        }
+      ],
+      "profilePicture": "http://keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg"
+    },
+    {
+      "username": "testUser2",
+      "emailAddress": "email@email.com",
+      "passHash": "83592796bc17705662dc9a750c8b6d0a4fd93396",
+      "secretQuestion": "secret Q",
+      "secretAnswer": "secret A",
+      "id": "3b0c833b-4d7a-41e6-9d4e-e7409ff06ec2",
+      "location": "Sofia",
+      "description": "User description here",
+      "gender": "1",
+      "profilePicture": "http://cdn.freshome.com/wp-content/uploads/2011/04/Grace-Santorini-Hotel-13-750x500.jpg",
+      "added": [
+        {
+          "name": "A demo hotel"
+        }
+      ]
+    }
+  ]
+}

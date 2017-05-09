@@ -1,0 +1,96 @@
+<div class="mainbody container-fluid">
+    <div class="row">
+        <!--<div style="padding-top:50px;"> </div>-->
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="media">
+                        <div align="center">
+                            {{#if profilePicture}}
+                            <img class="thumbnail img-responsive" src="{{profilePicture}}" width="300px" height="300px">                            
+                            {{else}}
+                            <img class="thumbnail img-responsive" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="300px" height="300px">                            {{/if}}
+                        </div>
+                        <div class="media-body">
+                            <hr>
+                            <h3><strong>{{username}}</strong></h3>
+                            <hr>
+                            <h3><strong>Location</strong></h3>
+                            <p>
+                                <div contenteditable="true">
+                                    {{#if location}}
+                                    <p>{{location}}</p>
+                                    {{else}}
+                                    <p>Not Specified.</p>
+                                    {{/if}}
+                                </div>
+                            </p>
+                            <hr>
+                            <h3><strong>Gender</strong></h3>
+                            <p>
+                                <div contenteditable="true">
+                                    {{#if gender}}
+                                    <p>{{gender}}</p>
+                                    {{else}}
+                                    <p>Not Specified.</p>
+                                    {{/if}}
+                                </div>
+                            </p>
+                            <hr>
+                            <h3><strong>Birthday</strong></h3>
+                            <p>
+                                <div contenteditable="true">
+                                    {{#if birthday}}
+                                    <p>{{birthday}}</p>
+                                    {{else}}
+                                    <p>Not Specified.</p>
+                                    {{/if}}
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <span>
+                        <h1 class="panel-title pull-left" style="font-size:30px;">{{username}} <small>{{emailAddress}}</small> </h1>
+                </span>
+                </div>
+            </div>
+            <hr>
+            <!-- Simple post content example. -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4><a href="#" style="text-decoration:none;"><strong>What Kind of Traveller are you? </strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+                        </small>
+                    </h4>
+                    <hr>
+                    <div class="post-content">
+                        {{#if description}}
+                        <p>{{description}}</p>
+                        {{else}}
+                        <p> User hasn`t added a description yet.</p>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            {{#if added}}
+            <div>
+                <h4><a href="#" style="text-decoration:none;"><strong>Added Items</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+            </div>
+            <div>
+                <ul style="list-style: none;">
+                    {{#each added}}
+                    <li>{{addedText name}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{else}}
+            <h4><a href="#" style="text-decoration:none;"><strong>No items were added by this user</strong><a href="#" style="text-decoration:none; color:grey;">  </a></small>
+                {{/if}}
+        </div>
+    </div>
+</div>
