@@ -3,40 +3,48 @@ import Handlebars from 'handlebars';
 import toastr from 'toastr';
 
 
-const itemsController = function (objectRequester, templateLoader) {
+const itemsController = function (objectRequester, addItemValidator, templateLoader) {
     const objRequester = objectRequester;
+    const validator = addItemValidator;
     const loader = templateLoader;
 
     function displayAddItemPage(templateName, containerSelector) {
         Promise.all([
             loader.loadTemplate(templateName)
         ])
-        .then(([template]) => {
-            $(containerSelector).html(template());
-        })
-        .then(() => {
-            $('#add-item-btn').on('click', function(ev) {
-                const category = $('#type-selection').val().toLowerCase();
-                
-                // validate fields
-                const item = {
-                    "name": $('#item-name').val().trim(),
-                    "description": $('#item-description').val().trim(),
-                    "phone": $('#item-phone').val().trim(),
-                    "address": $('#item-address').val().trim(),
-                    "e-mail": $('#item-email').val().trim(),
-                    "imageOne":  $('#item-main-image').val().trim(),
-                    "imageTwo": $('#item-second-image').val().trim(),
-                    "imageThree":  $('#item-third-image').val().trim(),
-                    "imageFour":  $('#item-fourth-image').val().trim(),
-                    "imageFive":  $('#item-fifth-image').val().trim(),
-                    "addedBy": localStorage.getItem('username') || sessionStorage.getItem('username')
-                };
+            .then(([template]) => {
+                $(containerSelector).html(template());
+            })
+            .then(() => {
+                $('#add-item-btn').on('click', function (ev) {
+                    const category = $('#type-selection').val().toLowerCase();
 
-                addItem(item, category)
-                    .then(toastr.success('Item added!'));
+                    // validate fields
+                    const item = {
+                        "name": $('#item-name').val().trim(),
+                        "description": $('#item-description').val().trim(),
+                        "phone": $('#item-phone').val().trim(),
+                        "address": $('#item-address').val().trim(),
+                        "e-mail": $('#item-email').val().trim(),
+                        "imageOne": $('#item-main-image').val().trim(),
+                        "imageTwo": $('#item-second-image').val().trim(),
+                        "imageThree": $('#item-third-image').val().trim(),
+                        "imageFour": $('#item-fourth-image').val().trim(),
+                        "imageFive": $('#item-fifth-image').val().trim(),
+                        "addedBy": localStorage.getItem('username') || sessionStorage.getItem('username')
+                    };
+
+                    try {
+                        validator.validateItem(item);
+                        addItem(item, category)
+                            .then(toastr.success('Item added!'));
+                    }
+                    catch (err) {
+                        toastr.error(err);
+                    }
+
+                });
             });
-        });
     }
 
     function displayItemDetailsPage(directory, searchParams, templateName, containerSelector) {
@@ -52,13 +60,13 @@ const itemsController = function (objectRequester, templateLoader) {
             switch (itemType) {
                 case 'hotel':
                     dbDirectory = 'hotels';
-                    break;                
+                    break;
                 case 'restaurant':
                     dbDirectory = 'restaurants';
-                    break;                
+                    break;
                 case 'sightseeing':
                     dbDirectory = 'sightseeing';
-                    break;            
+                    break;
                 default:
                     break;
             }
@@ -89,21 +97,21 @@ const itemsController = function (objectRequester, templateLoader) {
             loader.loadTemplate(templateName),
             objRequester.getObjectsPage(directory, page)
         ])
-        .then(([template, data]) => {
-            $(containerSelector).html(template(data));
-        });
+            .then(([template, data]) => {
+                $(containerSelector).html(template(data));
+            });
     }
 
     function addItem(item, itemCategory) {
         // add validations for picture link (to be actual link), names etc etc
         let directory;
-        if(itemCategory === 'hotel') {
+        if (itemCategory === 'hotel') {
             directory = 'hotels';
         }
-        else if(itemCategory === 'sightseeing') {
+        else if (itemCategory === 'sightseeing') {
             directory = 'sightseeing';
         }
-        else if(itemCategory === 'restaurant') {
+        else if (itemCategory === 'restaurant') {
             directory = 'restaurants';
         }
 
@@ -120,20 +128,20 @@ const itemsController = function (objectRequester, templateLoader) {
         return objRequester.editSpecificObject('api/' + directory, comment);
     }
 
-    $('#search-btn').on('click' , function(ev) {
+    $('#search-btn').on('click', function (ev) {
         console.log('called');
         const searchedName = $('#search-input-field').val().trim();
 
         Promise.all([
             loader.loadTemplate('mainPage'),
-            objRequester.searchAllObjects(searchedName)            
+            objRequester.searchAllObjects(searchedName)
         ])
-        .then(([template, data]) => {
-            const objects = {
-                objects: data
-            };
-            $('#app-container').html(template(objects));
-        });
+            .then(([template, data]) => {
+                const objects = {
+                    objects: data
+                };
+                $('#app-container').html(template(objects));
+            });
     });
 
     return {
@@ -143,4 +151,4 @@ const itemsController = function (objectRequester, templateLoader) {
     };
 }
 
-export { itemsController };
+export {itemsController};

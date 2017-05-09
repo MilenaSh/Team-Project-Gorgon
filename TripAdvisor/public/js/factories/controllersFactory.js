@@ -6,6 +6,7 @@ import { userValidator } from 'userValidator';
 import { userController } from 'userController';
 import { propertyValidator } from 'propertyValidator';
 import { itemsController } from 'itemsController';
+import { addItemValidator } from 'addItemValidator'
 
 const controllersFactory = function() {
     // Extracted here in case we decide to extract dependancies here too
@@ -15,13 +16,14 @@ const controllersFactory = function() {
     const loader = templateLoader(requester);
     const usrValidator = userValidator();
     const propValidator = propertyValidator();
+    const itemValidator = addItemValidator();
 
     function createUserController() {
         return userController(usrRequester, objRequester, usrValidator, propValidator, loader);
     }
 
     function createItemsController() {
-        return itemsController(objRequester, loader);
+        return itemsController(objRequester, itemValidator, loader);
     }
 
     return {
